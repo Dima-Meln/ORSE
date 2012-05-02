@@ -1,0 +1,8 @@
+#ifndef COMMON_H
+#define COMMON_H
+
+#define PrijectName OasisEngine
+#define BeginNamespace namespace ProjectName {
+#define EndNamespace };
+
+#endif
