@@ -17,20 +17,15 @@
 */
 
 
-#include "viewport.h"
+#include "root.h"
 
-ViewPort::ViewPort() {
-  
-}
-ViewPort::~ViewPort() {
-  
-}
-void ViewPort::create() {
-  // Create one viewport, entire window
-  Ogre::Viewport* vp = Window::getSingletonPtr()->addViewport(Camera::getSingleton());
-  vp->setBackgroundColour(Ogre::ColourValue(0,0,0));
+Root::Root()
+{
 
-  // Alter the camera aspect ratio to match the viewport
-  mCamera->setAspectRatio(
-    Ogre::Real(vp->getActualWidth()) / Ogre::Real(vp->getActualHeight()));
 }
+
+Root::~Root()
+{
+
+}
+

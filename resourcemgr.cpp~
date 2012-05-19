@@ -19,6 +19,7 @@
 
 #include "resourcemgr.h"
 
+BeginNamespace
 ResourceMgr::ResourceMgr()
 {
 
@@ -31,7 +32,7 @@ ResourceMgr::~ResourceMgr()
 void ResourceMgr::setup(Ogre::String file) {
     // Load resource paths from config file
     Ogre::ConfigFile cf;
-    cf.load(mResourcesCfg);
+    cf.load(file);
 
     // Go through all sections & settings in the file
     Ogre::ConfigFile::SectionIterator seci = cf.getSectionIterator();

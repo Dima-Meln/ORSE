@@ -1,7 +1,9 @@
 #ifndef COMMON_H
 #define COMMON_H
 
-#define PrijectName OasisEngine
+using namespace std;
+
+#define PrijectName ORSE
 #define BeginNamespace namespace ProjectName {
 #define EndNamespace };
 

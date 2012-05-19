@@ -30,16 +30,25 @@ include_directories(SYSTEM
   ${SDL_INCLUDE_DIR}
 )
 
-set(OASIS_LIB_SOURCES resourcemgr.cpp viewport.cpp scenemanager.cpp camera.cpp base.cpp window.cpp network/connection.cpp network/auth.cpp video.cpp audio.cpp node.cpp entity.cpp)
-add_library(${PROJECT} ${OASIS_LIB_SOURCES})
+set(ORSE_LIB_SOURCES root.cpp
+		     resourcemgr.cpp
+		     viewport.cpp
+		     scenemanager.cpp
+		     window.cpp
+		     network/connection.cpp
+		     network/auth.cpp
+		     video.cpp
+		     audio.cpp
+		     node.cpp
+		     entity.cpp)
+add_library(${PROJECT} ${ORSE_LIB_SOURCES})
 
 target_link_libraries(${PROJECT} 
   ${BULLET_LIBRARIES},
-  ${QT_LIBRARIES},
   ${SDL_LIBRARY}
 )
 
-install(TARGETS /usr/lib/Oasis ${PROJECT})
+install(TARGETS /usr/lib/ORSE ${PROJECT})
 
 if(${APPLE})
   #хз

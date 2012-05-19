@@ -23,24 +23,19 @@
 #include <string>
 #include <OGRE/OgreRenderSystem.h>
 
-#include "../base.h"
 #include "../common.h"
 
 BeginNamespace;
 namespace Config {
 
-class Video :private base {
+class Video {
   public:
     Video();
     virtual ~Video();
     
-    void showConfigDialog();
-    
-    void getAvalibleRenders();
-    void setRender(string render);
     void setConfigOption(string name,string value);
   private:
-    //ogre config vodeo and sdl config vodeo
+    //ogre config vodeo
 };
 
 }

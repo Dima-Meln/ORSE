@@ -23,6 +23,7 @@
 #include <OGRE/OgreResourceGroupManager.h>
 #include <OGRE/OgreConfigFile.h>
 
+BeginNamespace
 class ResourceMgr {
   public:
     ResourceMgr();
@@ -30,7 +31,8 @@ class ResourceMgr {
     void setup(Ogre::String file);
     void load();
   private:
-    Ogre::String mResourcesCfg;
+    
 };
+EndNamespace
 
 #endif // RESOURCEMGR_H

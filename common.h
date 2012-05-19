@@ -3,8 +3,7 @@
 
 using namespace std;
 
-#define PrijectName OasisEngine
-#define BeginNamespace namespace ProjectName {
+#define BeginNamespace namespace Orse {
 #define EndNamespace };
 
 #endif

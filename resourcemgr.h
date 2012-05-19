@@ -23,6 +23,9 @@
 #include <OGRE/OgreResourceGroupManager.h>
 #include <OGRE/OgreConfigFile.h>
 
+#include "common.h"
+
+BeginNamespace
 class ResourceMgr {
   public:
     ResourceMgr();
@@ -32,5 +35,6 @@ class ResourceMgr {
   private:
     
 };
+EndNamespace
 
 #endif // RESOURCEMGR_H

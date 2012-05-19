@@ -19,6 +19,7 @@
 
 #include "resourcemgr.h"
 
+BeginNamespace
 ResourceMgr::ResourceMgr()
 {
 
@@ -54,3 +55,4 @@ void ResourceMgr::setup(Ogre::String file) {
 void ResourceMgr::load() {
   Ogre::ResourceGroupManager::getSingleton().initialiseAllResourceGroups();
 }
+EndNamespace

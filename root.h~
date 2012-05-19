@@ -17,15 +17,31 @@
 */
 
 
-#include "base.h"
+#ifndef ROOT_H
+#define ROOT_H
 
-base::base()
-{
+#include <OGRE/OgreRoot.h>
+#include <OGRE/OgreSingleton.h>
 
-}
+#include <CEGUI/CEGUI.h>
+#include <CEGUI/RendererModules/Ogre/CEGUIOgreRenderer.h>
 
-base::~base()
-{
+#include <OgreBullet/Collisions/OgreBulletCollisions.h>
 
-}
+#include <memory>
+#include "common.h"
 
+BeginNamespace
+class Root :public Ogre::Singleton {
+  public:
+    Root();
+    virtual ~Root();
+    
+    //void showWindow();
+  protected:
+    auto_ptr<Ogre::Root> m_ORoot;
+    auto_ptr<CEGUI::OgreRenderer> m_RendererCEGUI;
+};
+EndNamespace
+
+#endif // ROOT_H

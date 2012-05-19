@@ -17,13 +17,31 @@
 */
 
 
-#ifndef NODE_H
-#define NODE_H
+#ifndef ROOT_H
+#define ROOT_H
 
-class Node :public Ogre::Node {
+#include <OGRE/OgreRoot.h>
+#include <OGRE/OgreSingleton.h>
+
+#include <CEGUI/CEGUI.h>
+#include <CEGUI/RendererModules/Ogre/CEGUIOgreRenderer.h>
+
+#include <OgreBullet/Collisions/OgreBulletCollisions.h>
+
+#include <memory>
+#include "common.h"
+
+BeginNamespace
+class Root :public Ogre::Singleton {
   public:
-    Node(string Name);
-    addEntity(Oasis::Entity Entity);
+    Root();
+    virtual ~Root();
+    
+    //void showWindow();
+  protected:
+    auto_ptr<Ogre::Root> m_ORoot;
+    auto_ptr<CEGUI::OgreRenderer> m_RendererCEGUI;
 };
+EndNamespace
 
-#endif // NODE_H
+#endif // ROOT_H
