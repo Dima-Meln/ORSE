@@ -20,8 +20,8 @@
 #ifndef RESOURCEMGR_H
 #define RESOURCEMGR_H
 
-#include <OGRE/OgreResourceGroupManager.h>
-#include <OGRE/OgreConfigFile.h>
+#include <OgreResourceGroupManager.h>
+#include <OgreConfigFile.h>
 
 #include "common.h"
 

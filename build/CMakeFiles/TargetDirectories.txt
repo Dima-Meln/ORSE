@@ -1,1 +1,3 @@
-/home/dima/projects/ORSE/build/CMakeFiles/ORSE.dir
+/home/dima/projects/ORSE/build/CMakeFiles/OrseMain.dir
+/home/dima/projects/ORSE/build/CMakeFiles/OrsePhysics.dir
+/home/dima/projects/ORSE/build/CMakeFiles/OrseSound.dir

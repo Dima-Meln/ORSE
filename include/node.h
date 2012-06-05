@@ -25,7 +25,7 @@ class Node :public Ogre::Node {
     Node(string Name);
     addEntity(Oasis::Entity Entity);
   private:
-    m_OgreEntity;
+    
 };
 
 #endif // NODE_H

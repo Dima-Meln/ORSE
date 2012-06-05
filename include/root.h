@@ -20,13 +20,11 @@
 #ifndef ROOT_H
 #define ROOT_H
 
-#include <OGRE/OgreRoot.h>
-#include <OGRE/OgreSingleton.h>
+#include <OgreRoot.h>
+#include <OgreSingleton.h>
 
 #include <CEGUI/CEGUI.h>
 #include <CEGUI/RendererModules/Ogre/CEGUIOgreRenderer.h>
-
-#include <OgreBullet/Collisions/OgreBulletCollisions.h>
 
 #include <memory>
 #include "common.h"
@@ -39,8 +37,8 @@ class Root :public Ogre::Singleton {
     
     //void showWindow();
   protected:
-    auto_ptr<Ogre::Root> m_ORoot;
-    auto_ptr<CEGUI::OgreRenderer> m_RendererCEGUI;
+    shared_ptr<Ogre::Root> m_ORoot;
+    shared_ptr<CEGUI::OgreRenderer> m_RendererCEGUI;
 };
 EndNamespace
 

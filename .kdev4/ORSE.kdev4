@@ -6,10 +6,14 @@ BuildDirs=/home/dima/projects/ORSE/build
 CMakeDir=/usr/share/cmake-2.8/Modules
 Current CMake Binary=file:///usr/bin/cmake
 CurrentBuildDir=file:///home/dima/projects/ORSE/build
-CurrentBuildType=Debug
-CurrentInstallDir=
+CurrentBuildType=Release
+CurrentInstallDir=file:///usr/local
 Extra Arguments=
 ProjectRootRelative=./
+
+[MakeBuilder]
+Default Make Environment Profile=0
+Number Of Jobs=1
 
 [Project]
 VersionControlSupport=kdevgit

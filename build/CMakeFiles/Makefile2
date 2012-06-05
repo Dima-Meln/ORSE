@@ -53,38 +53,108 @@ CMAKE_SOURCE_DIR = /home/dima/projects/ORSE
 CMAKE_BINARY_DIR = /home/dima/projects/ORSE/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/ORSE.dir
+# Target rules for target CMakeFiles/OrseMain.dir
 
 # All Build rule for target.
-CMakeFiles/ORSE.dir/all:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/depend
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles  1 2 3 4 5 6 7 8 9
-	@echo "Built target ORSE"
-.PHONY : CMakeFiles/ORSE.dir/all
+CMakeFiles/OrseMain.dir/all:
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/depend
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles  1 2 3
+	@echo "Built target OrseMain"
+.PHONY : CMakeFiles/OrseMain.dir/all
 
 # Include target in all.
-all: CMakeFiles/ORSE.dir/all
+all: CMakeFiles/OrseMain.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ORSE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/projects/ORSE/build/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ORSE.dir/all
+CMakeFiles/OrseMain.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/projects/ORSE/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OrseMain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/projects/ORSE/build/CMakeFiles 0
-.PHONY : CMakeFiles/ORSE.dir/rule
+.PHONY : CMakeFiles/OrseMain.dir/rule
 
 # Convenience name for target.
-ORSE: CMakeFiles/ORSE.dir/rule
-.PHONY : ORSE
+OrseMain: CMakeFiles/OrseMain.dir/rule
+.PHONY : OrseMain
 
 # clean rule for target.
-CMakeFiles/ORSE.dir/clean:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/clean
-.PHONY : CMakeFiles/ORSE.dir/clean
+CMakeFiles/OrseMain.dir/clean:
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/clean
+.PHONY : CMakeFiles/OrseMain.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/ORSE.dir/clean
+clean: CMakeFiles/OrseMain.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OrsePhysics.dir
+
+# All Build rule for target.
+CMakeFiles/OrsePhysics.dir/all:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/depend
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles  4 5 6 7 8 9 10 11 12 13 14
+	@echo "Built target OrsePhysics"
+.PHONY : CMakeFiles/OrsePhysics.dir/all
+
+# Include target in all.
+all: CMakeFiles/OrsePhysics.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OrsePhysics.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/projects/ORSE/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OrsePhysics.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/projects/ORSE/build/CMakeFiles 0
+.PHONY : CMakeFiles/OrsePhysics.dir/rule
+
+# Convenience name for target.
+OrsePhysics: CMakeFiles/OrsePhysics.dir/rule
+.PHONY : OrsePhysics
+
+# clean rule for target.
+CMakeFiles/OrsePhysics.dir/clean:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/clean
+.PHONY : CMakeFiles/OrsePhysics.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/OrsePhysics.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OrseSound.dir
+
+# All Build rule for target.
+CMakeFiles/OrseSound.dir/all:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/depend
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles  15 16 17 18 19 20 21 22 23 24 25
+	@echo "Built target OrseSound"
+.PHONY : CMakeFiles/OrseSound.dir/all
+
+# Include target in all.
+all: CMakeFiles/OrseSound.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OrseSound.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/projects/ORSE/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OrseSound.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dima/projects/ORSE/build/CMakeFiles 0
+.PHONY : CMakeFiles/OrseSound.dir/rule
+
+# Convenience name for target.
+OrseSound: CMakeFiles/OrseSound.dir/rule
+.PHONY : OrseSound
+
+# clean rule for target.
+CMakeFiles/OrseSound.dir/clean:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/clean
+.PHONY : CMakeFiles/OrseSound.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/OrseSound.dir/clean
 .PHONY : clean
 
 #=============================================================================

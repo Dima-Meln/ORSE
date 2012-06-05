@@ -49,9 +49,32 @@ include CMakeFiles/ORSE.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ORSE.dir/flags.make
 
+CMakeFiles/ORSE.dir/src/node.cpp.o: CMakeFiles/ORSE.dir/flags.make
+CMakeFiles/ORSE.dir/src/node.cpp.o: ../src/node.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/node.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/node.cpp.o -c /home/dima/projects/ORSE/src/node.cpp
+
+CMakeFiles/ORSE.dir/src/node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/node.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/node.cpp > CMakeFiles/ORSE.dir/src/node.cpp.i
+
+CMakeFiles/ORSE.dir/src/node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/node.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/node.cpp -o CMakeFiles/ORSE.dir/src/node.cpp.s
+
+CMakeFiles/ORSE.dir/src/node.cpp.o.requires:
+.PHONY : CMakeFiles/ORSE.dir/src/node.cpp.o.requires
+
+CMakeFiles/ORSE.dir/src/node.cpp.o.provides: CMakeFiles/ORSE.dir/src/node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/node.cpp.o.provides.build
+.PHONY : CMakeFiles/ORSE.dir/src/node.cpp.o.provides
+
+CMakeFiles/ORSE.dir/src/node.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/node.cpp.o
+
 CMakeFiles/ORSE.dir/src/root.cpp.o: CMakeFiles/ORSE.dir/flags.make
 CMakeFiles/ORSE.dir/src/root.cpp.o: ../src/root.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/root.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/root.cpp.o -c /home/dima/projects/ORSE/src/root.cpp
 
@@ -74,7 +97,7 @@ CMakeFiles/ORSE.dir/src/root.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/root.
 
 CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o: CMakeFiles/ORSE.dir/flags.make
 CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o: ../src/resourcemgr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o -c /home/dima/projects/ORSE/src/resourcemgr.cpp
 
@@ -95,195 +118,24 @@ CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o.provides: CMakeFiles/ORSE.dir/src/reso
 
 CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o
 
-CMakeFiles/ORSE.dir/src/viewport.cpp.o: CMakeFiles/ORSE.dir/flags.make
-CMakeFiles/ORSE.dir/src/viewport.cpp.o: ../src/viewport.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/viewport.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/viewport.cpp.o -c /home/dima/projects/ORSE/src/viewport.cpp
-
-CMakeFiles/ORSE.dir/src/viewport.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/viewport.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/viewport.cpp > CMakeFiles/ORSE.dir/src/viewport.cpp.i
-
-CMakeFiles/ORSE.dir/src/viewport.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/viewport.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/viewport.cpp -o CMakeFiles/ORSE.dir/src/viewport.cpp.s
-
-CMakeFiles/ORSE.dir/src/viewport.cpp.o.requires:
-.PHONY : CMakeFiles/ORSE.dir/src/viewport.cpp.o.requires
-
-CMakeFiles/ORSE.dir/src/viewport.cpp.o.provides: CMakeFiles/ORSE.dir/src/viewport.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/viewport.cpp.o.provides.build
-.PHONY : CMakeFiles/ORSE.dir/src/viewport.cpp.o.provides
-
-CMakeFiles/ORSE.dir/src/viewport.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/viewport.cpp.o
-
-CMakeFiles/ORSE.dir/src/scenemanager.cpp.o: CMakeFiles/ORSE.dir/flags.make
-CMakeFiles/ORSE.dir/src/scenemanager.cpp.o: ../src/scenemanager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/scenemanager.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/scenemanager.cpp.o -c /home/dima/projects/ORSE/src/scenemanager.cpp
-
-CMakeFiles/ORSE.dir/src/scenemanager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/scenemanager.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/scenemanager.cpp > CMakeFiles/ORSE.dir/src/scenemanager.cpp.i
-
-CMakeFiles/ORSE.dir/src/scenemanager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/scenemanager.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/scenemanager.cpp -o CMakeFiles/ORSE.dir/src/scenemanager.cpp.s
-
-CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.requires:
-.PHONY : CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.requires
-
-CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.provides: CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.provides.build
-.PHONY : CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.provides
-
-CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/scenemanager.cpp.o
-
-CMakeFiles/ORSE.dir/src/window.cpp.o: CMakeFiles/ORSE.dir/flags.make
-CMakeFiles/ORSE.dir/src/window.cpp.o: ../src/window.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/window.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/window.cpp.o -c /home/dima/projects/ORSE/src/window.cpp
-
-CMakeFiles/ORSE.dir/src/window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/window.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/window.cpp > CMakeFiles/ORSE.dir/src/window.cpp.i
-
-CMakeFiles/ORSE.dir/src/window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/window.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/window.cpp -o CMakeFiles/ORSE.dir/src/window.cpp.s
-
-CMakeFiles/ORSE.dir/src/window.cpp.o.requires:
-.PHONY : CMakeFiles/ORSE.dir/src/window.cpp.o.requires
-
-CMakeFiles/ORSE.dir/src/window.cpp.o.provides: CMakeFiles/ORSE.dir/src/window.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/window.cpp.o.provides.build
-.PHONY : CMakeFiles/ORSE.dir/src/window.cpp.o.provides
-
-CMakeFiles/ORSE.dir/src/window.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/window.cpp.o
-
-CMakeFiles/ORSE.dir/src/network/connection.cpp.o: CMakeFiles/ORSE.dir/flags.make
-CMakeFiles/ORSE.dir/src/network/connection.cpp.o: ../src/network/connection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/network/connection.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/network/connection.cpp.o -c /home/dima/projects/ORSE/src/network/connection.cpp
-
-CMakeFiles/ORSE.dir/src/network/connection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/network/connection.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/network/connection.cpp > CMakeFiles/ORSE.dir/src/network/connection.cpp.i
-
-CMakeFiles/ORSE.dir/src/network/connection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/network/connection.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/network/connection.cpp -o CMakeFiles/ORSE.dir/src/network/connection.cpp.s
-
-CMakeFiles/ORSE.dir/src/network/connection.cpp.o.requires:
-.PHONY : CMakeFiles/ORSE.dir/src/network/connection.cpp.o.requires
-
-CMakeFiles/ORSE.dir/src/network/connection.cpp.o.provides: CMakeFiles/ORSE.dir/src/network/connection.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/connection.cpp.o.provides.build
-.PHONY : CMakeFiles/ORSE.dir/src/network/connection.cpp.o.provides
-
-CMakeFiles/ORSE.dir/src/network/connection.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/network/connection.cpp.o
-
-CMakeFiles/ORSE.dir/src/network/auth.cpp.o: CMakeFiles/ORSE.dir/flags.make
-CMakeFiles/ORSE.dir/src/network/auth.cpp.o: ../src/network/auth.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/network/auth.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/network/auth.cpp.o -c /home/dima/projects/ORSE/src/network/auth.cpp
-
-CMakeFiles/ORSE.dir/src/network/auth.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/network/auth.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/network/auth.cpp > CMakeFiles/ORSE.dir/src/network/auth.cpp.i
-
-CMakeFiles/ORSE.dir/src/network/auth.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/network/auth.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/network/auth.cpp -o CMakeFiles/ORSE.dir/src/network/auth.cpp.s
-
-CMakeFiles/ORSE.dir/src/network/auth.cpp.o.requires:
-.PHONY : CMakeFiles/ORSE.dir/src/network/auth.cpp.o.requires
-
-CMakeFiles/ORSE.dir/src/network/auth.cpp.o.provides: CMakeFiles/ORSE.dir/src/network/auth.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/auth.cpp.o.provides.build
-.PHONY : CMakeFiles/ORSE.dir/src/network/auth.cpp.o.provides
-
-CMakeFiles/ORSE.dir/src/network/auth.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/network/auth.cpp.o
-
-CMakeFiles/ORSE.dir/src/node.cpp.o: CMakeFiles/ORSE.dir/flags.make
-CMakeFiles/ORSE.dir/src/node.cpp.o: ../src/node.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/node.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/node.cpp.o -c /home/dima/projects/ORSE/src/node.cpp
-
-CMakeFiles/ORSE.dir/src/node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/node.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/node.cpp > CMakeFiles/ORSE.dir/src/node.cpp.i
-
-CMakeFiles/ORSE.dir/src/node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/node.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/node.cpp -o CMakeFiles/ORSE.dir/src/node.cpp.s
-
-CMakeFiles/ORSE.dir/src/node.cpp.o.requires:
-.PHONY : CMakeFiles/ORSE.dir/src/node.cpp.o.requires
-
-CMakeFiles/ORSE.dir/src/node.cpp.o.provides: CMakeFiles/ORSE.dir/src/node.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/node.cpp.o.provides.build
-.PHONY : CMakeFiles/ORSE.dir/src/node.cpp.o.provides
-
-CMakeFiles/ORSE.dir/src/node.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/node.cpp.o
-
-CMakeFiles/ORSE.dir/src/entity.cpp.o: CMakeFiles/ORSE.dir/flags.make
-CMakeFiles/ORSE.dir/src/entity.cpp.o: ../src/entity.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ORSE.dir/src/entity.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ORSE.dir/src/entity.cpp.o -c /home/dima/projects/ORSE/src/entity.cpp
-
-CMakeFiles/ORSE.dir/src/entity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORSE.dir/src/entity.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/entity.cpp > CMakeFiles/ORSE.dir/src/entity.cpp.i
-
-CMakeFiles/ORSE.dir/src/entity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORSE.dir/src/entity.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/entity.cpp -o CMakeFiles/ORSE.dir/src/entity.cpp.s
-
-CMakeFiles/ORSE.dir/src/entity.cpp.o.requires:
-.PHONY : CMakeFiles/ORSE.dir/src/entity.cpp.o.requires
-
-CMakeFiles/ORSE.dir/src/entity.cpp.o.provides: CMakeFiles/ORSE.dir/src/entity.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/entity.cpp.o.provides.build
-.PHONY : CMakeFiles/ORSE.dir/src/entity.cpp.o.provides
-
-CMakeFiles/ORSE.dir/src/entity.cpp.o.provides.build: CMakeFiles/ORSE.dir/src/entity.cpp.o
-
 # Object files for target ORSE
 ORSE_OBJECTS = \
-"CMakeFiles/ORSE.dir/src/root.cpp.o" \
-"CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o" \
-"CMakeFiles/ORSE.dir/src/viewport.cpp.o" \
-"CMakeFiles/ORSE.dir/src/scenemanager.cpp.o" \
-"CMakeFiles/ORSE.dir/src/window.cpp.o" \
-"CMakeFiles/ORSE.dir/src/network/connection.cpp.o" \
-"CMakeFiles/ORSE.dir/src/network/auth.cpp.o" \
 "CMakeFiles/ORSE.dir/src/node.cpp.o" \
-"CMakeFiles/ORSE.dir/src/entity.cpp.o"
+"CMakeFiles/ORSE.dir/src/root.cpp.o" \
+"CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o"
 
 # External object files for target ORSE
 ORSE_EXTERNAL_OBJECTS =
 
+libORSE.so: CMakeFiles/ORSE.dir/src/node.cpp.o
 libORSE.so: CMakeFiles/ORSE.dir/src/root.cpp.o
 libORSE.so: CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o
-libORSE.so: CMakeFiles/ORSE.dir/src/viewport.cpp.o
-libORSE.so: CMakeFiles/ORSE.dir/src/scenemanager.cpp.o
-libORSE.so: CMakeFiles/ORSE.dir/src/window.cpp.o
-libORSE.so: CMakeFiles/ORSE.dir/src/network/connection.cpp.o
-libORSE.so: CMakeFiles/ORSE.dir/src/network/auth.cpp.o
-libORSE.so: CMakeFiles/ORSE.dir/src/node.cpp.o
-libORSE.so: CMakeFiles/ORSE.dir/src/entity.cpp.o
 libORSE.so: /usr/lib/libBulletDynamics.so
 libORSE.so: /usr/lib/libBulletCollision.so
 libORSE.so: /usr/lib/libLinearMath.so
 libORSE.so: /usr/lib/libBulletSoftBody.so,
+libORSE.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+libORSE.so: /usr/local/lib/OGRE/Plugin_CgProgramManager.so
 libORSE.so: CMakeFiles/ORSE.dir/build.make
 libORSE.so: CMakeFiles/ORSE.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libORSE.so"
@@ -293,15 +145,9 @@ libORSE.so: CMakeFiles/ORSE.dir/link.txt
 CMakeFiles/ORSE.dir/build: libORSE.so
 .PHONY : CMakeFiles/ORSE.dir/build
 
+CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/node.cpp.o.requires
 CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/root.cpp.o.requires
 CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o.requires
-CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/viewport.cpp.o.requires
-CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/scenemanager.cpp.o.requires
-CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/window.cpp.o.requires
-CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/network/connection.cpp.o.requires
-CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/network/auth.cpp.o.requires
-CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/node.cpp.o.requires
-CMakeFiles/ORSE.dir/requires: CMakeFiles/ORSE.dir/src/entity.cpp.o.requires
 .PHONY : CMakeFiles/ORSE.dir/requires
 
 CMakeFiles/ORSE.dir/clean:

@@ -140,96 +140,50 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ORSE
+# Target rules for targets named OrseMain
 
 # Build rule for target.
-ORSE: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ORSE
-.PHONY : ORSE
+OrseMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OrseMain
+.PHONY : OrseMain
 
 # fast build rule for target.
-ORSE/fast:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/build
-.PHONY : ORSE/fast
+OrseMain/fast:
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/build
+.PHONY : OrseMain/fast
 
-src/entity.o: src/entity.cpp.o
-.PHONY : src/entity.o
+#=============================================================================
+# Target rules for targets named OrsePhysics
 
-# target to build an object file
-src/entity.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/entity.cpp.o
-.PHONY : src/entity.cpp.o
+# Build rule for target.
+OrsePhysics: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OrsePhysics
+.PHONY : OrsePhysics
 
-src/entity.i: src/entity.cpp.i
-.PHONY : src/entity.i
+# fast build rule for target.
+OrsePhysics/fast:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/build
+.PHONY : OrsePhysics/fast
 
-# target to preprocess a source file
-src/entity.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/entity.cpp.i
-.PHONY : src/entity.cpp.i
+#=============================================================================
+# Target rules for targets named OrseSound
 
-src/entity.s: src/entity.cpp.s
-.PHONY : src/entity.s
+# Build rule for target.
+OrseSound: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OrseSound
+.PHONY : OrseSound
 
-# target to generate assembly for a file
-src/entity.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/entity.cpp.s
-.PHONY : src/entity.cpp.s
-
-src/network/auth.o: src/network/auth.cpp.o
-.PHONY : src/network/auth.o
-
-# target to build an object file
-src/network/auth.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/auth.cpp.o
-.PHONY : src/network/auth.cpp.o
-
-src/network/auth.i: src/network/auth.cpp.i
-.PHONY : src/network/auth.i
-
-# target to preprocess a source file
-src/network/auth.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/auth.cpp.i
-.PHONY : src/network/auth.cpp.i
-
-src/network/auth.s: src/network/auth.cpp.s
-.PHONY : src/network/auth.s
-
-# target to generate assembly for a file
-src/network/auth.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/auth.cpp.s
-.PHONY : src/network/auth.cpp.s
-
-src/network/connection.o: src/network/connection.cpp.o
-.PHONY : src/network/connection.o
-
-# target to build an object file
-src/network/connection.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/connection.cpp.o
-.PHONY : src/network/connection.cpp.o
-
-src/network/connection.i: src/network/connection.cpp.i
-.PHONY : src/network/connection.i
-
-# target to preprocess a source file
-src/network/connection.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/connection.cpp.i
-.PHONY : src/network/connection.cpp.i
-
-src/network/connection.s: src/network/connection.cpp.s
-.PHONY : src/network/connection.s
-
-# target to generate assembly for a file
-src/network/connection.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/network/connection.cpp.s
-.PHONY : src/network/connection.cpp.s
+# fast build rule for target.
+OrseSound/fast:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/build
+.PHONY : OrseSound/fast
 
 src/node.o: src/node.cpp.o
 .PHONY : src/node.o
 
 # target to build an object file
 src/node.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/node.cpp.o
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/node.cpp.o
 .PHONY : src/node.cpp.o
 
 src/node.i: src/node.cpp.i
@@ -237,7 +191,7 @@ src/node.i: src/node.cpp.i
 
 # target to preprocess a source file
 src/node.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/node.cpp.i
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/node.cpp.i
 .PHONY : src/node.cpp.i
 
 src/node.s: src/node.cpp.s
@@ -245,15 +199,279 @@ src/node.s: src/node.cpp.s
 
 # target to generate assembly for a file
 src/node.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/node.cpp.s
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/node.cpp.s
 .PHONY : src/node.cpp.s
+
+src/physics/collisions/OgreBulletCollisionsObject.o: src/physics/collisions/OgreBulletCollisionsObject.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsObject.o
+
+# target to build an object file
+src/physics/collisions/OgreBulletCollisionsObject.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsObject.cpp.o
+
+src/physics/collisions/OgreBulletCollisionsObject.i: src/physics/collisions/OgreBulletCollisionsObject.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsObject.i
+
+# target to preprocess a source file
+src/physics/collisions/OgreBulletCollisionsObject.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsObject.cpp.i
+
+src/physics/collisions/OgreBulletCollisionsObject.s: src/physics/collisions/OgreBulletCollisionsObject.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsObject.s
+
+# target to generate assembly for a file
+src/physics/collisions/OgreBulletCollisionsObject.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsObject.cpp.s
+
+src/physics/collisions/OgreBulletCollisionsObjectState.o: src/physics/collisions/OgreBulletCollisionsObjectState.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsObjectState.o
+
+# target to build an object file
+src/physics/collisions/OgreBulletCollisionsObjectState.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObjectState.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsObjectState.cpp.o
+
+src/physics/collisions/OgreBulletCollisionsObjectState.i: src/physics/collisions/OgreBulletCollisionsObjectState.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsObjectState.i
+
+# target to preprocess a source file
+src/physics/collisions/OgreBulletCollisionsObjectState.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObjectState.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsObjectState.cpp.i
+
+src/physics/collisions/OgreBulletCollisionsObjectState.s: src/physics/collisions/OgreBulletCollisionsObjectState.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsObjectState.s
+
+# target to generate assembly for a file
+src/physics/collisions/OgreBulletCollisionsObjectState.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObjectState.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsObjectState.cpp.s
+
+src/physics/collisions/OgreBulletCollisionsPrecompiled.o: src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsPrecompiled.o
+
+# target to build an object file
+src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.o
+
+src/physics/collisions/OgreBulletCollisionsPrecompiled.i: src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsPrecompiled.i
+
+# target to preprocess a source file
+src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.i
+
+src/physics/collisions/OgreBulletCollisionsPrecompiled.s: src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsPrecompiled.s
+
+# target to generate assembly for a file
+src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.s
+
+src/physics/collisions/OgreBulletCollisionsRay.o: src/physics/collisions/OgreBulletCollisionsRay.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsRay.o
+
+# target to build an object file
+src/physics/collisions/OgreBulletCollisionsRay.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsRay.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsRay.cpp.o
+
+src/physics/collisions/OgreBulletCollisionsRay.i: src/physics/collisions/OgreBulletCollisionsRay.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsRay.i
+
+# target to preprocess a source file
+src/physics/collisions/OgreBulletCollisionsRay.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsRay.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsRay.cpp.i
+
+src/physics/collisions/OgreBulletCollisionsRay.s: src/physics/collisions/OgreBulletCollisionsRay.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsRay.s
+
+# target to generate assembly for a file
+src/physics/collisions/OgreBulletCollisionsRay.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsRay.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsRay.cpp.s
+
+src/physics/collisions/OgreBulletCollisionsShape.o: src/physics/collisions/OgreBulletCollisionsShape.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsShape.o
+
+# target to build an object file
+src/physics/collisions/OgreBulletCollisionsShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsShape.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsShape.cpp.o
+
+src/physics/collisions/OgreBulletCollisionsShape.i: src/physics/collisions/OgreBulletCollisionsShape.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsShape.i
+
+# target to preprocess a source file
+src/physics/collisions/OgreBulletCollisionsShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsShape.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsShape.cpp.i
+
+src/physics/collisions/OgreBulletCollisionsShape.s: src/physics/collisions/OgreBulletCollisionsShape.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/OgreBulletCollisionsShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsShape.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsShape.cpp.s
+
+src/physics/collisions/OgreBulletCollisionsWorld.o: src/physics/collisions/OgreBulletCollisionsWorld.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsWorld.o
+
+# target to build an object file
+src/physics/collisions/OgreBulletCollisionsWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsWorld.cpp.o
+.PHONY : src/physics/collisions/OgreBulletCollisionsWorld.cpp.o
+
+src/physics/collisions/OgreBulletCollisionsWorld.i: src/physics/collisions/OgreBulletCollisionsWorld.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsWorld.i
+
+# target to preprocess a source file
+src/physics/collisions/OgreBulletCollisionsWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsWorld.cpp.i
+.PHONY : src/physics/collisions/OgreBulletCollisionsWorld.cpp.i
+
+src/physics/collisions/OgreBulletCollisionsWorld.s: src/physics/collisions/OgreBulletCollisionsWorld.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsWorld.s
+
+# target to generate assembly for a file
+src/physics/collisions/OgreBulletCollisionsWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsWorld.cpp.s
+.PHONY : src/physics/collisions/OgreBulletCollisionsWorld.cpp.s
+
+src/physics/dynamics/OgreBulletDynamicsConstraint.o: src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsConstraint.o
+
+# target to build an object file
+src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o
+
+src/physics/dynamics/OgreBulletDynamicsConstraint.i: src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsConstraint.i
+
+# target to preprocess a source file
+src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.i
+
+src/physics/dynamics/OgreBulletDynamicsConstraint.s: src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsConstraint.s
+
+# target to generate assembly for a file
+src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.s
+
+src/physics/dynamics/OgreBulletDynamicsObjectState.o: src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsObjectState.o
+
+# target to build an object file
+src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o
+
+src/physics/dynamics/OgreBulletDynamicsObjectState.i: src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsObjectState.i
+
+# target to preprocess a source file
+src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.i
+
+src/physics/dynamics/OgreBulletDynamicsObjectState.s: src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsObjectState.s
+
+# target to generate assembly for a file
+src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.s
+
+src/physics/dynamics/OgreBulletDynamicsPrecompiled.o: src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsPrecompiled.o
+
+# target to build an object file
+src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o
+
+src/physics/dynamics/OgreBulletDynamicsPrecompiled.i: src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsPrecompiled.i
+
+# target to preprocess a source file
+src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.i
+
+src/physics/dynamics/OgreBulletDynamicsPrecompiled.s: src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsPrecompiled.s
+
+# target to generate assembly for a file
+src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.s
+
+src/physics/dynamics/OgreBulletDynamicsRigidBody.o: src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsRigidBody.o
+
+# target to build an object file
+src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o
+
+src/physics/dynamics/OgreBulletDynamicsRigidBody.i: src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsRigidBody.i
+
+# target to preprocess a source file
+src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.i
+
+src/physics/dynamics/OgreBulletDynamicsRigidBody.s: src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsRigidBody.s
+
+# target to generate assembly for a file
+src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.s
+
+src/physics/dynamics/OgreBulletDynamicsWorld.o: src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsWorld.o
+
+# target to build an object file
+src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o
+.PHONY : src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o
+
+src/physics/dynamics/OgreBulletDynamicsWorld.i: src/physics/dynamics/OgreBulletDynamicsWorld.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsWorld.i
+
+# target to preprocess a source file
+src/physics/dynamics/OgreBulletDynamicsWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.i
+.PHONY : src/physics/dynamics/OgreBulletDynamicsWorld.cpp.i
+
+src/physics/dynamics/OgreBulletDynamicsWorld.s: src/physics/dynamics/OgreBulletDynamicsWorld.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsWorld.s
+
+# target to generate assembly for a file
+src/physics/dynamics/OgreBulletDynamicsWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.s
+.PHONY : src/physics/dynamics/OgreBulletDynamicsWorld.cpp.s
 
 src/resourcemgr.o: src/resourcemgr.cpp.o
 .PHONY : src/resourcemgr.o
 
 # target to build an object file
 src/resourcemgr.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/resourcemgr.cpp.o
 .PHONY : src/resourcemgr.cpp.o
 
 src/resourcemgr.i: src/resourcemgr.cpp.i
@@ -261,7 +479,7 @@ src/resourcemgr.i: src/resourcemgr.cpp.i
 
 # target to preprocess a source file
 src/resourcemgr.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/resourcemgr.cpp.i
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/resourcemgr.cpp.i
 .PHONY : src/resourcemgr.cpp.i
 
 src/resourcemgr.s: src/resourcemgr.cpp.s
@@ -269,7 +487,7 @@ src/resourcemgr.s: src/resourcemgr.cpp.s
 
 # target to generate assembly for a file
 src/resourcemgr.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/resourcemgr.cpp.s
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/resourcemgr.cpp.s
 .PHONY : src/resourcemgr.cpp.s
 
 src/root.o: src/root.cpp.o
@@ -277,7 +495,7 @@ src/root.o: src/root.cpp.o
 
 # target to build an object file
 src/root.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/root.cpp.o
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/root.cpp.o
 .PHONY : src/root.cpp.o
 
 src/root.i: src/root.cpp.i
@@ -285,7 +503,7 @@ src/root.i: src/root.cpp.i
 
 # target to preprocess a source file
 src/root.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/root.cpp.i
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/root.cpp.i
 .PHONY : src/root.cpp.i
 
 src/root.s: src/root.cpp.s
@@ -293,80 +511,272 @@ src/root.s: src/root.cpp.s
 
 # target to generate assembly for a file
 src/root.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/root.cpp.s
+	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/root.cpp.s
 .PHONY : src/root.cpp.s
 
-src/scenemanager.o: src/scenemanager.cpp.o
-.PHONY : src/scenemanager.o
+src/sound/OgreOggISound.o: src/sound/OgreOggISound.cpp.o
+.PHONY : src/sound/OgreOggISound.o
 
 # target to build an object file
-src/scenemanager.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/scenemanager.cpp.o
-.PHONY : src/scenemanager.cpp.o
+src/sound/OgreOggISound.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggISound.cpp.o
+.PHONY : src/sound/OgreOggISound.cpp.o
 
-src/scenemanager.i: src/scenemanager.cpp.i
-.PHONY : src/scenemanager.i
+src/sound/OgreOggISound.i: src/sound/OgreOggISound.cpp.i
+.PHONY : src/sound/OgreOggISound.i
 
 # target to preprocess a source file
-src/scenemanager.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/scenemanager.cpp.i
-.PHONY : src/scenemanager.cpp.i
+src/sound/OgreOggISound.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggISound.cpp.i
+.PHONY : src/sound/OgreOggISound.cpp.i
 
-src/scenemanager.s: src/scenemanager.cpp.s
-.PHONY : src/scenemanager.s
+src/sound/OgreOggISound.s: src/sound/OgreOggISound.cpp.s
+.PHONY : src/sound/OgreOggISound.s
 
 # target to generate assembly for a file
-src/scenemanager.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/scenemanager.cpp.s
-.PHONY : src/scenemanager.cpp.s
+src/sound/OgreOggISound.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggISound.cpp.s
+.PHONY : src/sound/OgreOggISound.cpp.s
 
-src/viewport.o: src/viewport.cpp.o
-.PHONY : src/viewport.o
+src/sound/OgreOggListener.o: src/sound/OgreOggListener.cpp.o
+.PHONY : src/sound/OgreOggListener.o
 
 # target to build an object file
-src/viewport.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/viewport.cpp.o
-.PHONY : src/viewport.cpp.o
+src/sound/OgreOggListener.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggListener.cpp.o
+.PHONY : src/sound/OgreOggListener.cpp.o
 
-src/viewport.i: src/viewport.cpp.i
-.PHONY : src/viewport.i
+src/sound/OgreOggListener.i: src/sound/OgreOggListener.cpp.i
+.PHONY : src/sound/OgreOggListener.i
 
 # target to preprocess a source file
-src/viewport.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/viewport.cpp.i
-.PHONY : src/viewport.cpp.i
+src/sound/OgreOggListener.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggListener.cpp.i
+.PHONY : src/sound/OgreOggListener.cpp.i
 
-src/viewport.s: src/viewport.cpp.s
-.PHONY : src/viewport.s
+src/sound/OgreOggListener.s: src/sound/OgreOggListener.cpp.s
+.PHONY : src/sound/OgreOggListener.s
 
 # target to generate assembly for a file
-src/viewport.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/viewport.cpp.s
-.PHONY : src/viewport.cpp.s
+src/sound/OgreOggListener.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggListener.cpp.s
+.PHONY : src/sound/OgreOggListener.cpp.s
 
-src/window.o: src/window.cpp.o
-.PHONY : src/window.o
+src/sound/OgreOggSoundFactory.o: src/sound/OgreOggSoundFactory.cpp.o
+.PHONY : src/sound/OgreOggSoundFactory.o
 
 # target to build an object file
-src/window.cpp.o:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/window.cpp.o
-.PHONY : src/window.cpp.o
+src/sound/OgreOggSoundFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundFactory.cpp.o
+.PHONY : src/sound/OgreOggSoundFactory.cpp.o
 
-src/window.i: src/window.cpp.i
-.PHONY : src/window.i
+src/sound/OgreOggSoundFactory.i: src/sound/OgreOggSoundFactory.cpp.i
+.PHONY : src/sound/OgreOggSoundFactory.i
 
 # target to preprocess a source file
-src/window.cpp.i:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/window.cpp.i
-.PHONY : src/window.cpp.i
+src/sound/OgreOggSoundFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundFactory.cpp.i
+.PHONY : src/sound/OgreOggSoundFactory.cpp.i
 
-src/window.s: src/window.cpp.s
-.PHONY : src/window.s
+src/sound/OgreOggSoundFactory.s: src/sound/OgreOggSoundFactory.cpp.s
+.PHONY : src/sound/OgreOggSoundFactory.s
 
 # target to generate assembly for a file
-src/window.cpp.s:
-	$(MAKE) -f CMakeFiles/ORSE.dir/build.make CMakeFiles/ORSE.dir/src/window.cpp.s
-.PHONY : src/window.cpp.s
+src/sound/OgreOggSoundFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundFactory.cpp.s
+.PHONY : src/sound/OgreOggSoundFactory.cpp.s
+
+src/sound/OgreOggSoundPlugin.o: src/sound/OgreOggSoundPlugin.cpp.o
+.PHONY : src/sound/OgreOggSoundPlugin.o
+
+# target to build an object file
+src/sound/OgreOggSoundPlugin.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPlugin.cpp.o
+.PHONY : src/sound/OgreOggSoundPlugin.cpp.o
+
+src/sound/OgreOggSoundPlugin.i: src/sound/OgreOggSoundPlugin.cpp.i
+.PHONY : src/sound/OgreOggSoundPlugin.i
+
+# target to preprocess a source file
+src/sound/OgreOggSoundPlugin.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPlugin.cpp.i
+.PHONY : src/sound/OgreOggSoundPlugin.cpp.i
+
+src/sound/OgreOggSoundPlugin.s: src/sound/OgreOggSoundPlugin.cpp.s
+.PHONY : src/sound/OgreOggSoundPlugin.s
+
+# target to generate assembly for a file
+src/sound/OgreOggSoundPlugin.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPlugin.cpp.s
+.PHONY : src/sound/OgreOggSoundPlugin.cpp.s
+
+src/sound/OgreOggSoundPluginDllStart.o: src/sound/OgreOggSoundPluginDllStart.cpp.o
+.PHONY : src/sound/OgreOggSoundPluginDllStart.o
+
+# target to build an object file
+src/sound/OgreOggSoundPluginDllStart.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPluginDllStart.cpp.o
+.PHONY : src/sound/OgreOggSoundPluginDllStart.cpp.o
+
+src/sound/OgreOggSoundPluginDllStart.i: src/sound/OgreOggSoundPluginDllStart.cpp.i
+.PHONY : src/sound/OgreOggSoundPluginDllStart.i
+
+# target to preprocess a source file
+src/sound/OgreOggSoundPluginDllStart.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPluginDllStart.cpp.i
+.PHONY : src/sound/OgreOggSoundPluginDllStart.cpp.i
+
+src/sound/OgreOggSoundPluginDllStart.s: src/sound/OgreOggSoundPluginDllStart.cpp.s
+.PHONY : src/sound/OgreOggSoundPluginDllStart.s
+
+# target to generate assembly for a file
+src/sound/OgreOggSoundPluginDllStart.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPluginDllStart.cpp.s
+.PHONY : src/sound/OgreOggSoundPluginDllStart.cpp.s
+
+src/sound/OgreOggSoundRecord.o: src/sound/OgreOggSoundRecord.cpp.o
+.PHONY : src/sound/OgreOggSoundRecord.o
+
+# target to build an object file
+src/sound/OgreOggSoundRecord.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundRecord.cpp.o
+.PHONY : src/sound/OgreOggSoundRecord.cpp.o
+
+src/sound/OgreOggSoundRecord.i: src/sound/OgreOggSoundRecord.cpp.i
+.PHONY : src/sound/OgreOggSoundRecord.i
+
+# target to preprocess a source file
+src/sound/OgreOggSoundRecord.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundRecord.cpp.i
+.PHONY : src/sound/OgreOggSoundRecord.cpp.i
+
+src/sound/OgreOggSoundRecord.s: src/sound/OgreOggSoundRecord.cpp.s
+.PHONY : src/sound/OgreOggSoundRecord.s
+
+# target to generate assembly for a file
+src/sound/OgreOggSoundRecord.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundRecord.cpp.s
+.PHONY : src/sound/OgreOggSoundRecord.cpp.s
+
+src/sound/OgreOggStaticSound.o: src/sound/OgreOggStaticSound.cpp.o
+.PHONY : src/sound/OgreOggStaticSound.o
+
+# target to build an object file
+src/sound/OgreOggStaticSound.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStaticSound.cpp.o
+.PHONY : src/sound/OgreOggStaticSound.cpp.o
+
+src/sound/OgreOggStaticSound.i: src/sound/OgreOggStaticSound.cpp.i
+.PHONY : src/sound/OgreOggStaticSound.i
+
+# target to preprocess a source file
+src/sound/OgreOggStaticSound.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStaticSound.cpp.i
+.PHONY : src/sound/OgreOggStaticSound.cpp.i
+
+src/sound/OgreOggStaticSound.s: src/sound/OgreOggStaticSound.cpp.s
+.PHONY : src/sound/OgreOggStaticSound.s
+
+# target to generate assembly for a file
+src/sound/OgreOggStaticSound.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStaticSound.cpp.s
+.PHONY : src/sound/OgreOggStaticSound.cpp.s
+
+src/sound/OgreOggStaticWavSound.o: src/sound/OgreOggStaticWavSound.cpp.o
+.PHONY : src/sound/OgreOggStaticWavSound.o
+
+# target to build an object file
+src/sound/OgreOggStaticWavSound.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStaticWavSound.cpp.o
+.PHONY : src/sound/OgreOggStaticWavSound.cpp.o
+
+src/sound/OgreOggStaticWavSound.i: src/sound/OgreOggStaticWavSound.cpp.i
+.PHONY : src/sound/OgreOggStaticWavSound.i
+
+# target to preprocess a source file
+src/sound/OgreOggStaticWavSound.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStaticWavSound.cpp.i
+.PHONY : src/sound/OgreOggStaticWavSound.cpp.i
+
+src/sound/OgreOggStaticWavSound.s: src/sound/OgreOggStaticWavSound.cpp.s
+.PHONY : src/sound/OgreOggStaticWavSound.s
+
+# target to generate assembly for a file
+src/sound/OgreOggStaticWavSound.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStaticWavSound.cpp.s
+.PHONY : src/sound/OgreOggStaticWavSound.cpp.s
+
+src/sound/OgreOggStreamWavSound.o: src/sound/OgreOggStreamWavSound.cpp.o
+.PHONY : src/sound/OgreOggStreamWavSound.o
+
+# target to build an object file
+src/sound/OgreOggStreamWavSound.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStreamWavSound.cpp.o
+.PHONY : src/sound/OgreOggStreamWavSound.cpp.o
+
+src/sound/OgreOggStreamWavSound.i: src/sound/OgreOggStreamWavSound.cpp.i
+.PHONY : src/sound/OgreOggStreamWavSound.i
+
+# target to preprocess a source file
+src/sound/OgreOggStreamWavSound.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStreamWavSound.cpp.i
+.PHONY : src/sound/OgreOggStreamWavSound.cpp.i
+
+src/sound/OgreOggStreamWavSound.s: src/sound/OgreOggStreamWavSound.cpp.s
+.PHONY : src/sound/OgreOggStreamWavSound.s
+
+# target to generate assembly for a file
+src/sound/OgreOggStreamWavSound.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/OgreOggStreamWavSound.cpp.s
+.PHONY : src/sound/OgreOggStreamWavSound.cpp.s
+
+src/sound/ogreoggsoundmanager.o: src/sound/ogreoggsoundmanager.cpp.o
+.PHONY : src/sound/ogreoggsoundmanager.o
+
+# target to build an object file
+src/sound/ogreoggsoundmanager.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/ogreoggsoundmanager.cpp.o
+.PHONY : src/sound/ogreoggsoundmanager.cpp.o
+
+src/sound/ogreoggsoundmanager.i: src/sound/ogreoggsoundmanager.cpp.i
+.PHONY : src/sound/ogreoggsoundmanager.i
+
+# target to preprocess a source file
+src/sound/ogreoggsoundmanager.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/ogreoggsoundmanager.cpp.i
+.PHONY : src/sound/ogreoggsoundmanager.cpp.i
+
+src/sound/ogreoggsoundmanager.s: src/sound/ogreoggsoundmanager.cpp.s
+.PHONY : src/sound/ogreoggsoundmanager.s
+
+# target to generate assembly for a file
+src/sound/ogreoggsoundmanager.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/ogreoggsoundmanager.cpp.s
+.PHONY : src/sound/ogreoggsoundmanager.cpp.s
+
+src/sound/ogreoggstreamsound.o: src/sound/ogreoggstreamsound.cpp.o
+.PHONY : src/sound/ogreoggstreamsound.o
+
+# target to build an object file
+src/sound/ogreoggstreamsound.cpp.o:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/ogreoggstreamsound.cpp.o
+.PHONY : src/sound/ogreoggstreamsound.cpp.o
+
+src/sound/ogreoggstreamsound.i: src/sound/ogreoggstreamsound.cpp.i
+.PHONY : src/sound/ogreoggstreamsound.i
+
+# target to preprocess a source file
+src/sound/ogreoggstreamsound.cpp.i:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/ogreoggstreamsound.cpp.i
+.PHONY : src/sound/ogreoggstreamsound.cpp.i
+
+src/sound/ogreoggstreamsound.s: src/sound/ogreoggstreamsound.cpp.s
+.PHONY : src/sound/ogreoggstreamsound.s
+
+# target to generate assembly for a file
+src/sound/ogreoggstreamsound.cpp.s:
+	$(MAKE) -f CMakeFiles/OrseSound.dir/build.make CMakeFiles/OrseSound.dir/src/sound/ogreoggstreamsound.cpp.s
+.PHONY : src/sound/ogreoggstreamsound.cpp.s
 
 # Help Target
 help:
@@ -374,40 +784,90 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... ORSE"
+	@echo "... OrseMain"
+	@echo "... OrsePhysics"
+	@echo "... OrseSound"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... src/entity.o"
-	@echo "... src/entity.i"
-	@echo "... src/entity.s"
-	@echo "... src/network/auth.o"
-	@echo "... src/network/auth.i"
-	@echo "... src/network/auth.s"
-	@echo "... src/network/connection.o"
-	@echo "... src/network/connection.i"
-	@echo "... src/network/connection.s"
 	@echo "... src/node.o"
 	@echo "... src/node.i"
 	@echo "... src/node.s"
+	@echo "... src/physics/collisions/OgreBulletCollisionsObject.o"
+	@echo "... src/physics/collisions/OgreBulletCollisionsObject.i"
+	@echo "... src/physics/collisions/OgreBulletCollisionsObject.s"
+	@echo "... src/physics/collisions/OgreBulletCollisionsObjectState.o"
+	@echo "... src/physics/collisions/OgreBulletCollisionsObjectState.i"
+	@echo "... src/physics/collisions/OgreBulletCollisionsObjectState.s"
+	@echo "... src/physics/collisions/OgreBulletCollisionsPrecompiled.o"
+	@echo "... src/physics/collisions/OgreBulletCollisionsPrecompiled.i"
+	@echo "... src/physics/collisions/OgreBulletCollisionsPrecompiled.s"
+	@echo "... src/physics/collisions/OgreBulletCollisionsRay.o"
+	@echo "... src/physics/collisions/OgreBulletCollisionsRay.i"
+	@echo "... src/physics/collisions/OgreBulletCollisionsRay.s"
+	@echo "... src/physics/collisions/OgreBulletCollisionsShape.o"
+	@echo "... src/physics/collisions/OgreBulletCollisionsShape.i"
+	@echo "... src/physics/collisions/OgreBulletCollisionsShape.s"
+	@echo "... src/physics/collisions/OgreBulletCollisionsWorld.o"
+	@echo "... src/physics/collisions/OgreBulletCollisionsWorld.i"
+	@echo "... src/physics/collisions/OgreBulletCollisionsWorld.s"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsConstraint.o"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsConstraint.i"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsConstraint.s"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsObjectState.o"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsObjectState.i"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsObjectState.s"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsPrecompiled.o"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsPrecompiled.i"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsPrecompiled.s"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsRigidBody.o"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsRigidBody.i"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsRigidBody.s"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsWorld.o"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsWorld.i"
+	@echo "... src/physics/dynamics/OgreBulletDynamicsWorld.s"
 	@echo "... src/resourcemgr.o"
 	@echo "... src/resourcemgr.i"
 	@echo "... src/resourcemgr.s"
 	@echo "... src/root.o"
 	@echo "... src/root.i"
 	@echo "... src/root.s"
-	@echo "... src/scenemanager.o"
-	@echo "... src/scenemanager.i"
-	@echo "... src/scenemanager.s"
-	@echo "... src/viewport.o"
-	@echo "... src/viewport.i"
-	@echo "... src/viewport.s"
-	@echo "... src/window.o"
-	@echo "... src/window.i"
-	@echo "... src/window.s"
+	@echo "... src/sound/OgreOggISound.o"
+	@echo "... src/sound/OgreOggISound.i"
+	@echo "... src/sound/OgreOggISound.s"
+	@echo "... src/sound/OgreOggListener.o"
+	@echo "... src/sound/OgreOggListener.i"
+	@echo "... src/sound/OgreOggListener.s"
+	@echo "... src/sound/OgreOggSoundFactory.o"
+	@echo "... src/sound/OgreOggSoundFactory.i"
+	@echo "... src/sound/OgreOggSoundFactory.s"
+	@echo "... src/sound/OgreOggSoundPlugin.o"
+	@echo "... src/sound/OgreOggSoundPlugin.i"
+	@echo "... src/sound/OgreOggSoundPlugin.s"
+	@echo "... src/sound/OgreOggSoundPluginDllStart.o"
+	@echo "... src/sound/OgreOggSoundPluginDllStart.i"
+	@echo "... src/sound/OgreOggSoundPluginDllStart.s"
+	@echo "... src/sound/OgreOggSoundRecord.o"
+	@echo "... src/sound/OgreOggSoundRecord.i"
+	@echo "... src/sound/OgreOggSoundRecord.s"
+	@echo "... src/sound/OgreOggStaticSound.o"
+	@echo "... src/sound/OgreOggStaticSound.i"
+	@echo "... src/sound/OgreOggStaticSound.s"
+	@echo "... src/sound/OgreOggStaticWavSound.o"
+	@echo "... src/sound/OgreOggStaticWavSound.i"
+	@echo "... src/sound/OgreOggStaticWavSound.s"
+	@echo "... src/sound/OgreOggStreamWavSound.o"
+	@echo "... src/sound/OgreOggStreamWavSound.i"
+	@echo "... src/sound/OgreOggStreamWavSound.s"
+	@echo "... src/sound/ogreoggsoundmanager.o"
+	@echo "... src/sound/ogreoggsoundmanager.i"
+	@echo "... src/sound/ogreoggsoundmanager.s"
+	@echo "... src/sound/ogreoggstreamsound.o"
+	@echo "... src/sound/ogreoggstreamsound.i"
+	@echo "... src/sound/ogreoggstreamsound.s"
 .PHONY : help
 
 
