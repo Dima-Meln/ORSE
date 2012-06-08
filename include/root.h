@@ -30,15 +30,15 @@
 #include "common.h"
 
 BeginNamespace
-class Root :public Ogre::Singleton {
+class Root :public Ogre::Singleton<Root> {
   public:
     Root();
     virtual ~Root();
     
     //void showWindow();
-  protected:
-    shared_ptr<Ogre::Root> m_ORoot;
-    shared_ptr<CEGUI::OgreRenderer> m_RendererCEGUI;
+  //protected:
+    static shared_ptr<Ogre::Root> ORoot;
+    static shared_ptr<CEGUI::OgreRenderer> RendererCEGUI;
 };
 EndNamespace
 

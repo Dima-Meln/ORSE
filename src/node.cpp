@@ -19,8 +19,8 @@
 
 #include "node.h"
 
-Node::Node()
-{
-  this=m_OgreEntity;
+BeginNamespace
+Node::Node(string name) {
+  
 }
-
+EndNamespace

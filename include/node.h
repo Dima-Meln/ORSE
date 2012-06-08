@@ -20,12 +20,19 @@
 #ifndef NODE_H
 #define NODE_H
 
+#include <OgreNode.h>
+#include <OgreEntity.h>
+#include <string>
+#include "common.h"
+
+BeginNamespace
 class Node :public Ogre::Node {
   public:
-    Node(string Name);
-    addEntity(Oasis::Entity Entity);
+    Node(string name);
+    void addEntity(Ogre::Entity Entity);
   private:
     
 };
+EndNamespace
 
 #endif // NODE_H

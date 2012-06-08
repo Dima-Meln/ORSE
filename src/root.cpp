@@ -18,14 +18,13 @@
 
 
 #include "root.h"
+
 BeginNamespace
-Root::Root()
-{
+Root::Root() {
 
 }
 
-Root::~Root()
-{
+Root::~Root() {
 
 }
 EndNamespace

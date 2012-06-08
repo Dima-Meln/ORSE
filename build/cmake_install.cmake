@@ -82,12 +82,28 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
-IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  INCLUDE("/home/dima/projects/ORSE/build/include/cmake_install.cmake")
-  INCLUDE("/home/dima/projects/ORSE/build/src/cmake_install.cmake")
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
+   "/usr/include/orse/common.h;/usr/include/orse/node.h;/usr/include/orse/resourcemgr.h;/usr/include/orse/root.h")
+FILE(INSTALL DESTINATION "/usr/include/orse" TYPE FILE FILES
+    "/home/dima/projects/ORSE/include/common.h"
+    "/home/dima/projects/ORSE/include/node.h"
+    "/home/dima/projects/ORSE/include/resourcemgr.h"
+    "/home/dima/projects/ORSE/include/root.h"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
-ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
+   "/usr/include/orse/sound")
+FILE(INSTALL DESTINATION "/usr/include/orse" TYPE DIRECTORY FILES "/home/dima/projects/ORSE/include/sound")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
+   "/usr/include/orse/physics")
+FILE(INSTALL DESTINATION "/usr/include/orse" TYPE DIRECTORY FILES "/home/dima/projects/ORSE/include/physics")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")

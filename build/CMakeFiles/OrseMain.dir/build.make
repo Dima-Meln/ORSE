@@ -130,10 +130,6 @@ OrseMain_EXTERNAL_OBJECTS =
 libOrseMain.so: CMakeFiles/OrseMain.dir/src/node.cpp.o
 libOrseMain.so: CMakeFiles/OrseMain.dir/src/root.cpp.o
 libOrseMain.so: CMakeFiles/OrseMain.dir/src/resourcemgr.cpp.o
-libOrseMain.so: /usr/lib/libBulletDynamics.so
-libOrseMain.so: /usr/lib/libBulletCollision.so
-libOrseMain.so: /usr/lib/libLinearMath.so
-libOrseMain.so: /usr/lib/libBulletSoftBody.so,
 libOrseMain.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
 libOrseMain.so: /usr/local/lib/OGRE/Plugin_CgProgramManager.so
 libOrseMain.so: CMakeFiles/OrseMain.dir/build.make

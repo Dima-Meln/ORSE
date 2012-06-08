@@ -202,6 +202,102 @@ src/node.cpp.s:
 	$(MAKE) -f CMakeFiles/OrseMain.dir/build.make CMakeFiles/OrseMain.dir/src/node.cpp.s
 .PHONY : src/node.cpp.s
 
+src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.o: src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.o
+
+# target to build an object file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.i: src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.i
+
+# target to preprocess a source file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.i
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.s: src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.s
+
+# target to generate assembly for a file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.s
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.o: src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.o
+
+# target to build an object file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.i: src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.i
+
+# target to preprocess a source file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.i
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.s: src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.s
+
+# target to generate assembly for a file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.s
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.o: src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.o
+
+# target to build an object file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.i: src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.i
+
+# target to preprocess a source file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.i
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.s: src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.s
+
+# target to generate assembly for a file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.s
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.o: src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.o
+
+# target to build an object file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.i: src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.i
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.i
+
+src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.s: src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.s
+.PHONY : src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.s
+
 src/physics/collisions/OgreBulletCollisionsObject.o: src/physics/collisions/OgreBulletCollisionsObject.cpp.o
 .PHONY : src/physics/collisions/OgreBulletCollisionsObject.o
 
@@ -346,6 +442,486 @@ src/physics/collisions/OgreBulletCollisionsWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsWorld.cpp.s
 .PHONY : src/physics/collisions/OgreBulletCollisionsWorld.cpp.s
 
+src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.s
+
+src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.o: src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.o
+
+# target to build an object file
+src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o
+
+src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.i: src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.i
+
+# target to preprocess a source file
+src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.i
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.i
+
+src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.s: src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.s
+
+# target to generate assembly for a file
+src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.s
+.PHONY : src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.s
+
+src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.o: src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o
+.PHONY : src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.o
+
+# target to build an object file
+src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o
+.PHONY : src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o
+
+src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.i: src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.i
+.PHONY : src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.i
+
+# target to preprocess a source file
+src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.i
+.PHONY : src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.i
+
+src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.s: src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.s
+.PHONY : src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.s
+
+# target to generate assembly for a file
+src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.s
+.PHONY : src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.s
+
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.o: src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.o
+
+# target to build an object file
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o
+
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.i: src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.i
+
+# target to preprocess a source file
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.i
+
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.s: src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.s
+
+# target to generate assembly for a file
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.s
+
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.o: src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.o
+
+# target to build an object file
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o
+
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.i: src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.i
+
+# target to preprocess a source file
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.i
+
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.s: src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.s
+
+# target to generate assembly for a file
+src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.s
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.o: src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.o
+
+# target to build an object file
+src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.i: src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.i
+
+# target to preprocess a source file
+src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.i
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.s: src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.s
+
+# target to generate assembly for a file
+src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.s
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.o: src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.o
+
+# target to build an object file
+src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.i: src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.i
+
+# target to preprocess a source file
+src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.i
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.s: src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.s
+
+# target to generate assembly for a file
+src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.s
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.o: src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.o
+
+# target to build an object file
+src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.i: src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.i
+
+# target to preprocess a source file
+src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.i
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.s: src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.s
+
+# target to generate assembly for a file
+src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.s
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.o: src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.o
+
+# target to build an object file
+src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.i: src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.i
+
+# target to preprocess a source file
+src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.i
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.i
+
+src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.s: src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.s
+
+# target to generate assembly for a file
+src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.s
+.PHONY : src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.s
+
 src/physics/dynamics/OgreBulletDynamicsConstraint.o: src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o
 .PHONY : src/physics/dynamics/OgreBulletDynamicsConstraint.o
 
@@ -465,6 +1041,30 @@ src/physics/dynamics/OgreBulletDynamicsWorld.s: src/physics/dynamics/OgreBulletD
 src/physics/dynamics/OgreBulletDynamicsWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.s
 .PHONY : src/physics/dynamics/OgreBulletDynamicsWorld.cpp.s
+
+src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.o: src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o
+.PHONY : src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.o
+
+# target to build an object file
+src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o
+.PHONY : src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o
+
+src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.i: src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.i
+.PHONY : src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.i
+
+# target to preprocess a source file
+src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.i:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.i
+.PHONY : src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.i
+
+src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.s: src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.s
+.PHONY : src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.s
+
+# target to generate assembly for a file
+src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.s:
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.s
+.PHONY : src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.s
 
 src/resourcemgr.o: src/resourcemgr.cpp.o
 .PHONY : src/resourcemgr.o
@@ -796,6 +1396,18 @@ help:
 	@echo "... src/node.o"
 	@echo "... src/node.i"
 	@echo "... src/node.s"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.o"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.i"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.s"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.o"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.i"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.s"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.o"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.i"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.s"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.o"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.i"
+	@echo "... src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.s"
 	@echo "... src/physics/collisions/OgreBulletCollisionsObject.o"
 	@echo "... src/physics/collisions/OgreBulletCollisionsObject.i"
 	@echo "... src/physics/collisions/OgreBulletCollisionsObject.s"
@@ -814,6 +1426,66 @@ help:
 	@echo "... src/physics/collisions/OgreBulletCollisionsWorld.o"
 	@echo "... src/physics/collisions/OgreBulletCollisionsWorld.i"
 	@echo "... src/physics/collisions/OgreBulletCollisionsWorld.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.s"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.o"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.i"
+	@echo "... src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.s"
+	@echo "... src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.o"
+	@echo "... src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.i"
+	@echo "... src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.s"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.o"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.i"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.s"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.o"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.i"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.s"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.o"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.i"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.s"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.o"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.i"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.s"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.o"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.i"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.s"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.o"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.i"
+	@echo "... src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.s"
 	@echo "... src/physics/dynamics/OgreBulletDynamicsConstraint.o"
 	@echo "... src/physics/dynamics/OgreBulletDynamicsConstraint.i"
 	@echo "... src/physics/dynamics/OgreBulletDynamicsConstraint.s"
@@ -829,6 +1501,9 @@ help:
 	@echo "... src/physics/dynamics/OgreBulletDynamicsWorld.o"
 	@echo "... src/physics/dynamics/OgreBulletDynamicsWorld.i"
 	@echo "... src/physics/dynamics/OgreBulletDynamicsWorld.s"
+	@echo "... src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.o"
+	@echo "... src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.i"
+	@echo "... src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.s"
 	@echo "... src/resourcemgr.o"
 	@echo "... src/resourcemgr.i"
 	@echo "... src/resourcemgr.s"

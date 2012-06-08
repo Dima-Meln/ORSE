@@ -330,6 +330,8 @@ libOrseSound.so: CMakeFiles/OrseSound.dir/src/sound/OgreOggStaticSound.cpp.o
 libOrseSound.so: CMakeFiles/OrseSound.dir/src/sound/OgreOggISound.cpp.o
 libOrseSound.so: CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPlugin.cpp.o
 libOrseSound.so: CMakeFiles/OrseSound.dir/src/sound/OgreOggSoundPluginDllStart.cpp.o
+libOrseSound.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+libOrseSound.so: /usr/lib/x86_64-linux-gnu/libvorbis.so
 libOrseSound.so: CMakeFiles/OrseSound.dir/build.make
 libOrseSound.so: CMakeFiles/OrseSound.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libOrseSound.so"

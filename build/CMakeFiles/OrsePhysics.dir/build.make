@@ -187,9 +187,423 @@ CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp
 
 CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.o
 
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o: ../src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o: ../src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o: ../src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o: ../src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o: ../src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o: ../src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o -c /home/dima/projects/ORSE/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp > CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o
+
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o: ../src/physics/dynamics/OgreBulletDynamicsWorld.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/OgreBulletDynamicsWorld.cpp
 
@@ -212,7 +626,7 @@ CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o.pr
 
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o: ../src/physics/dynamics/OgreBulletDynamicsObjectState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp
 
@@ -235,7 +649,7 @@ CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cp
 
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o: ../src/physics/dynamics/OgreBulletDynamicsConstraint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp
 
@@ -258,7 +672,7 @@ CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp
 
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o: ../src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp
 
@@ -281,7 +695,7 @@ CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.
 
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o: ../src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp
 
@@ -302,6 +716,167 @@ CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cp
 
 CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o
 
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o: ../src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp > CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o: ../src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp > CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o: ../src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp > CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o: ../src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp > CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o: ../src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp > CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o: ../src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp > CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o: CMakeFiles/OrsePhysics.dir/flags.make
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o: ../src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/dima/projects/ORSE/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o -c /home/dima/projects/ORSE/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dima/projects/ORSE/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp > CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.i
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dima/projects/ORSE/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp -o CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.s
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.requires:
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.requires
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.provides: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.requires
+	$(MAKE) -f CMakeFiles/OrsePhysics.dir/build.make CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.provides.build
+.PHONY : CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.provides
+
+CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.provides.build: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o
+
 # Object files for target OrsePhysics
 OrsePhysics_OBJECTS = \
 "CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsPrecompiled.cpp.o" \
@@ -310,11 +885,36 @@ OrsePhysics_OBJECTS = \
 "CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsShape.cpp.o" \
 "CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsWorld.cpp.o" \
 "CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o" \
 "CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o" \
 "CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o" \
 "CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o" \
 "CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o" \
-"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o"
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o" \
+"CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o"
 
 # External object files for target OrsePhysics
 OrsePhysics_EXTERNAL_OBJECTS =
@@ -325,11 +925,41 @@ libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletC
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsShape.cpp.o
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsWorld.cpp.o
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o
+libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o
+libOrsePhysics.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+libOrsePhysics.so: /usr/lib/libBulletDynamics.so
+libOrsePhysics.so: /usr/lib/libBulletCollision.so
+libOrsePhysics.so: /usr/lib/libLinearMath.so
+libOrsePhysics.so: /usr/lib/libBulletSoftBody.so
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/build.make
 libOrsePhysics.so: CMakeFiles/OrsePhysics.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libOrsePhysics.so"
@@ -345,11 +975,36 @@ CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/coll
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsShape.cpp.o.requires
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsWorld.cpp.o.requires
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/OgreBulletCollisionsObject.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugDrawer.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugContact.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Debug/OgreBulletCollisionsDebugLines.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMinkowskiSumShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTriangleShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConvexHullShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCapsuleShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsBoxShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCompoundShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsStaticPlaneShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsCylinderShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsGImpactShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsMultiSphereShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsSphereShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Shapes/OgreBulletCollisionsConeShape.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/collisions/Utils/OgreBulletCollisionsMeshToShapeConverter.cpp.o.requires
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsWorld.cpp.o.requires
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsObjectState.cpp.o.requires
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsConstraint.cpp.o.requires
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsRigidBody.cpp.o.requires
 CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/OgreBulletDynamicsPrecompiled.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofConstraint.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsPoint2pointConstraint.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsHingeConstraint.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsRaycastVehicle.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamics6DofSpringConstraint.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Constraints/OgreBulletDynamicsConeTwistConstraint.cpp.o.requires
+CMakeFiles/OrsePhysics.dir/requires: CMakeFiles/OrsePhysics.dir/src/physics/dynamics/Prefab/OgreBulletDynamicsRagDoll.cpp.o.requires
 .PHONY : CMakeFiles/OrsePhysics.dir/requires
 
 CMakeFiles/OrsePhysics.dir/clean:

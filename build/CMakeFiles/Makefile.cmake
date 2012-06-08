@@ -11,8 +11,8 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeSystem.cmake"
-  "../include/CMakeLists.txt"
-  "../src/CMakeLists.txt"
+  "../cmake/FindOgg.cmake"
+  "../cmake/FindVorbis.cmake"
   "/usr/local/lib/OGRE/cmake/FindOGRE.cmake"
   "/usr/local/lib/OGRE/cmake/FindPkgMacros.cmake"
   "/usr/local/lib/OGRE/cmake/PreprocessorUtils.cmake"
@@ -47,8 +47,6 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "include/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
