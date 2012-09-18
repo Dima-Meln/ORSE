@@ -35,102 +35,102 @@ THE SOFTWARE.
 #include "OgreBulletDynamicsConstraint.h"
 
 
-namespace OgreBulletDynamics
-{
+namespace OgreBulletDynamics {
 
-    // -------------------------------------------------------------------------
-    // VehicleRayCaster  class
-    class VehicleRayCaster
-    {
-    public:
-        VehicleRayCaster(DynamicsWorld *world);
-        virtual ~VehicleRayCaster();
-        
-        btVehicleRaycaster *getBulletVehicleRayCaster()
-        {return static_cast <btVehicleRaycaster*> (mBulletVehicleRayCaster);};
-         
-    private:
-        btDefaultVehicleRaycaster *mBulletVehicleRayCaster;        
+// -------------------------------------------------------------------------
+// VehicleRayCaster  class
+class VehicleRayCaster {
+  public:
+    VehicleRayCaster(DynamicsWorld* world);
+    virtual ~VehicleRayCaster();
+
+    btVehicleRaycaster* getBulletVehicleRayCaster() {
+      return static_cast <btVehicleRaycaster*>(mBulletVehicleRayCaster);
     };
-    // -------------------------------------------------------------------------
-    // VehicleTuning  class
-    class VehicleTuning
-    {
-    public:
-        VehicleTuning(
-            const Ogre::Real suspensionStiffness,
-            const Ogre::Real suspensionCompression,
-            const Ogre::Real suspensionDamping,
-            const Ogre::Real maxSuspensionTravelCm,
-            const Ogre::Real frictionSlip);
-        virtual ~VehicleTuning();
-        
-        btRaycastVehicle::btVehicleTuning *getBulletTuning()
-        {return mBulletTuning;};
-        
-    private:
-        btRaycastVehicle::btVehicleTuning *mBulletTuning;        
+
+  private:
+    btDefaultVehicleRaycaster* mBulletVehicleRayCaster;
+};
+// -------------------------------------------------------------------------
+// VehicleTuning  class
+class VehicleTuning {
+  public:
+    VehicleTuning(
+      const Ogre::Real suspensionStiffness,
+      const Ogre::Real suspensionCompression,
+      const Ogre::Real suspensionDamping,
+      const Ogre::Real maxSuspensionTravelCm,
+      const Ogre::Real frictionSlip);
+    virtual ~VehicleTuning();
+
+    btRaycastVehicle::btVehicleTuning* getBulletTuning() {
+      return mBulletTuning;
     };
-    // -------------------------------------------------------------------------
-    // RaycastVehicle  class
-    class WheelInfo
-    {
-    public:
-        WheelInfo(btWheelInfo &w): 
-          mWheel(&w)
-          {};
-        virtual ~WheelInfo(){};
 
-        btWheelInfo *getBulletWheelInfo(){return static_cast<btWheelInfo *> (mWheel);}
-       
-    protected:
-        btWheelInfo                   *mWheel;
+  private:
+    btRaycastVehicle::btVehicleTuning* mBulletTuning;
+};
+// -------------------------------------------------------------------------
+// RaycastVehicle  class
+class WheelInfo {
+  public:
+    WheelInfo(btWheelInfo& w):
+      mWheel(&w)
+    {};
+    virtual ~WheelInfo() {};
+
+    btWheelInfo* getBulletWheelInfo() {
+      return static_cast<btWheelInfo*>(mWheel);
+    }
+
+  protected:
+    btWheelInfo*                   mWheel;
+};
+// -------------------------------------------------------------------------
+// RaycastVehicle  class
+class RaycastVehicle : public ActionInterface {
+  public:
+    RaycastVehicle(WheeledRigidBody* body,
+                   VehicleTuning*        vt,
+                   VehicleRayCaster*     caster = 0);
+
+    virtual ~RaycastVehicle();
+
+    btRaycastVehicle* getBulletVehicle() {
+      return static_cast<btRaycastVehicle*>(mActionInterface);
     };
-    // -------------------------------------------------------------------------
-    // RaycastVehicle  class
-    class RaycastVehicle : public ActionInterface
-    {
-    public:
-        RaycastVehicle(WheeledRigidBody *body,  
-            VehicleTuning        *vt,
-            VehicleRayCaster     *caster = 0);
+    void setCoordinateSystem(int rightIndex, int upIndex, int forwardIndex);
 
-        virtual ~RaycastVehicle();
+    void addWheel(
+      Ogre::SceneNode* node,
+      const Ogre::Vector3& connectionPoint,
+      const Ogre::Vector3& wheelDirection,
+      const Ogre::Vector3& wheelAxle,
+      const Ogre::Real suspensionRestLength,
+      const Ogre::Real wheelRadius,
+      const bool isFrontWheel,
+      const Ogre::Real wheelFriction,
+      const Ogre::Real rollInfluence);
 
-        btRaycastVehicle *getBulletVehicle()
-        {return static_cast<btRaycastVehicle *> (mActionInterface);};
-        void setCoordinateSystem(int rightIndex,int upIndex,int forwardIndex);
+    // when all wheels are attached, make vehicle aware of it
+    void setWheelsAttached();
+    // update wheels when needed.
+    void setTransform();
 
-        void addWheel(
-            Ogre::SceneNode *node,
-            const Ogre::Vector3 &connectionPoint,
-            const Ogre::Vector3 &wheelDirection,
-            const Ogre::Vector3 &wheelAxle,
-            const Ogre::Real suspensionRestLength,
-            const Ogre::Real wheelRadius,
-            const bool isFrontWheel,
-            const Ogre::Real wheelFriction,
-            const Ogre::Real rollInfluence);
+    void applyEngineForce(float engineForce, int wheel);
+    void setSteeringValue(float steering, int wheel);
 
-        // when all wheels are attached, make vehicle aware of it
-        void setWheelsAttached();
-        // update wheels when needed.
-        void setTransform();
+  protected:
+    VehicleTuning*                   mTuning;
+    VehicleRayCaster*                mRayCaster;
 
-        void applyEngineForce (float engineForce, int wheel);
-        void setSteeringValue(float steering, int wheel);
+    std::vector<btWheelInfo*>         mWheelsInfo;
+    std::vector<Ogre::SceneNode*>      mWheelNodes;
 
-     protected:
-         VehicleTuning                   *mTuning;
-         VehicleRayCaster                *mRayCaster;
-    
-         std::vector<btWheelInfo *>         mWheelsInfo;
-         std::vector<Ogre::SceneNode *>      mWheelNodes;
+    WheeledRigidBody* mChassisBody;
+    Ogre::SceneNode* mNode;
 
-         WheeledRigidBody* mChassisBody;
-         Ogre::SceneNode *mNode;
-         
-    };
+};
 }
 #endif //_OGREBULLETDYNAMICS_RaycastVehicle_H
 

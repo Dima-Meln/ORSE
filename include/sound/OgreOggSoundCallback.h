@@ -4,10 +4,10 @@
 * @version v1.21
 *
 * @section LICENSE
-* 
-* This source file is part of OgreOggSound, an OpenAL wrapper library for   
-* use with the Ogre Rendering Engine.										 
-*                                                                           
+*
+* This source file is part of OgreOggSound, an OpenAL wrapper library for
+* use with the Ogre Rendering Engine.
+*
 * Copyright (c) 2011 <Ian Stangoe>
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -26,10 +26,10 @@
 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-* THE SOFTWARE.  
+* THE SOFTWARE.
 *
 * @section DESCRIPTION
-* 
+*
 * Callbacks for detecting various states
 */
 
@@ -38,59 +38,55 @@
 
 #include "OgreOggSoundPrereqs.h"
 
-namespace OgreOggSound
-{
-	class OgreOggISound;
+namespace OgreOggSound {
+class OgreOggISound;
 
-	//! Callbacks for sound states.
-	/** Template class for implementing callbacks which can be attached to sounds.
-	@remarks
-		Allows member functions to be used as callbacks. Amended from OgreAL, 
-		originally written by CaseyB.
-	**/
-	class _OGGSOUND_EXPORT OOSCallback
-	{
-	
-	public:
-	
-		virtual ~OOSCallback(){};
-		virtual void execute(OgreOggISound* sound) = 0;
+//! Callbacks for sound states.
+/** Template class for implementing callbacks which can be attached to sounds.
+@remarks
+	Allows member functions to be used as callbacks. Amended from OgreAL,
+	originally written by CaseyB.
+**/
+class _OGGSOUND_EXPORT OOSCallback {
 
-	};
+  public:
 
-	//! Callback template
-	template<typename T>
-	class OSSCallbackPointer : public OOSCallback
-	{
+    virtual ~OOSCallback() {};
+    virtual void execute(OgreOggISound* sound) = 0;
 
-	public:
+};
 
-		typedef void (T::*MemberFunction)(OgreOggISound* sound);
+//! Callback template
+template<typename T>
+class OSSCallbackPointer : public OOSCallback {
 
-		OSSCallbackPointer() : mUndefined(true){}
+  public:
 
-		OSSCallbackPointer(MemberFunction func, T* obj) :
-			mFunction(func),
-			mObject(obj),
-			mUndefined(false)
-		{}
+    typedef void (T::*MemberFunction)(OgreOggISound* sound);
 
-		virtual ~OSSCallbackPointer(){}
+    OSSCallbackPointer() : mUndefined(true) {}
 
-		void execute(OgreOggISound* sound)
-		{
-			if(!mUndefined)
-				(mObject->*mFunction)(sound);
-		}
+    OSSCallbackPointer(MemberFunction func, T* obj) :
+      mFunction(func),
+      mObject(obj),
+      mUndefined(false)
+    {}
 
-	protected:
+    virtual ~OSSCallbackPointer() {}
 
-		MemberFunction mFunction;
-		T* mObject;
-		bool mUndefined;
+    void execute(OgreOggISound* sound) {
+      if(!mUndefined)
+        (mObject->*mFunction)(sound);
+    }
 
-	}; 
+  protected:
 
-} 
+    MemberFunction mFunction;
+    T* mObject;
+    bool mUndefined;
+
+};
+
+}
 
 #endif	/* _OGREOGGSOUND_CALLBACK_H_ */

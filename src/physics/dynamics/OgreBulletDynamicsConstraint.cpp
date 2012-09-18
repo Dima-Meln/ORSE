@@ -32,89 +32,78 @@ THE SOFTWARE.
 
 #include "OgreBulletDynamicsConstraint.h"
 
-#include "OgreBulletDynamicsWorld.h" 
+#include "OgreBulletDynamicsWorld.h"
 
 #include "OgreBulletDynamicsRigidBody.h"
 
 using namespace Ogre;
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    TypedConstraint::TypedConstraint(DynamicsWorld *world) :
-            mConstraint (0),
-            mWorld (world),
-            mBodyA (0),
-            mBodyB (0)
-    {
-    }
-    // -------------------------------------------------------------------------
-    TypedConstraint::TypedConstraint(RigidBody *bodyA) :
-            mConstraint(0),
-            mWorld(bodyA->getDynamicsWorld()),
-            mBodyA (bodyA),
-            mBodyB (0)
-    {
-            mBodyA = bodyA;
-    }
-    // -------------------------------------------------------------------------
-    TypedConstraint::TypedConstraint(RigidBody *bodyA, RigidBody *bodyB) :
-            mConstraint(0),
-            mWorld(bodyA->getDynamicsWorld()),
-            mBodyA (bodyA),
-            mBodyB (bodyB)
-    {
-        assert (bodyA->getDynamicsWorld() == bodyB->getDynamicsWorld());
-        mBodyA = bodyA;
-        mBodyB = bodyB;
-    }
-    // -------------------------------------------------------------------------
-    TypedConstraint::~TypedConstraint()
-    {
-        if (mConstraint)
-        {
-            assert (mWorld->isConstraintRegistered (this) == false);
-            delete mConstraint;
-        }
-    }
-    // -------------------------------------------------------------------------
-	// -------------------------------------------------------------------------
-	ActionInterface::ActionInterface(DynamicsWorld *world) :
-	mActionInterface (0),
-		mWorld (world),
-		mBodyA (0),
-		mBodyB (0)
-	{
-	}
-	// -------------------------------------------------------------------------
-	ActionInterface::ActionInterface(RigidBody *bodyA) :
-	mActionInterface(0),
-		mWorld(bodyA->getDynamicsWorld()),
-		mBodyA (bodyA),
-		mBodyB (0)
-	{
-		mBodyA = bodyA;
-	}
-	// -------------------------------------------------------------------------
-	ActionInterface::ActionInterface(RigidBody *bodyA, RigidBody *bodyB) :
-	mActionInterface(0),
-		mWorld(bodyA->getDynamicsWorld()),
-		mBodyA (bodyA),
-		mBodyB (bodyB)
-	{
-		assert (bodyA->getDynamicsWorld() == bodyB->getDynamicsWorld());
-		mBodyA = bodyA;
-		mBodyB = bodyB;
-	}
-	// -------------------------------------------------------------------------
-	ActionInterface::~ActionInterface()
-	{
-		if (mActionInterface)
-		{
-			//assert (mWorld->isConstraintRegistered (this) == false);
-			delete mActionInterface;
-		}
-	}
-	// -------------------------------------------------------------------------
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+TypedConstraint::TypedConstraint(DynamicsWorld* world) :
+  mConstraint(0),
+  mWorld(world),
+  mBodyA(0),
+  mBodyB(0) {
+}
+// -------------------------------------------------------------------------
+TypedConstraint::TypedConstraint(RigidBody* bodyA) :
+  mConstraint(0),
+  mWorld(bodyA->getDynamicsWorld()),
+  mBodyA(bodyA),
+  mBodyB(0) {
+  mBodyA = bodyA;
+}
+// -------------------------------------------------------------------------
+TypedConstraint::TypedConstraint(RigidBody* bodyA, RigidBody* bodyB) :
+  mConstraint(0),
+  mWorld(bodyA->getDynamicsWorld()),
+  mBodyA(bodyA),
+  mBodyB(bodyB) {
+  assert(bodyA->getDynamicsWorld() == bodyB->getDynamicsWorld());
+  mBodyA = bodyA;
+  mBodyB = bodyB;
+}
+// -------------------------------------------------------------------------
+TypedConstraint::~TypedConstraint() {
+  if(mConstraint) {
+    assert(mWorld->isConstraintRegistered(this) == false);
+    delete mConstraint;
+  }
+}
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+ActionInterface::ActionInterface(DynamicsWorld* world) :
+  mActionInterface(0),
+  mWorld(world),
+  mBodyA(0),
+  mBodyB(0) {
+}
+// -------------------------------------------------------------------------
+ActionInterface::ActionInterface(RigidBody* bodyA) :
+  mActionInterface(0),
+  mWorld(bodyA->getDynamicsWorld()),
+  mBodyA(bodyA),
+  mBodyB(0) {
+  mBodyA = bodyA;
+}
+// -------------------------------------------------------------------------
+ActionInterface::ActionInterface(RigidBody* bodyA, RigidBody* bodyB) :
+  mActionInterface(0),
+  mWorld(bodyA->getDynamicsWorld()),
+  mBodyA(bodyA),
+  mBodyB(bodyB) {
+  assert(bodyA->getDynamicsWorld() == bodyB->getDynamicsWorld());
+  mBodyA = bodyA;
+  mBodyB = bodyB;
+}
+// -------------------------------------------------------------------------
+ActionInterface::~ActionInterface() {
+  if(mActionInterface) {
+    //assert (mWorld->isConstraintRegistered (this) == false);
+    delete mActionInterface;
+  }
+}
+// -------------------------------------------------------------------------
 
 }

@@ -4,10 +4,10 @@
 * @version v1.21
 *
 * @section LICENSE
-* 
-* This source file is part of OgreOggSound, an OpenAL wrapper library for   
-* use with the Ogre Rendering Engine.										 
-*                                                                           
+*
+* This source file is part of OgreOggSound, an OpenAL wrapper library for
+* use with the Ogre Rendering Engine.
+*
 * Copyright (c) 2011 <Ian Stangoe>
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -26,7 +26,7 @@
 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-* THE SOFTWARE.  
+* THE SOFTWARE.
 *
 */
 
@@ -43,19 +43,17 @@ OgreOggSoundPlugin* mOgreOggSoundPlugin;
 //----------------------------------------------------------------------------------
 // register SecureArchive with Archive Manager
 //----------------------------------------------------------------------------------
-extern "C" void _OGGSOUND_EXPORT dllStartPlugin( void )
-{
-	// Create new plugin
-	mOgreOggSoundPlugin = OGRE_NEW_T(OgreOggSoundPlugin, Ogre::MEMCATEGORY_GENERAL)();
+extern "C" void _OGGSOUND_EXPORT dllStartPlugin(void) {
+  // Create new plugin
+  mOgreOggSoundPlugin = OGRE_NEW_T(OgreOggSoundPlugin, Ogre::MEMCATEGORY_GENERAL)();
 
-	// Register
-	Root::getSingleton().installPlugin(mOgreOggSoundPlugin);
+  // Register
+  Root::getSingleton().installPlugin(mOgreOggSoundPlugin);
 }
 
-extern "C" void _OGGSOUND_EXPORT dllStopPlugin( void )
-{
-	Root::getSingleton().uninstallPlugin(mOgreOggSoundPlugin);
+extern "C" void _OGGSOUND_EXPORT dllStopPlugin(void) {
+  Root::getSingleton().uninstallPlugin(mOgreOggSoundPlugin);
 
-	OGRE_DELETE_T(mOgreOggSoundPlugin, OgreOggSoundPlugin, Ogre::MEMCATEGORY_GENERAL);
-	mOgreOggSoundPlugin = 0;
+  OGRE_DELETE_T(mOgreOggSoundPlugin, OgreOggSoundPlugin, Ogre::MEMCATEGORY_GENERAL);
+  mOgreOggSoundPlugin = 0;
 }

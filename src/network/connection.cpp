@@ -19,18 +19,15 @@
 
 #include "connection.h"
 
-connection::connection()
-{
+connection::connection() {
 
 }
 
-connection::connection(const connection&)
-{
+connection::connection(const connection&) {
 
 }
 
-connection::~connection()
-{
+connection::~connection() {
 
 }
 

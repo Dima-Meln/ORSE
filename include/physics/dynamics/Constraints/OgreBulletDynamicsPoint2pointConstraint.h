@@ -35,37 +35,34 @@ THE SOFTWARE.
 #include "OgreBulletDynamicsConstraint.h"
 
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    // PointTopointConstraint  class
-    class PointToPointConstraint : public TypedConstraint
-    {
-    public:
-	    PointToPointConstraint(RigidBody *body, const Ogre::Vector3 &pivot);
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+// PointTopointConstraint  class
+class PointToPointConstraint : public TypedConstraint {
+  public:
+    PointToPointConstraint(RigidBody* body, const Ogre::Vector3& pivot);
 
-	    virtual ~PointToPointConstraint();
+    virtual ~PointToPointConstraint();
 
-        inline btPoint2PointConstraint * getBulletPoint2PointConstraint () const;
+    inline btPoint2PointConstraint* getBulletPoint2PointConstraint() const;
 
-        void setTau (float tau);
-        void setDamping (float damping);
+    void setTau(float tau);
+    void setDamping(float damping);
 
-        float getTau () const;
-        float getDamping () const;
+    float getTau() const;
+    float getDamping() const;
 
 
-        void	setPivotA(const Ogre::Vector3& pivotA);
-        void	setPivotB(const Ogre::Vector3& pivotB);
+    void	setPivotA(const Ogre::Vector3& pivotA);
+    void	setPivotB(const Ogre::Vector3& pivotB);
 
-    };
-    // -------------------------------------------------------------------------
-    // inline PointTopointConstraint  class methods
-    // -------------------------------------------------------------------------
-    inline btPoint2PointConstraint * PointToPointConstraint::getBulletPoint2PointConstraint () const 
-    {
-        return static_cast <btPoint2PointConstraint *> (mConstraint);
-    }
+};
+// -------------------------------------------------------------------------
+// inline PointTopointConstraint  class methods
+// -------------------------------------------------------------------------
+inline btPoint2PointConstraint* PointToPointConstraint::getBulletPoint2PointConstraint() const {
+  return static_cast <btPoint2PointConstraint*>(mConstraint);
+}
 }
 #endif //_OGREBULLETDYNAMICS_PointTopointConstraint_H
 

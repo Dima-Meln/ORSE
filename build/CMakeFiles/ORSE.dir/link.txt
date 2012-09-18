@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -std=c++11 -O3 -DNDEBUG   -shared -Wl,-soname,libORSE.so -o libORSE.so CMakeFiles/ORSE.dir/src/node.cpp.o CMakeFiles/ORSE.dir/src/root.cpp.o CMakeFiles/ORSE.dir/src/resourcemgr.cpp.o -lBulletDynamics -lBulletCollision -lLinearMath /usr/lib/libBulletSoftBody.so, -lOgreMain /usr/local/lib/OGRE/Plugin_CgProgramManager.so -Wl,-rpath,/usr/local/lib/OGRE: 

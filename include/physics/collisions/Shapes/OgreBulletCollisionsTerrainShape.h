@@ -10,120 +10,105 @@
 #include "BulletCollision/CollisionShapes/btHeightfieldTerrainShape.h"
 #include "BulletCollision/CollisionShapes/btTriangleCallback.h"
 
-namespace OgreBulletCollisions
-{
-	
-	class DebugHelper : public btIDebugDraw
-	{
-	public:
+namespace OgreBulletCollisions {
 
-		DebugHelper(DebugLines* pLines) : m_pLines(pLines) {}
-		~DebugHelper () {}
+class DebugHelper : public btIDebugDraw {
+  public:
 
-		void	drawLine(const btVector3& from,const btVector3& to,const btVector3& color)
-		{
-			Ogre::Vector3 a(from.x(), from.y(), from.z());
-			Ogre::Vector3 b(to.x(), to.y(), to.z());
-			m_pLines->addLine(a, b);
-		}
-		void	draw3dText(const btVector3 &,const char *)
-		{
+    DebugHelper(DebugLines* pLines) : m_pLines(pLines) {}
+    ~DebugHelper() {}
 
-		}
+    void	drawLine(const btVector3& from, const btVector3& to, const btVector3& color) {
+      Ogre::Vector3 a(from.x(), from.y(), from.z());
+      Ogre::Vector3 b(to.x(), to.y(), to.z());
+      m_pLines->addLine(a, b);
+    }
+    void	draw3dText(const btVector3&, const char*) {
 
-		void	drawContactPoint(const btVector3& PointOnB,const btVector3& normalOnB,btScalar distance,int lifeTime,const btVector3& color)
-		{
-		}
+    }
 
-		void	reportErrorWarning(const char* warningString)
-		{
-		}
+    void	drawContactPoint(const btVector3& PointOnB, const btVector3& normalOnB, btScalar distance, int lifeTime, const btVector3& color) {
+    }
 
-		void	setDebugMode(int debugMode)
-		{
-		}
+    void	reportErrorWarning(const char* warningString) {
+    }
 
-		int		getDebugMode() const
-		{
-			return -1;
-		}
+    void	setDebugMode(int debugMode) {
+    }
 
-	private:
-		DebugLines* m_pLines;
-	};
+    int		getDebugMode() const {
+      return -1;
+    }
 
-	class DebugTriangleDrawCallback : public btTriangleCallback
-	{
-	private:
+  private:
+    DebugLines* m_pLines;
+};
 
-		DebugHelper     *mDebugHelper;
-		btTransform     mTransform;
-		btVector3		mColor;
+class DebugTriangleDrawCallback : public btTriangleCallback {
+  private:
 
-	public:
+    DebugHelper*     mDebugHelper;
+    btTransform     mTransform;
+    btVector3		mColor;
 
-		DebugTriangleDrawCallback(DebugHelper *db, btTransform &bt, const btVector3& color) :
-		  btTriangleCallback(),
-			mDebugHelper(db),
-			mTransform(bt),
-			mColor(color)
-		{
+  public:
 
-		}
+    DebugTriangleDrawCallback(DebugHelper* db, btTransform& bt, const btVector3& color) :
+      btTriangleCallback(),
+      mDebugHelper(db),
+      mTransform(bt),
+      mColor(color) {
 
-		void processTriangle(btVector3* triangle, int partId, int triangleIndex)
-		{
-			mDebugHelper->drawLine (*triangle,     *(triangle+1), mColor);
-			mDebugHelper->drawLine (*(triangle+1), *(triangle+2), mColor);
-			mDebugHelper->drawLine (*(triangle+2), *triangle,     mColor);
-		}						 
-	};
+    }
 
-	class HeightmapCollisionShape : public CollisionShape
-	{
-	public:
-		HeightmapCollisionShape(int width, int length, Ogre::Vector3& scale, Ogre::Real* pHeightData, bool bFlip)
-		{
-			int upIndex = 1;
-			bool useFloatDatam=true;
-			bool flipQuadEdges=bFlip;
+    void processTriangle(btVector3* triangle, int partId, int triangleIndex) {
+      mDebugHelper->drawLine(*triangle,     *(triangle + 1), mColor);
+      mDebugHelper->drawLine(*(triangle + 1), *(triangle + 2), mColor);
+      mDebugHelper->drawLine(*(triangle + 2), *triangle,     mColor);
+    }
+};
 
-			btHeightfieldTerrainShape* pHeightShape = 
-				new btHeightfieldTerrainShape(width, length, pHeightData, scale.y, upIndex, useFloatDatam, flipQuadEdges);
-			pHeightShape->setUseDiamondSubdivision(true);
+class HeightmapCollisionShape : public CollisionShape {
+  public:
+    HeightmapCollisionShape(int width, int length, Ogre::Vector3& scale, Ogre::Real* pHeightData, bool bFlip) {
+      int upIndex = 1;
+      bool useFloatDatam = true;
+      bool flipQuadEdges = bFlip;
 
-			mShape = pHeightShape;
+      btHeightfieldTerrainShape* pHeightShape =
+        new btHeightfieldTerrainShape(width, length, pHeightData, scale.y, upIndex, useFloatDatam, flipQuadEdges);
+      pHeightShape->setUseDiamondSubdivision(true);
 
-			btVector3 sc(scale.x, scale.y, scale.z);
-			mShape->setLocalScaling(sc);
+      mShape = pHeightShape;
 
-		}
+      btVector3 sc(scale.x, scale.y, scale.z);
+      mShape->setLocalScaling(sc);
 
-		virtual ~HeightmapCollisionShape()
-		{
-		}
+    }
 
-		bool drawWireFrame(DebugLines *wire, 
-			const Ogre::Vector3 &pos = Ogre::Vector3::ZERO, 
-			const Ogre::Quaternion &quat= Ogre::Quaternion::IDENTITY) const
-		{
-			btHeightfieldTerrainShape* pHeightShape = static_cast<btHeightfieldTerrainShape*>(mShape);
+    virtual ~HeightmapCollisionShape() {
+    }
 
-			btTransform bt;
-			bt.setIdentity();
+    bool drawWireFrame(DebugLines* wire,
+                       const Ogre::Vector3& pos = Ogre::Vector3::ZERO,
+                       const Ogre::Quaternion& quat = Ogre::Quaternion::IDENTITY) const {
+      btHeightfieldTerrainShape* pHeightShape = static_cast<btHeightfieldTerrainShape*>(mShape);
 
-			btVector3 colour(255.0, 255.0, 255.0);
+      btTransform bt;
+      bt.setIdentity();
 
-			DebugHelper ddraw(wire);
-			DebugTriangleDrawCallback cb(&ddraw, bt, colour);
+      btVector3 colour(255.0, 255.0, 255.0);
 
-			btVector3 aabbMax(btScalar(1e30),btScalar(1e30),btScalar(1e30));
-			btVector3 aabbMin(btScalar(-1e30),btScalar(-1e30),btScalar(-1e30));
-			pHeightShape->processAllTriangles(&cb, aabbMin, aabbMax);
-			return true;
-		}
+      DebugHelper ddraw(wire);
+      DebugTriangleDrawCallback cb(&ddraw, bt, colour);
 
-	};
+      btVector3 aabbMax(btScalar(1e30), btScalar(1e30), btScalar(1e30));
+      btVector3 aabbMin(btScalar(-1e30), btScalar(-1e30), btScalar(-1e30));
+      pHeightShape->processAllTriangles(&cb, aabbMin, aabbMax);
+      return true;
+    }
+
+};
 }
 
 

@@ -37,24 +37,23 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
+namespace OgreBulletCollisions {
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-	class __declspec( dllexport ) GImpactConcaveShape : public CollisionShape
+class __declspec(dllexport) GImpactConcaveShape : public CollisionShape
 #else
-	class GImpactConcaveShape : public CollisionShape
+class GImpactConcaveShape : public CollisionShape
 #endif
-	{
-	public:
-		GImpactConcaveShape(Ogre::Vector3 *_vertices, unsigned int _vertex_count, unsigned int *_indices, unsigned int_index_count);
-		virtual ~GImpactConcaveShape();
+{
+  public:
+    GImpactConcaveShape(Ogre::Vector3* _vertices, unsigned int _vertex_count, unsigned int* _indices, unsigned int_index_count);
+    virtual ~GImpactConcaveShape();
 
-		bool drawWireFrame(DebugLines *wire, 
-			const Ogre::Vector3 &pos = Ogre::Vector3::ZERO, 
-			const Ogre::Quaternion &quat= Ogre::Quaternion::IDENTITY) const;
+    bool drawWireFrame(DebugLines* wire,
+                       const Ogre::Vector3& pos = Ogre::Vector3::ZERO,
+                       const Ogre::Quaternion& quat = Ogre::Quaternion::IDENTITY) const;
 
-	private:
-		btTriangleMesh*         mTriMesh;
-	};
+  private:
+    btTriangleMesh*         mTriMesh;
+};
 }
 #endif

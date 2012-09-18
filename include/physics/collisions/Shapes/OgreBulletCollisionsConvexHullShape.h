@@ -35,20 +35,18 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    // basic ConvexHullShape
-    class ConvexHullCollisionShape : public CollisionShape
-    {
-    public:
-        ConvexHullCollisionShape(const Ogre::Real* points, int numPoints, int stride);
-        ConvexHullCollisionShape();
-		ConvexHullCollisionShape(btConvexHullShape *shape);
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+// basic ConvexHullShape
+class ConvexHullCollisionShape : public CollisionShape {
+  public:
+    ConvexHullCollisionShape(const Ogre::Real* points, int numPoints, int stride);
+    ConvexHullCollisionShape();
+    ConvexHullCollisionShape(btConvexHullShape* shape);
 
-	    virtual ~ConvexHullCollisionShape();
+    virtual ~ConvexHullCollisionShape();
 
-    };
+};
 }
 #endif //_OGREBULLETCOLLISIONS_ConvexHullShape_H
 

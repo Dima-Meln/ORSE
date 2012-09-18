@@ -36,46 +36,45 @@ THE SOFTWARE.
 #include "OgreBulletCollisionsWorld.h"
 #include "Debug/OgreBulletCollisionsDebugDrawer.h"
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    // basic rigid body class
-    class DynamicsWorld : public OgreBulletCollisions::CollisionsWorld
-    {
-    public:
-        DynamicsWorld(Ogre::SceneManager *mgr, 
-            const Ogre::AxisAlignedBox &bounds,  
-            const Ogre::Vector3 &gravity,
-            bool init = true, bool set32BitAxisSweep = true, unsigned int maxHandles = 1500000);
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+// basic rigid body class
+class DynamicsWorld : public OgreBulletCollisions::CollisionsWorld {
+  public:
+    DynamicsWorld(Ogre::SceneManager* mgr,
+                  const Ogre::AxisAlignedBox& bounds,
+                  const Ogre::Vector3& gravity,
+                  bool init = true, bool set32BitAxisSweep = true, unsigned int maxHandles = 1500000);
 
-	    ~DynamicsWorld();
+    ~DynamicsWorld();
 
-        template <class BTDNYWORLDCLASS>
-            void createBtDynamicsWorld(BTDNYWORLDCLASS *&createdWorld)
-            {
-				createdWorld = new BTDNYWORLDCLASS(mDispatcher, mBroadphase, mConstraintsolver, &mDefaultCollisionConfiguration);
-                mWorld = createdWorld;
-            }
+    template <class BTDNYWORLDCLASS>
+    void createBtDynamicsWorld(BTDNYWORLDCLASS *&createdWorld) {
+      createdWorld = new BTDNYWORLDCLASS(mDispatcher, mBroadphase, mConstraintsolver, &mDefaultCollisionConfiguration);
+      mWorld = createdWorld;
+    }
 
-        void stepSimulation(const Ogre::Real elapsedTime, int maxSubSteps = 1, const Ogre::Real fixedTimestep = 1./60.);
+    void stepSimulation(const Ogre::Real elapsedTime, int maxSubSteps = 1, const Ogre::Real fixedTimestep = 1. / 60.);
 
-        void addRigidBody (RigidBody *rb, short collisionGroup, short collisionMask);
+    void addRigidBody(RigidBody* rb, short collisionGroup, short collisionMask);
 
 
-        inline btDynamicsWorld * getBulletDynamicsWorld() const {return static_cast<btDynamicsWorld *> (mWorld);};
-
-        void removeConstraint(TypedConstraint *constraint);
-        void addConstraint(TypedConstraint *constraint);
-        bool isConstraintRegistered(TypedConstraint *constraint) const;
-
-        void addVehicle(RaycastVehicle *v);
-
-    private:
-        btConstraintSolver                                *mConstraintsolver;
-
-		std::deque <TypedConstraint *>                    mConstraints;
-		std::deque <ActionInterface *>                    mActionInterface;
+    inline btDynamicsWorld* getBulletDynamicsWorld() const {
+      return static_cast<btDynamicsWorld*>(mWorld);
     };
+
+    void removeConstraint(TypedConstraint* constraint);
+    void addConstraint(TypedConstraint* constraint);
+    bool isConstraintRegistered(TypedConstraint* constraint) const;
+
+    void addVehicle(RaycastVehicle* v);
+
+  private:
+    btConstraintSolver*                                mConstraintsolver;
+
+    std::deque <TypedConstraint*>                    mConstraints;
+    std::deque <ActionInterface*>                    mActionInterface;
+};
 }
 #endif //_OGREBULLETDYNAMICS_DynamicWorld_H
 

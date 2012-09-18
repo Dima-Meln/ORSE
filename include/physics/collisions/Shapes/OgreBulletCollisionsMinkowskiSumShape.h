@@ -35,17 +35,15 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    // basic MinkowskiSumShape
-    class MinkowskiSumCollisionShape : public CollisionShape
-    {
-    public:
-	    MinkowskiSumCollisionShape(CollisionShape* shapeA, CollisionShape* shapeB);
-	    virtual ~MinkowskiSumCollisionShape();
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+// basic MinkowskiSumShape
+class MinkowskiSumCollisionShape : public CollisionShape {
+  public:
+    MinkowskiSumCollisionShape(CollisionShape* shapeA, CollisionShape* shapeB);
+    virtual ~MinkowskiSumCollisionShape();
 
-    };
+};
 }
 #endif //_OGREBULLETCOLLISIONS_MinkowskiSumShape_H
 

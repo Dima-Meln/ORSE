@@ -40,166 +40,141 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    //-----------------------------------------------------------------------
-    const Ogre::String Object::mMovableType = "OgreBullet::Object";
-    // -------------------------------------------------------------------------
-    Object::Object(const String &name, CollisionsWorld *world, bool init)
-        :	
-        MovableObject(name),
-        mWorld(world),
-        mShape(0),
-        mState(0),
-        mRootNode(0),
-        mBounds(Vector3::ZERO, Vector3::ZERO),
-        mDebugShape(0),
-        mShapeNode(0),
-        mDebugNode(0)
-    {
-        if (init)
-        {
-            mObject = new btCollisionObject();
-            mState = new ObjectState(this);
-        }
-    }
-    // -------------------------------------------------------------------------
-    Object::~Object()
-    {
-        if (mRootNode)
-        {
-            showDebugShape(false);
-            mShapeNode->detachObject (this);
-            mRootNode->removeAndDestroyChild (mShapeNode->getName ());
-            //mRootNode->getParentSceneNode ()->removeAndDestroyChild (mRootNode->getName ());
-        }
+namespace OgreBulletCollisions {
+//-----------------------------------------------------------------------
+const Ogre::String Object::mMovableType = "OgreBullet::Object";
+// -------------------------------------------------------------------------
+Object::Object(const String& name, CollisionsWorld* world, bool init)
+  :
+  MovableObject(name),
+  mWorld(world),
+  mShape(0),
+  mState(0),
+  mRootNode(0),
+  mBounds(Vector3::ZERO, Vector3::ZERO),
+  mDebugShape(0),
+  mShapeNode(0),
+  mDebugNode(0) {
+  if(init) {
+    mObject = new btCollisionObject();
+    mState = new ObjectState(this);
+  }
+}
+// -------------------------------------------------------------------------
+Object::~Object() {
+  if(mRootNode) {
+    showDebugShape(false);
+    mShapeNode->detachObject(this);
+    mRootNode->removeAndDestroyChild(mShapeNode->getName());
+    //mRootNode->getParentSceneNode ()->removeAndDestroyChild (mRootNode->getName ());
+  }
 
-        getBulletCollisionWorld()->removeCollisionObject( mObject );
-		getCollisionWorld()->removeObject(this);
+  getBulletCollisionWorld()->removeCollisionObject(mObject);
+  getCollisionWorld()->removeObject(this);
 
-        delete mObject;        
-        //delete mShape;
-        delete mState;
-        delete mDebugShape;
+  delete mObject;
+  //delete mShape;
+  delete mState;
+  delete mDebugShape;
+}
+//-----------------------------------------------------------------------
+void Object::showDebugShape(bool show) {
+  if(show && mDebugShape == 0 && mShape) {
+    mDebugShape = new DebugCollisionShape(mShape);
+    if(mDebugShape->getIsVisual()) {
+      assert(mDebugNode == 0);
+      mDebugNode = mRootNode->createChildSceneNode(mName + "DebugShape");
+      mDebugNode->setInheritScale(false);
+      mDebugNode->attachObject(mDebugShape);
     }
-    //-----------------------------------------------------------------------
-    void Object::showDebugShape(bool show)
-    {
-        if (show && mDebugShape == 0 && mShape)
-        {
-            mDebugShape = new DebugCollisionShape(mShape);
-            if (mDebugShape->getIsVisual ())
-            {
-                assert (mDebugNode == 0);
-                mDebugNode = mRootNode->createChildSceneNode(mName + "DebugShape");
-                mDebugNode->setInheritScale(false);
-                mDebugNode->attachObject (mDebugShape);
-            }
-        }
-        else if (show != true && mDebugShape != 0)
-        {
-            if (mDebugShape->getIsVisual ())
-            {
-                assert (mDebugNode);
-                mDebugNode->detachObject (mDebugShape->getName());
-                mRootNode->removeAndDestroyChild (mDebugNode->getName());
-                mDebugNode = 0;
-            }
-            assert (mDebugNode == 0);
-            delete mDebugShape;
-            mDebugShape = 0;
-        }
+  } else if(show != true && mDebugShape != 0) {
+    if(mDebugShape->getIsVisual()) {
+      assert(mDebugNode);
+      mDebugNode->detachObject(mDebugShape->getName());
+      mRootNode->removeAndDestroyChild(mDebugNode->getName());
+      mDebugNode = 0;
     }
-    // -------------------------------------------------------------------------
-    void Object::setTransform(const btVector3 &pos, const btQuaternion &quat)
-    { 
-        mRootNode->setPosition(pos[0], pos[1], pos[2]);
-        mRootNode->setOrientation(quat.getW(),quat.getX(), quat.getY(), quat.getZ());
-    }
-    // -------------------------------------------------------------------------
-    void Object::setPosition(const btVector3 &pos)
-    {
-		mRootNode->setPosition(pos[0], pos[1], pos[2]);
-    }
-    // -------------------------------------------------------------------------
-    void Object::setOrientation(const btQuaternion &quat)
-    {   
-		mRootNode->setOrientation(quat.getW(),quat.getX(), quat.getY(), quat.getZ());
-    }
-    // -------------------------------------------------------------------------
-    void Object::setTransform(const btTransform& worldTrans)
-    { 
-        mRootNode->setPosition(worldTrans.getOrigin()[0], worldTrans.getOrigin()[1],worldTrans.getOrigin()[2]);
-        mRootNode->setOrientation(worldTrans.getRotation().getW(),worldTrans.getRotation().getX(), worldTrans.getRotation().getY(), worldTrans.getRotation().getZ());
-    }
-    //-----------------------------------------------------------------------
-    void Object::setShape(CollisionShape *shape, 
-        const Vector3 &pos, 
-        const Quaternion &quat)
-    {
-        mShape = shape;
+    assert(mDebugNode == 0);
+    delete mDebugShape;
+    mDebugShape = 0;
+  }
+}
+// -------------------------------------------------------------------------
+void Object::setTransform(const btVector3& pos, const btQuaternion& quat) {
+  mRootNode->setPosition(pos[0], pos[1], pos[2]);
+  mRootNode->setOrientation(quat.getW(), quat.getX(), quat.getY(), quat.getZ());
+}
+// -------------------------------------------------------------------------
+void Object::setPosition(const btVector3& pos) {
+  mRootNode->setPosition(pos[0], pos[1], pos[2]);
+}
+// -------------------------------------------------------------------------
+void Object::setOrientation(const btQuaternion& quat) {
+  mRootNode->setOrientation(quat.getW(), quat.getX(), quat.getY(), quat.getZ());
+}
+// -------------------------------------------------------------------------
+void Object::setTransform(const btTransform& worldTrans) {
+  mRootNode->setPosition(worldTrans.getOrigin()[0], worldTrans.getOrigin()[1], worldTrans.getOrigin()[2]);
+  mRootNode->setOrientation(worldTrans.getRotation().getW(), worldTrans.getRotation().getX(), worldTrans.getRotation().getY(), worldTrans.getRotation().getZ());
+}
+//-----------------------------------------------------------------------
+void Object::setShape(CollisionShape* shape,
+                      const Vector3& pos,
+                      const Quaternion& quat) {
+  mShape = shape;
 
-        mRootNode = mWorld->getSceneManager()->getRootSceneNode()->createChildSceneNode(mName, pos, quat);
-        mShapeNode = mRootNode->createChildSceneNode(mName + "Shape");
-        mShapeNode->attachObject(this);
+  mRootNode = mWorld->getSceneManager()->getRootSceneNode()->createChildSceneNode(mName, pos, quat);
+  mShapeNode = mRootNode->createChildSceneNode(mName + "Shape");
+  mShapeNode->attachObject(this);
 
-        mObject->setCollisionShape(shape->getBulletShape());
-        showDebugShape(mWorld->getShowDebugShapes()); 
+  mObject->setCollisionShape(shape->getBulletShape());
+  showDebugShape(mWorld->getShowDebugShapes());
 
-		mObject->getWorldTransform().setOrigin(btVector3(pos.x, pos.y, pos.z));
-		mObject->getWorldTransform().setRotation(btQuaternion(quat.x, quat.y, quat.z, quat.w));
+  mObject->getWorldTransform().setOrigin(btVector3(pos.x, pos.y, pos.z));
+  mObject->getWorldTransform().setRotation(btQuaternion(quat.x, quat.y, quat.z, quat.w));
+
+}
+// -------------------------------------------------------------------------
+//-----------------------------------------------------------------------
+void Object::_notifyAttached(Node* parent, bool isTagPoint) {
+  MovableObject::_notifyAttached(parent, isTagPoint);
+  if(parent) {
+    Object* other_object = mWorld->findObject(static_cast<SceneNode*>(parent));
+    if((other_object) && (other_object != this)) {
+      static_cast<SceneNode*>(parent)->detachObject(other_object);
 
     }
-    // -------------------------------------------------------------------------
-    //-----------------------------------------------------------------------
-    void Object::_notifyAttached(Node* parent, bool isTagPoint)
-    {
-        MovableObject::_notifyAttached(parent,isTagPoint);
-        if (parent)
-        {
-            Object* other_object = mWorld->findObject(static_cast<SceneNode*>(parent));
-            if ((other_object) && (other_object != this))
-            {
-                static_cast<SceneNode*>(parent)->detachObject(other_object);
-
-            }
-            setPosition(parent->getPosition());
-            setOrientation(parent->getOrientation());
-        } 
-    }
+    setPosition(parent->getPosition());
+    setOrientation(parent->getOrientation());
+  }
+}
 #if (OGRE_VERSION >=  ((1 << 16) | (5 << 8) | 0)) // must have at least shoggoth (1.5.0)
-    //-----------------------------------------------------------------------
-	void Object::visitRenderables(Renderable::Visitor* visitor, 
-		bool debugRenderables)
-	{
-		//visitor->visit(this, 0, false);
-	}
+//-----------------------------------------------------------------------
+void Object::visitRenderables(Renderable::Visitor* visitor,
+                              bool debugRenderables) {
+  //visitor->visit(this, 0, false);
+}
 #endif
-    //-----------------------------------------------------------------------
-    const Ogre::String& Object::getMovableType() const
-    {
-        return mMovableType;
-    }
+//-----------------------------------------------------------------------
+const Ogre::String& Object::getMovableType() const {
+  return mMovableType;
+}
 
-    //-----------------------------------------------------------------------
-    void Object::_notifyCurrentCamera(Camera* camera)
-    {
-    }
+//-----------------------------------------------------------------------
+void Object::_notifyCurrentCamera(Camera* camera) {
+}
 
-    //-----------------------------------------------------------------------
-    const AxisAlignedBox& Object::getBoundingBox(void) const
-    {
-        return mBounds;
-    }
-    //-----------------------------------------------------------------------
-    Real Object::getBoundingRadius(void) const
-    {
-        return Ogre::Real(0.0);
-    }
+//-----------------------------------------------------------------------
+const AxisAlignedBox& Object::getBoundingBox(void) const {
+  return mBounds;
+}
+//-----------------------------------------------------------------------
+Real Object::getBoundingRadius(void) const {
+  return Ogre::Real(0.0);
+}
 
-    //-----------------------------------------------------------------------
-    void Object::_updateRenderQueue(RenderQueue* queue)
-    {
-    }
+//-----------------------------------------------------------------------
+void Object::_updateRenderQueue(RenderQueue* queue) {
+}
 }
 

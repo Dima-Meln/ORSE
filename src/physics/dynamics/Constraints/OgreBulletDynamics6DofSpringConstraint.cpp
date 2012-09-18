@@ -38,83 +38,69 @@ THE SOFTWARE.
 
 using namespace Ogre;
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    SixDofSpringConstraint::SixDofSpringConstraint(RigidBody * rbA, RigidBody * rbB, 
-        const Vector3& FrameInAVector3, const Quaternion& FrameInAOrientation,
-        const Vector3& FrameInBVector3, const Quaternion& FrameInBOrientation):
-    TypedConstraint(rbA, rbB)
-    {
-        btTransform frameInA (OgreBulletCollisions::OgreBtConverter::to (FrameInAOrientation), 
-                              OgreBulletCollisions::OgreBtConverter::to (FrameInAVector3));
-        btTransform frameInB (OgreBulletCollisions::OgreBtConverter::to (FrameInBOrientation),
-                              OgreBulletCollisions::OgreBtConverter::to (FrameInBVector3));
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+SixDofSpringConstraint::SixDofSpringConstraint(RigidBody* rbA, RigidBody* rbB,
+    const Vector3& FrameInAVector3, const Quaternion& FrameInAOrientation,
+    const Vector3& FrameInBVector3, const Quaternion& FrameInBOrientation):
+  TypedConstraint(rbA, rbB) {
+  btTransform frameInA(OgreBulletCollisions::OgreBtConverter::to(FrameInAOrientation),
+                       OgreBulletCollisions::OgreBtConverter::to(FrameInAVector3));
+  btTransform frameInB(OgreBulletCollisions::OgreBtConverter::to(FrameInBOrientation),
+                       OgreBulletCollisions::OgreBtConverter::to(FrameInBVector3));
 
-        mConstraint = new btGeneric6DofSpringConstraint(
-            *rbA->getBulletRigidBody (),
-            *rbB->getBulletRigidBody (), 
-            frameInA,
-            frameInB,
-			true); // Eric added this because Bullet 2.61 has a new argument (useLinearReferenceFrameA)
-    }
-    // -------------------------------------------------------------------------
-    SixDofSpringConstraint::~SixDofSpringConstraint()
-    {
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setLinearLowerLimit(const Ogre::Vector3& linearLower)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to (linearLower));
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setLinearUpperLimit(const Ogre::Vector3& linearUpper)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to (linearUpper));
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setAngularLowerLimit(const Ogre::Vector3& angularLower)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to (angularLower));
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setAngularUpperLimit(const Ogre::Vector3& angularUpper)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to (angularUpper));
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setLimit(const int axis, const Ogre::Real lo, const Ogre::Real hi)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setLimit(axis, lo, hi);
-	}
-	// -------------------------------------------------------------------------
-	bool	 SixDofSpringConstraint::isLimited(int limitIndex)
-	{
-		return static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->isLimited(limitIndex);
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::enableSpring(int index, bool onOff)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->enableSpring(index, onOff);
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setStiffness(int index, const Ogre::Real stiffness)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setStiffness(index, stiffness);
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setDamping(int index, const Ogre::Real damping)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setStiffness(index, damping);
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setEquilibriumPoint(int index)
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setEquilibriumPoint(index);
-	}
-	// -------------------------------------------------------------------------
-	void	 SixDofSpringConstraint::setEquilibriumPoint()
-	{
-		static_cast<btGeneric6DofSpringConstraint* > (mConstraint)->setEquilibriumPoint();
-	}
+  mConstraint = new btGeneric6DofSpringConstraint(
+    *rbA->getBulletRigidBody(),
+    *rbB->getBulletRigidBody(),
+    frameInA,
+    frameInB,
+    true); // Eric added this because Bullet 2.61 has a new argument (useLinearReferenceFrameA)
+}
+// -------------------------------------------------------------------------
+SixDofSpringConstraint::~SixDofSpringConstraint() {
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setLinearLowerLimit(const Ogre::Vector3& linearLower) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to(linearLower));
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setLinearUpperLimit(const Ogre::Vector3& linearUpper) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to(linearUpper));
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setAngularLowerLimit(const Ogre::Vector3& angularLower) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to(angularLower));
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setAngularUpperLimit(const Ogre::Vector3& angularUpper) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setLinearLowerLimit(OgreBulletCollisions::OgreBtConverter::to(angularUpper));
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setLimit(const int axis, const Ogre::Real lo, const Ogre::Real hi) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setLimit(axis, lo, hi);
+}
+// -------------------------------------------------------------------------
+bool	 SixDofSpringConstraint::isLimited(int limitIndex) {
+  return static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->isLimited(limitIndex);
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::enableSpring(int index, bool onOff) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->enableSpring(index, onOff);
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setStiffness(int index, const Ogre::Real stiffness) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setStiffness(index, stiffness);
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setDamping(int index, const Ogre::Real damping) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setStiffness(index, damping);
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setEquilibriumPoint(int index) {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setEquilibriumPoint(index);
+}
+// -------------------------------------------------------------------------
+void	 SixDofSpringConstraint::setEquilibriumPoint() {
+  static_cast<btGeneric6DofSpringConstraint* >(mConstraint)->setEquilibriumPoint();
+}
 }

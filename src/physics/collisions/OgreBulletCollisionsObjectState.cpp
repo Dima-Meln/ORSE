@@ -36,33 +36,28 @@ THE SOFTWARE.
 
 using namespace Ogre;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    ObjectState::ObjectState(Object *parent):	
-        mObject(parent)
-    {
-    }
-    // -------------------------------------------------------------------------
-    ObjectState::~ObjectState()
-    {
-    }
-    // -------------------------------------------------------------------------
-    void ObjectState::getWorldTransform(btTransform& worldTrans) const
-    {
-        assert (mObject);
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+ObjectState::ObjectState(Object* parent):
+  mObject(parent) {
+}
+// -------------------------------------------------------------------------
+ObjectState::~ObjectState() {
+}
+// -------------------------------------------------------------------------
+void ObjectState::getWorldTransform(btTransform& worldTrans) const {
+  assert(mObject);
 
-        // could use mWorldTrans ?
-		
-        worldTrans.setOrigin(OgreBtConverter::to(mObject->getWorldPosition()));
-        worldTrans.setRotation(OgreBtConverter::to(mObject->getWorldOrientation()));
-    }
-    // -------------------------------------------------------------------------
-    void ObjectState::setWorldTransform(const btTransform& worldTrans)
-    {
-        assert (mObject);        
+  // could use mWorldTrans ?
 
-        mObject->setTransform (worldTrans);
-        mWorldTrans = worldTrans;        
-    }
+  worldTrans.setOrigin(OgreBtConverter::to(mObject->getWorldPosition()));
+  worldTrans.setRotation(OgreBtConverter::to(mObject->getWorldOrientation()));
+}
+// -------------------------------------------------------------------------
+void ObjectState::setWorldTransform(const btTransform& worldTrans) {
+  assert(mObject);
+
+  mObject->setTransform(worldTrans);
+  mWorldTrans = worldTrans;
+}
 }

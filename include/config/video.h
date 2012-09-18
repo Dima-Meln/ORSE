@@ -32,12 +32,11 @@ class Video {
   public:
     Video();
     virtual ~Video();
-    
-    void setConfigOption(string name,string value);
+
+    void setConfigOption(string name, string value);
   private:
     //ogre config vodeo
 };
-
 }
 EndNamespace
 #endif // VIDEO_H

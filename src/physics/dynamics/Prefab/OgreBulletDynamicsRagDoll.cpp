@@ -42,114 +42,108 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletDynamics
-{
+namespace OgreBulletDynamics {
 
-	// -------------------------------------------------------------------------
-	RagDoll::RagDoll (btDynamicsWorld* ownerWorld, const btVector3& positionOffset)
-		: 
-		m_ownerWorld (ownerWorld)
-	{
-		// Setup all the rigid bodies
-		btTransform offset; offset.setIdentity();
-		offset.setOrigin(positionOffset);
+// -------------------------------------------------------------------------
+RagDoll::RagDoll(btDynamicsWorld* ownerWorld, const btVector3& positionOffset)
+  :
+  m_ownerWorld(ownerWorld) {
+  // Setup all the rigid bodies
+  btTransform offset;
+  offset.setIdentity();
+  offset.setOrigin(positionOffset);
 
 
-		btTransform transform;
+  btTransform transform;
 
-		// for
-		{
-			transform.setIdentity();
-			transform.setOrigin(btVector3(btScalar(0.), btScalar(1.), btScalar(0.)));
-			m_bodies.push_back(
-				localCreateRigidBody(btScalar(1.), 
-										offset*transform, 
-										new btCapsuleShape(btScalar(0.15), btScalar(0.20))
-										)
-									);
-		}
+  // for
+  {
+    transform.setIdentity();
+    transform.setOrigin(btVector3(btScalar(0.), btScalar(1.), btScalar(0.)));
+    m_bodies.push_back(
+      localCreateRigidBody(btScalar(1.),
+                           offset * transform,
+                           new btCapsuleShape(btScalar(0.15), btScalar(0.20))
+                          )
+    );
+  }
 
-		// Setup some damping on the m_bodies
-		for(std::vector<btRigidBody* >::iterator i=m_bodies.begin();
-			i!=m_bodies.end();
-			++i) 
-		{
-			(*i)->setDamping(0.05, 0.85);
-			(*i)->setDeactivationTime(0.8);
-			(*i)->setSleepingThresholds(1.6, 2.5);
-		}
+  // Setup some damping on the m_bodies
+  for(std::vector<btRigidBody* >::iterator i = m_bodies.begin();
+      i != m_bodies.end();
+      ++i) {
+    (*i)->setDamping(0.05, 0.85);
+    (*i)->setDeactivationTime(0.8);
+    (*i)->setSleepingThresholds(1.6, 2.5);
+  }
 
-		// Now setup the constraints
-		btHingeConstraint* hingeC;
-		//btConeTwistConstraint* coneC;
-		btTransform localA, localB;
+  // Now setup the constraints
+  btHingeConstraint* hingeC;
+  //btConeTwistConstraint* coneC;
+  btTransform localA, localB;
 
-		// for
-		{
-			localA.setIdentity(); localB.setIdentity();
-			localA.getBasis().setEulerZYX(0, Ogre::Math::TWO_PI,0); 
-			localA.setOrigin(btVector3(btScalar(0.), btScalar(0.15), btScalar(0.)));
-			localB.getBasis().setEulerZYX(0,Ogre::Math::TWO_PI,0); 
-			localB.setOrigin(btVector3(btScalar(0.), btScalar(-0.15), btScalar(0.)));
-			hingeC =  new btHingeConstraint(*m_bodies[0], *m_bodies[1], 
-				localA, localB);
-			hingeC->setLimit(btScalar(-Ogre::Math::TWO_PI*2), btScalar(Ogre::Math::TWO_PI));
-			m_joints.push_back(hingeC);
-			m_ownerWorld->addConstraint(hingeC, true);
-		}
+  // for
+  {
+    localA.setIdentity();
+    localB.setIdentity();
+    localA.getBasis().setEulerZYX(0, Ogre::Math::TWO_PI, 0);
+    localA.setOrigin(btVector3(btScalar(0.), btScalar(0.15), btScalar(0.)));
+    localB.getBasis().setEulerZYX(0, Ogre::Math::TWO_PI, 0);
+    localB.setOrigin(btVector3(btScalar(0.), btScalar(-0.15), btScalar(0.)));
+    hingeC =  new btHingeConstraint(*m_bodies[0], *m_bodies[1],
+                                    localA, localB);
+    hingeC->setLimit(btScalar(-Ogre::Math::TWO_PI * 2), btScalar(Ogre::Math::TWO_PI));
+    m_joints.push_back(hingeC);
+    m_ownerWorld->addConstraint(hingeC, true);
+  }
 
-	}
-    // -------------------------------------------------------------------------
-	RagDoll::~RagDoll ()
-	{
-		std::vector<btCollisionShape* >  m_shapes;
-		std::vector<btRigidBody* >		 m_bodies;
-		std::vector<btTypedConstraint* > m_joints;
-		// Remove all constraints
-		for(std::vector<btTypedConstraint* >::iterator i=m_joints.begin();
-			i!=m_joints.end();
-			++i) 
-		{
-			m_ownerWorld->removeConstraint(*i);
-			delete *i;
-		}
+}
+// -------------------------------------------------------------------------
+RagDoll::~RagDoll() {
+  std::vector<btCollisionShape* >  m_shapes;
+  std::vector<btRigidBody* >		 m_bodies;
+  std::vector<btTypedConstraint* > m_joints;
+  // Remove all constraints
+  for(std::vector<btTypedConstraint* >::iterator i = m_joints.begin();
+      i != m_joints.end();
+      ++i) {
+    m_ownerWorld->removeConstraint(*i);
+    delete *i;
+  }
 
-		// Remove all bodies and shapes
-		for(std::vector<btRigidBody* >::iterator i=m_bodies.begin();
-			i!=m_bodies.end();
-			++i) 
-		{
-			m_ownerWorld->removeRigidBody(*i);
+  // Remove all bodies and shapes
+  for(std::vector<btRigidBody* >::iterator i = m_bodies.begin();
+      i != m_bodies.end();
+      ++i) {
+    m_ownerWorld->removeRigidBody(*i);
 
-			delete (*i)->getMotionState();
-			delete *i;
-		}
-		for(std::vector<btCollisionShape* >::iterator i=m_shapes.begin();
-			i!=m_shapes.end();
-			++i) 
-		{
-			delete *i;
-		}
-	}
-	// -------------------------------------------------------------------------
-	btRigidBody* RagDoll::localCreateRigidBody (btScalar mass, 
-		const btTransform& startTransform, 
-		btCollisionShape* shape)
-	{
-		bool isDynamic = (mass != 0.f);
+    delete(*i)->getMotionState();
+    delete *i;
+  }
+  for(std::vector<btCollisionShape* >::iterator i = m_shapes.begin();
+      i != m_shapes.end();
+      ++i) {
+    delete *i;
+  }
+}
+// -------------------------------------------------------------------------
+btRigidBody* RagDoll::localCreateRigidBody(btScalar mass,
+    const btTransform& startTransform,
+    btCollisionShape* shape) {
+  bool isDynamic = (mass != 0.f);
 
-		btVector3 localInertia(0,0,0);
-		if (isDynamic)
-			shape->calculateLocalInertia(mass,localInertia);
+  btVector3 localInertia(0, 0, 0);
+  if(isDynamic)
+    shape->calculateLocalInertia(mass, localInertia);
 
-		btDefaultMotionState* myMotionState = new btDefaultMotionState(startTransform);
+  btDefaultMotionState* myMotionState = new btDefaultMotionState(startTransform);
 
-		btRigidBody::btRigidBodyConstructionInfo rbInfo(mass,myMotionState,shape,localInertia);
-		btRigidBody* body = new btRigidBody(rbInfo);
+  btRigidBody::btRigidBodyConstructionInfo rbInfo(mass, myMotionState, shape, localInertia);
+  btRigidBody* body = new btRigidBody(rbInfo);
 
-		m_ownerWorld->addRigidBody(body);
+  m_ownerWorld->addRigidBody(body);
 
-		return body;
-	}
+  return body;
+}
 }
 

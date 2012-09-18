@@ -35,35 +35,30 @@ THE SOFTWARE.
 
 using namespace Ogre;
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    PhysicState::PhysicState(RigidBody *parent)
-        :	
-      btMotionState(),
-        mObject(parent)
-    {
-    }
-    // -------------------------------------------------------------------------
-    PhysicState::~PhysicState()
-    {
-    }
-    // -------------------------------------------------------------------------
-    void PhysicState::getWorldTransform(btTransform& worldTrans ) const
-    {
-        assert (mObject);
-        
-        worldTrans.setOrigin(OgreBulletCollisions::OgreBtConverter::to(mObject->getWorldPosition()));
-        worldTrans.setRotation(OgreBulletCollisions::OgreBtConverter::to(mObject->getWorldOrientation()));
-        
-    }
-    // -------------------------------------------------------------------------
-    void PhysicState::setWorldTransform(const btTransform& worldTrans)
-    {
-        assert (mObject);
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+PhysicState::PhysicState(RigidBody* parent)
+  :
+  btMotionState(),
+  mObject(parent) {
+}
+// -------------------------------------------------------------------------
+PhysicState::~PhysicState() {
+}
+// -------------------------------------------------------------------------
+void PhysicState::getWorldTransform(btTransform& worldTrans) const {
+  assert(mObject);
 
-        mObject->setPosition(OgreBulletCollisions::BtOgreConverter::to(worldTrans.getOrigin()));
-        mObject->setOrientation(OgreBulletCollisions::BtOgreConverter::to(worldTrans.getRotation()));
-        
-    }
+  worldTrans.setOrigin(OgreBulletCollisions::OgreBtConverter::to(mObject->getWorldPosition()));
+  worldTrans.setRotation(OgreBulletCollisions::OgreBtConverter::to(mObject->getWorldOrientation()));
+
+}
+// -------------------------------------------------------------------------
+void PhysicState::setWorldTransform(const btTransform& worldTrans) {
+  assert(mObject);
+
+  mObject->setPosition(OgreBulletCollisions::BtOgreConverter::to(worldTrans.getOrigin()));
+  mObject->setOrientation(OgreBulletCollisions::BtOgreConverter::to(worldTrans.getRotation()));
+
+}
 }

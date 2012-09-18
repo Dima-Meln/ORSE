@@ -38,23 +38,20 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    MinkowskiSumCollisionShape::MinkowskiSumCollisionShape(CollisionShape* shapeA, CollisionShape* shapeB) :	
-        CollisionShape()
-    {
-        //assert (shapeA->getBulletShape()->getClass() == CONVEX && 
-         //       shapeB->getBulletShape()->getClass() == CONVEX);
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+MinkowskiSumCollisionShape::MinkowskiSumCollisionShape(CollisionShape* shapeA, CollisionShape* shapeB) :
+  CollisionShape() {
+  //assert (shapeA->getBulletShape()->getClass() == CONVEX &&
+  //       shapeB->getBulletShape()->getClass() == CONVEX);
 
-        mShape = new btMinkowskiSumShape(
-            (btConvexShape*)shapeA->getBulletShape(),
-            (btConvexShape*)shapeB->getBulletShape()
-            );
-    }
-    // -------------------------------------------------------------------------
-    MinkowskiSumCollisionShape::~MinkowskiSumCollisionShape()
-    {
-    }
+  mShape = new btMinkowskiSumShape(
+    (btConvexShape*)shapeA->getBulletShape(),
+    (btConvexShape*)shapeB->getBulletShape()
+  );
+}
+// -------------------------------------------------------------------------
+MinkowskiSumCollisionShape::~MinkowskiSumCollisionShape() {
+}
 }
 

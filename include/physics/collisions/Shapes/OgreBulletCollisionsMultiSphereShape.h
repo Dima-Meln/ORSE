@@ -35,21 +35,19 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    // basic MultiSphereShape
-    class MultiSphereCollisionShape : public CollisionShape
-    {
-    public:
-        MultiSphereCollisionShape(
-            const Ogre::Vector3& inertiaHalfExtents,
-            const Ogre::Vector3* positions,
-            const Ogre::Real* radi,
-            int numSpheres);
-	    virtual ~MultiSphereCollisionShape();
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+// basic MultiSphereShape
+class MultiSphereCollisionShape : public CollisionShape {
+  public:
+    MultiSphereCollisionShape(
+      const Ogre::Vector3& inertiaHalfExtents,
+      const Ogre::Vector3* positions,
+      const Ogre::Real* radi,
+      int numSpheres);
+    virtual ~MultiSphereCollisionShape();
 
-    };
+};
 }
 #endif //_OGREBULLETCOLLISIONS_MultiSphereShape_H
 

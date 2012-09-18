@@ -38,77 +38,67 @@ using namespace OgreBulletCollisions;
 using namespace Ogre;
 
 //------------------------------------------------------------------------------------------------
-DebugCollisionShape::DebugCollisionShape(CollisionShape *shape, DebugCollisionShape::Mode mode) 
-{
-    setStatemode(mode);
-    // try to draw debug wire frame of the shape
-    mIsVisual = shape->drawWireFrame (this);
+DebugCollisionShape::DebugCollisionShape(CollisionShape* shape, DebugCollisionShape::Mode mode) {
+  setStatemode(mode);
+  // try to draw debug wire frame of the shape
+  mIsVisual = shape->drawWireFrame(this);
 
-    // if no success (not possible or not implemented
-    // does not draw, hence saving a segfault
-    if (mIsVisual)
-        DebugLines::draw ();
+  // if no success (not possible or not implemented
+  // does not draw, hence saving a segfault
+  if(mIsVisual)
+    DebugLines::draw();
 }
 //------------------------------------------------------------------------------------------------
-void DebugCollisionShape::setStatemode(DebugCollisionShape::Mode mode)
-{
-	if (mode != mStatemode)
-	{
-		mStatemode = mode;
-		switch(mStatemode)
-		{
-			case DebugCollisionShape::Mode_Enabled:
-				setMaterial("OgreBulletCollisionsDebugLines/Enabled");
-			break;
+void DebugCollisionShape::setStatemode(DebugCollisionShape::Mode mode) {
+  if(mode != mStatemode) {
+    mStatemode = mode;
+    switch(mStatemode) {
+      case DebugCollisionShape::Mode_Enabled:
+        setMaterial("OgreBulletCollisionsDebugLines/Enabled");
+        break;
 
-			case DebugCollisionShape::Mode_Disabled:
-				setMaterial("OgreBulletCollisionsDebugLines/Disabled");
+      case DebugCollisionShape::Mode_Disabled:
+        setMaterial("OgreBulletCollisionsDebugLines/Disabled");
 
-			break;
+        break;
 
-			case DebugCollisionShape::Mode_Static:
-				setMaterial("OgreBulletCollisionsDebugLines/Static");
-			break;
-		}
-	}
+      case DebugCollisionShape::Mode_Static:
+        setMaterial("OgreBulletCollisionsDebugLines/Static");
+        break;
+    }
+  }
 }
 //------------------------------------------------------------------------------------------------
-DebugCollisionShape::~DebugCollisionShape() 
-{
+DebugCollisionShape::~DebugCollisionShape() {
 }
 //------------------------------------------------------------------------------------------------
-bool DebugCollisionShape::getIsVisual() const
-{
-    return mIsVisual;
+bool DebugCollisionShape::getIsVisual() const {
+  return mIsVisual;
 }
 //------------------------------------------------------------------------------------------------
-void DebugCollisionShape::setIsVisual( bool val )
-{
-    mIsVisual = val;
+void DebugCollisionShape::setIsVisual(bool val) {
+  mIsVisual = val;
 }
 //------------------------------------------------------------------------------------------------
-RayDebugShape::RayDebugShape(const Ogre::Vector3& start, 
-							   const Ogre::Vector3& direction, 
-							   const Ogre::Real length)
-{
-	const Ogre::Vector3 end (start + (direction.normalisedCopy() * length));
-	addLine(start, end);
+RayDebugShape::RayDebugShape(const Ogre::Vector3& start,
+                             const Ogre::Vector3& direction,
+                             const Ogre::Real length) {
+  const Ogre::Vector3 end(start + (direction.normalisedCopy() * length));
+  addLine(start, end);
 
-	draw();
+  draw();
 }
 //------------------------------------------------------------------------------------------------
 void RayDebugShape::setDefinition(const Ogre::Vector3& start,
-							const Ogre::Vector3& direction, 
-							const Ogre::Real length)
-{
-	clear();
+                                  const Ogre::Vector3& direction,
+                                  const Ogre::Real length) {
+  clear();
 
-	const Ogre::Vector3 end (start + (direction.normalisedCopy() * length));
-	addLine(start, end);
+  const Ogre::Vector3 end(start + (direction.normalisedCopy() * length));
+  addLine(start, end);
 
-	draw();
+  draw();
 }
 //------------------------------------------------------------------------------------------------
-RayDebugShape::~RayDebugShape()
-{
+RayDebugShape::~RayDebugShape() {
 }

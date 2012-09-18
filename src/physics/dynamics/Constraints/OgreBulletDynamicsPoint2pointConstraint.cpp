@@ -37,49 +37,40 @@ THE SOFTWARE.
 
 using namespace Ogre;
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    PointToPointConstraint::PointToPointConstraint(RigidBody *body, const Vector3 &pivot) :
-        TypedConstraint(body)
-    {
-        mConstraint = new btPoint2PointConstraint(*(body->getBulletRigidBody ()), 
-            OgreBulletCollisions::OgreBtConverter::to(pivot));
-    }
-    // -------------------------------------------------------------------------
-    PointToPointConstraint::~PointToPointConstraint()
-    {
-    }
-    // -------------------------------------------------------------------------
-    void	PointToPointConstraint::setPivotA(const Ogre::Vector3& pivotA)
-    {
-        getBulletPoint2PointConstraint()->setPivotA(
-            OgreBulletCollisions::OgreBtConverter::to(pivotA));
-    }
-    // -------------------------------------------------------------------------
-    void	PointToPointConstraint::setPivotB(const Ogre::Vector3& pivotB)
-    {
-        getBulletPoint2PointConstraint()->setPivotB(
-            OgreBulletCollisions::OgreBtConverter::to(pivotB));
-    }
-    // -------------------------------------------------------------------------
-    void PointToPointConstraint::setTau (float tau) 
-    {
-        getBulletPoint2PointConstraint()->m_setting.m_tau = tau;
-    };
-    // -------------------------------------------------------------------------
-    void PointToPointConstraint::setDamping (float damping) 
-    {
-        getBulletPoint2PointConstraint()->m_setting.m_damping = damping;
-    };
-    // -------------------------------------------------------------------------
-    float PointToPointConstraint::getTau () const 
-    {
-        return getBulletPoint2PointConstraint()->m_setting.m_tau;
-    };
-    // -------------------------------------------------------------------------
-    float PointToPointConstraint::getDamping () const 
-    {
-        return getBulletPoint2PointConstraint()->m_setting.m_damping;
-    };
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+PointToPointConstraint::PointToPointConstraint(RigidBody* body, const Vector3& pivot) :
+  TypedConstraint(body) {
+  mConstraint = new btPoint2PointConstraint(*(body->getBulletRigidBody()),
+      OgreBulletCollisions::OgreBtConverter::to(pivot));
+}
+// -------------------------------------------------------------------------
+PointToPointConstraint::~PointToPointConstraint() {
+}
+// -------------------------------------------------------------------------
+void	PointToPointConstraint::setPivotA(const Ogre::Vector3& pivotA) {
+  getBulletPoint2PointConstraint()->setPivotA(
+    OgreBulletCollisions::OgreBtConverter::to(pivotA));
+}
+// -------------------------------------------------------------------------
+void	PointToPointConstraint::setPivotB(const Ogre::Vector3& pivotB) {
+  getBulletPoint2PointConstraint()->setPivotB(
+    OgreBulletCollisions::OgreBtConverter::to(pivotB));
+}
+// -------------------------------------------------------------------------
+void PointToPointConstraint::setTau(float tau) {
+  getBulletPoint2PointConstraint()->m_setting.m_tau = tau;
+};
+// -------------------------------------------------------------------------
+void PointToPointConstraint::setDamping(float damping) {
+  getBulletPoint2PointConstraint()->m_setting.m_damping = damping;
+};
+// -------------------------------------------------------------------------
+float PointToPointConstraint::getTau() const {
+  return getBulletPoint2PointConstraint()->m_setting.m_tau;
+};
+// -------------------------------------------------------------------------
+float PointToPointConstraint::getDamping() const {
+  return getBulletPoint2PointConstraint()->m_setting.m_damping;
+};
 }

@@ -35,48 +35,50 @@ THE SOFTWARE.
 #include "OgreBulletCollisionsObject.h"
 
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    // basic constraint class
-    class TypedConstraint
-    {
-    public:
-        TypedConstraint(DynamicsWorld *world);
-        TypedConstraint(RigidBody *bodyA);
-        TypedConstraint(RigidBody *bodyA, RigidBody *bodyB);
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+// basic constraint class
+class TypedConstraint {
+  public:
+    TypedConstraint(DynamicsWorld* world);
+    TypedConstraint(RigidBody* bodyA);
+    TypedConstraint(RigidBody* bodyA, RigidBody* bodyB);
 
-	    virtual ~TypedConstraint();
+    virtual ~TypedConstraint();
 
 
-        inline btTypedConstraint* getBulletTypedConstraint() const {return static_cast <btTypedConstraint*> (mConstraint);};
+    inline btTypedConstraint* getBulletTypedConstraint() const {
+      return static_cast <btTypedConstraint*>(mConstraint);
+    };
 
-    protected:
-        btTypedConstraint       *mConstraint;
+  protected:
+    btTypedConstraint*       mConstraint;
 
-        DynamicsWorld           *mWorld;
-        RigidBody               *mBodyA;
-        RigidBody               *mBodyB;
-	}; 
-	// basic constraint action class
-	class ActionInterface
-	{
-	public:
-		ActionInterface(DynamicsWorld *world);
-		ActionInterface(RigidBody *bodyA);
-		ActionInterface(RigidBody *bodyA, RigidBody *bodyB); 
+    DynamicsWorld*           mWorld;
+    RigidBody*               mBodyA;
+    RigidBody*               mBodyB;
+};
+// basic constraint action class
+class ActionInterface {
+  public:
+    ActionInterface(DynamicsWorld* world);
+    ActionInterface(RigidBody* bodyA);
+    ActionInterface(RigidBody* bodyA, RigidBody* bodyB);
 
-		virtual ~ActionInterface();
+    virtual ~ActionInterface();
 
 
-		inline btActionInterface* getBulletActionInterface() const {return static_cast <btActionInterface*> (mActionInterface);};
+    inline btActionInterface* getBulletActionInterface() const {
+      return static_cast <btActionInterface*>(mActionInterface);
+    };
 
-	protected:
-		btActionInterface       *mActionInterface;
+  protected:
+    btActionInterface*       mActionInterface;
 
-		DynamicsWorld           *mWorld;
-		RigidBody               *mBodyA;
-		RigidBody               *mBodyB;
-	};
+    DynamicsWorld*           mWorld;
+    RigidBody*               mBodyA;
+    RigidBody*               mBodyB;
+};
 }
 #endif //_OGREBULLETDYNAMICS_TypedConstraint_H
+

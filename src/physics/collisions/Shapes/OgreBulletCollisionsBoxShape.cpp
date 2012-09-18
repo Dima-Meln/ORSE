@@ -37,17 +37,14 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    BoxCollisionShape::BoxCollisionShape(const Vector3  &bodyBounds):	
-        CollisionShape()
-    {
-            mShape = new btBoxShape(OgreBtConverter::to(bodyBounds));
-    }
-    // -------------------------------------------------------------------------
-    BoxCollisionShape::~BoxCollisionShape()
-    {
-    }
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+BoxCollisionShape::BoxCollisionShape(const Vector3&  bodyBounds):
+  CollisionShape() {
+  mShape = new btBoxShape(OgreBtConverter::to(bodyBounds));
+}
+// -------------------------------------------------------------------------
+BoxCollisionShape::~BoxCollisionShape() {
+}
 }
 

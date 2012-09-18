@@ -37,65 +37,63 @@ THE SOFTWARE.
 #include "BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h"
 
 #include "Ogre.h"
+#include "physics/collisions/Shapes/OgreBulletCollisionsTrimeshShape.h"
 
 /* Some <math.h> files do not define M_PI... */
 #ifndef M_PI
 #define M_PI 3.14159265
 #endif
 
-namespace OgreBulletCollisions
-{
-    class BtOgreConverter;
-    class OgreBtConverter;
+class BtOgreConverter;
+class OgreBtConverter;
 
-    class CollisionsWorld;
+class CollisionsWorld;
 
-    class CollisionRayResultCallback;
-    class CollisionClosestRayResultCallback;
+class CollisionRayResultCallback;
+class CollisionClosestRayResultCallback;
 
-    class DebugLines;
+class DebugLines;
 
-    class DebugDrawer;
+class DebugDrawer;
 
-    class DebugContact;
-    class DebugNormal;
-    class DebugContactText;
-    
-    class DebugCollisionShape;
-    class BoxDebugShape;
-    class SphereDebugShape;
-    class ConeDebugShape;
-    class TriangleMeshDebugShape;
-    class RayDebugShape;
+class DebugContact;
+class DebugNormal;
+class DebugContactText;
 
-	class GImpactConcaveShape;
-	class HeightmapCollisionShape;
-    class CollisionShape;
-    class BoxCollisionShape;
-    class SphereCollisionShape;
-    class CylinderCollisionShape;
-	class CapsuleCollisionShape;
-    class ConeCollisionShape;
+class DebugCollisionShape;
+class BoxDebugShape;
+class SphereDebugShape;
+class ConeDebugShape;
+class TriangleMeshDebugShape;
+class RayDebugShape;
 
-    class CompoundCollisionShape;
+class GImpactConcaveShape;
+class HeightmapCollisionShape;
+class CollisionShape;
+class BoxCollisionShape;
+class SphereCollisionShape;
+class CylinderCollisionShape;
+class CapsuleCollisionShape;
+class ConeCollisionShape;
 
-    class MultiSphereCollisionShape;
-    class MinkowskiSumCollisionShape;
+class CompoundCollisionShape;
 
-    class ConvexHullCollisionShape;
-    class TriangleMeshCollisionShape;
+class MultiSphereCollisionShape;
+class MinkowskiSumCollisionShape;
 
-    class Object;
+class ConvexHullCollisionShape;
+class TriangleMeshCollisionShape;
 
-    class ObjectState;
+class Object;
 
-	class CollisionShapebject;
+class ObjectState;
 
-    typedef std::vector<Ogre::Vector3> Vector3Array;
-    typedef std::map<unsigned short, Vector3Array* > BoneIndex;
-    typedef std::pair<unsigned short, Vector3Array* > BoneKeyIndex;
+class CollisionShapebject;
 
-}
+typedef std::vector<Ogre::Vector3> Vector3Array;
+typedef std::map<unsigned short, Vector3Array* > BoneIndex;
+typedef std::pair<unsigned short, Vector3Array* > BoneKeyIndex;
+
 
 #endif //_OGREBULLETCOLLISIONS_PREREQUISITES_H
 

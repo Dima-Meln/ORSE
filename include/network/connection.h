@@ -28,7 +28,7 @@
 #include "common.h"
 
 class connection {
-public:
+  public:
     connection();
     connection(const connection&);
     virtual ~connection();
@@ -36,7 +36,7 @@ public:
     bool connect(string server, uint port);
     bool reed(string text);
     bool write(string text);
-    
+
     //ioPtr* get_io_ptr();
 };
 

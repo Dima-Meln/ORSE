@@ -19,18 +19,15 @@
 
 #include "auth.h"
 
-auth::auth()
-{
+auth::auth() {
 
 }
 
-auth::auth(const auth& other)
-{
+auth::auth(const auth& other) {
 
 }
 
-auth::~auth()
-{
+auth::~auth() {
 
 }
 

@@ -36,51 +36,49 @@ THE SOFTWARE.
 #include "OgreBulletDynamicsPreRequisites.h"
 
 
-namespace OgreBulletDynamics
-{
-	// -------------------------------------------------------------------------
-	// basic CollisionWorld
-	class RagDoll 
-	{
-	public:
-		RagDoll (btDynamicsWorld* ownerWorld, 
-				const btVector3& positionOffset);
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+// basic CollisionWorld
+class RagDoll {
+  public:
+    RagDoll(btDynamicsWorld* ownerWorld,
+            const btVector3& positionOffset);
 
-		virtual	~RagDoll ();
+    virtual	~RagDoll();
 
-		// Make ragdoll  active.
-		void ragdollEnable(bool doEnable);
-		// is ragdoll active.
-		bool isRagdollEnabled();
+    // Make ragdoll  active.
+    void ragdollEnable(bool doEnable);
+    // is ragdoll active.
+    bool isRagdollEnabled();
 
-		// Make constraint between body part active.
-		void constraintEnable(bool value);
-		// are constraint between body part active ?
-		bool isConstraintEnabled();
+    // Make constraint between body part active.
+    void constraintEnable(bool value);
+    // are constraint between body part active ?
+    bool isConstraintEnabled();
 
-		// Make it collidable or not.
-		void collisionEnable(bool value);
-		// if shapes can collide
-		bool isCollisionEnabled();
+    // Make it collidable or not.
+    void collisionEnable(bool value);
+    // if shapes can collide
+    bool isCollisionEnabled();
 
-		// Make it fixed in a pose or not.
-		void rigidityEnable(bool value);
-		// is it fixed on a pose?
-		bool isRigidityEnable();
+    // Make it fixed in a pose or not.
+    void rigidityEnable(bool value);
+    // is it fixed on a pose?
+    bool isRigidityEnable();
 
 
-	protected:
-		btDynamicsWorld* m_ownerWorld;
+  protected:
+    btDynamicsWorld* m_ownerWorld;
 
-		std::vector<btCollisionShape* >  m_shapes;
-		std::vector<btRigidBody* >		 m_bodies;
-		std::vector<btTypedConstraint* > m_joints;
+    std::vector<btCollisionShape* >  m_shapes;
+    std::vector<btRigidBody* >		 m_bodies;
+    std::vector<btTypedConstraint* > m_joints;
 
-		btRigidBody* localCreateRigidBody (btScalar mass, 
-			const btTransform& startTransform, 
-			btCollisionShape* shape);
+    btRigidBody* localCreateRigidBody(btScalar mass,
+                                      const btTransform& startTransform,
+                                      btCollisionShape* shape);
 
-	};
+};
 }
 #endif //_OGREBULLETCOLLISIONS_CollisionWorld_H
 

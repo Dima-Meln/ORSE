@@ -36,17 +36,14 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    SphereCollisionShape::SphereCollisionShape(const Real radius):	
-        CollisionShape()
-    {
-            mShape = new btSphereShape(radius);
-    }
-    // -------------------------------------------------------------------------
-    SphereCollisionShape::~SphereCollisionShape()
-    {
-    }
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+SphereCollisionShape::SphereCollisionShape(const Real radius):
+  CollisionShape() {
+  mShape = new btSphereShape(radius);
+}
+// -------------------------------------------------------------------------
+SphereCollisionShape::~SphereCollisionShape() {
+}
 }
 

@@ -35,18 +35,16 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    // basic SphereShape
-    class SphereCollisionShape : public CollisionShape
-    {
-    public:
-        SphereCollisionShape(const Ogre::Real  radius);
-	    virtual ~SphereCollisionShape();
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+// basic SphereShape
+class SphereCollisionShape : public CollisionShape {
+  public:
+    SphereCollisionShape(const Ogre::Real  radius);
+    virtual ~SphereCollisionShape();
 
-    private:
-    };
+  private:
+};
 }
 #endif //_OGREBULLETCOLLISIONS_SphereShape_H
 

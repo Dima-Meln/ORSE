@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -lpthread -std=c++11 -O3 -DNDEBUG   -shared -Wl,-soname,libOrseMain.so -o libOrseMain.so CMakeFiles/OrseMain.dir/src/node.cpp.o CMakeFiles/OrseMain.dir/src/root.cpp.o CMakeFiles/OrseMain.dir/src/resourcemgr.cpp.o -lOgreMain /usr/local/lib/OGRE/Plugin_CgProgramManager.so -Wl,-rpath,/usr/local/lib/OGRE: 

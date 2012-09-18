@@ -34,34 +34,26 @@ THE SOFTWARE.
 #include "OgreBulletCollisionsPreRequisites.h"
 
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-	// basic Shape
+// -------------------------------------------------------------------------
+// basic Shape
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-	class __declspec( dllexport ) CollisionShape
+class __declspec(dllexport) CollisionShape
 #else
-	class CollisionShape 
+class CollisionShape
 #endif
-    {
+{
 
-    public:
-	    CollisionShape();
-        virtual ~CollisionShape();
-        
-        inline btCollisionShape* getBulletShape () {return mShape;};
+  public:
+    CollisionShape();
+    virtual ~CollisionShape();
 
-        virtual bool drawWireFrame(DebugLines *wire, 
-            const Ogre::Vector3 &pos = Ogre::Vector3::ZERO, 
-            const Ogre::Quaternion &quat= Ogre::Quaternion::IDENTITY) const;
-
-		bool drawConvexWireFrame(DebugLines *wire, const Ogre::Vector3 &pos, const Ogre::Quaternion &quat) const;
-
-
-    protected:
-        btCollisionShape*       mShape;        
-
+    inline btCollisionShape* getBulletShape() {
+      return mShape;
     };
-}
+
+  protected:
+    btCollisionShape*       mShape;
+
+};
 #endif //_OGREBULLETCOLLISIONS_Shape_H
 

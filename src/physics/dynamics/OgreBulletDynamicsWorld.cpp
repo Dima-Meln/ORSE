@@ -45,160 +45,138 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletDynamics
-{
+namespace OgreBulletDynamics {
 
-    DynamicsWorld::DynamicsWorld(Ogre::SceneManager *mgr, 
-                const Ogre::AxisAlignedBox &bounds,  
-                const Ogre::Vector3 &gravity,
-                bool init, bool set32BitAxisSweep, unsigned int maxHandles) :
-                CollisionsWorld(mgr, bounds, false, set32BitAxisSweep, maxHandles)
-    {
-        //btSequentialImpulseConstraintSolver
-        //btSequentialImpulseConstraintSolver3
-        mConstraintsolver = new btSequentialImpulseConstraintSolver();
+DynamicsWorld::DynamicsWorld(Ogre::SceneManager* mgr,
+                             const Ogre::AxisAlignedBox& bounds,
+                             const Ogre::Vector3& gravity,
+                             bool init, bool set32BitAxisSweep, unsigned int maxHandles) :
+  CollisionsWorld(mgr, bounds, false, set32BitAxisSweep, maxHandles) {
+  //btSequentialImpulseConstraintSolver
+  //btSequentialImpulseConstraintSolver3
+  mConstraintsolver = new btSequentialImpulseConstraintSolver();
 
-        //only if init is true, otherwise you have to create mWorld manually later on
-        if (init) {
-            mWorld = new btDiscreteDynamicsWorld(mDispatcher, mBroadphase, mConstraintsolver, &mDefaultCollisionConfiguration);
-			static_cast <btDiscreteDynamicsWorld *> (mWorld)->setGravity(btVector3(gravity.x,gravity.y,gravity.z));
+  //only if init is true, otherwise you have to create mWorld manually later on
+  if(init) {
+    mWorld = new btDiscreteDynamicsWorld(mDispatcher, mBroadphase, mConstraintsolver, &mDefaultCollisionConfiguration);
+    static_cast <btDiscreteDynamicsWorld*>(mWorld)->setGravity(btVector3(gravity.x, gravity.y, gravity.z));
 
-			//btCollisionDispatcher * dispatcher = static_cast<btCollisionDispatcher *>(mWorld->getDispatcher());
-			//btGImpactCollisionAlgorithm::registerAlgorithm(dispatcher);
-		}
+    //btCollisionDispatcher * dispatcher = static_cast<btCollisionDispatcher *>(mWorld->getDispatcher());
+    //btGImpactCollisionAlgorithm::registerAlgorithm(dispatcher);
+  }
 
-    }
-    // -------------------------------------------------------------------------
-    DynamicsWorld::~DynamicsWorld()
-    {
-        delete mConstraintsolver;
-    }
+}
+// -------------------------------------------------------------------------
+DynamicsWorld::~DynamicsWorld() {
+  delete mConstraintsolver;
+}
 
-    // -------------------------------------------------------------------------
-    void DynamicsWorld::addRigidBody (RigidBody *rb, short collisionGroup, short collisionMask)
-    {
-        mObjects.push_back (static_cast <Object *> (rb));
+// -------------------------------------------------------------------------
+void DynamicsWorld::addRigidBody(RigidBody* rb, short collisionGroup, short collisionMask) {
+  mObjects.push_back(static_cast <Object*>(rb));
 
-		if (collisionGroup == 0 && collisionMask == 0)
-		{
-			// use default collision group/mask values (dynamic/kinematic/static)
-			static_cast <btDiscreteDynamicsWorld *> (mWorld)->addRigidBody(rb->getBulletRigidBody());      
-		}
-		else
-		{
-			static_cast <btDiscreteDynamicsWorld *> (mWorld)->addRigidBody(rb->getBulletRigidBody(), collisionGroup, collisionMask);      
-		}
-    }
-    // -------------------------------------------------------------------------
-    void DynamicsWorld::stepSimulation(const Ogre::Real elapsedTime, int maxSubSteps, const Ogre::Real fixedTimestep)
-    {
-        // Reset Debug Lines
-        if (mDebugDrawer) 
-			mDebugDrawer->clear ();
-		if (mDebugContactPoints)  
-			mDebugContactPoints->clear ();
+  if(collisionGroup == 0 && collisionMask == 0) {
+    // use default collision group/mask values (dynamic/kinematic/static)
+    static_cast <btDiscreteDynamicsWorld*>(mWorld)->addRigidBody(rb->getBulletRigidBody());
+  } else {
+    static_cast <btDiscreteDynamicsWorld*>(mWorld)->addRigidBody(rb->getBulletRigidBody(), collisionGroup, collisionMask);
+  }
+}
+// -------------------------------------------------------------------------
+void DynamicsWorld::stepSimulation(const Ogre::Real elapsedTime, int maxSubSteps, const Ogre::Real fixedTimestep) {
+  // Reset Debug Lines
+  if(mDebugDrawer)
+    mDebugDrawer->clear();
+  if(mDebugContactPoints)
+    mDebugContactPoints->clear();
 
-        static_cast <btDiscreteDynamicsWorld *> (mWorld)->stepSimulation(elapsedTime, maxSubSteps, fixedTimestep);
+  static_cast <btDiscreteDynamicsWorld*>(mWorld)->stepSimulation(elapsedTime, maxSubSteps, fixedTimestep);
 
-		if (mDebugContactPoints) 
-		{
-			///one way to draw all the contact points is iterating over contact manifolds / points:
-			const unsigned int  numManifolds = mWorld->getDispatcher()->getNumManifolds();
-			for (unsigned int i=0;i < numManifolds; i++)
-			{
-				btPersistentManifold* contactManifold = mWorld->getDispatcher()->getManifoldByIndexInternal(i);
+  if(mDebugContactPoints) {
+    ///one way to draw all the contact points is iterating over contact manifolds / points:
+    const unsigned int  numManifolds = mWorld->getDispatcher()->getNumManifolds();
+    for(unsigned int i = 0; i < numManifolds; i++) {
+      btPersistentManifold* contactManifold = mWorld->getDispatcher()->getManifoldByIndexInternal(i);
 
-				btCollisionObject* obA = static_cast<btCollisionObject*>(contactManifold->getBody0());
-				btCollisionObject* obB = static_cast<btCollisionObject*>(contactManifold->getBody1());
+      btCollisionObject* obA = static_cast<btCollisionObject*>(contactManifold->getBody0());
+      btCollisionObject* obB = static_cast<btCollisionObject*>(contactManifold->getBody1());
 
-				contactManifold->refreshContactPoints(obA->getWorldTransform(),obB->getWorldTransform());
+      contactManifold->refreshContactPoints(obA->getWorldTransform(), obB->getWorldTransform());
 
-				const unsigned int numContacts = contactManifold->getNumContacts();
-				for (unsigned int j = 0;j < numContacts; j++)
-				{
-					btManifoldPoint& pt = contactManifold->getContactPoint(j);
+      const unsigned int numContacts = contactManifold->getNumContacts();
+      for(unsigned int j = 0; j < numContacts; j++) {
+        btManifoldPoint& pt = contactManifold->getContactPoint(j);
 
-					if (mShowDebugContactPoints)
-					{
-						btVector3 ptA = pt.getPositionWorldOnA();
-						btVector3 ptB = pt.getPositionWorldOnB();
-						btVector3 ptDistB = ptB  + pt.m_normalWorldOnB *100;
+        if(mShowDebugContactPoints) {
+          btVector3 ptA = pt.getPositionWorldOnA();
+          btVector3 ptB = pt.getPositionWorldOnB();
+          btVector3 ptDistB = ptB  + pt.m_normalWorldOnB * 100;
 
-						mDebugContactPoints->addLine(ptA.x(),ptA.y(),ptA.z(),
-							ptB.x(),ptB.y(),ptB.z());
-						mDebugContactPoints->addLine(ptB.x(),ptB.y(),ptB.z(),
-							ptDistB.x(),ptDistB.y(),ptDistB.z());
-					}
-				}
-				//you can un-comment out this line, and then all points are removed
-				//contactManifold->clearManifold();	
-			}
-			// draw lines that step Simulation sent.
-			mDebugContactPoints->draw();
-		}
-
-		if (mDebugDrawer) 
-		{
-			// draw lines that step Simulation sent.
-			mDebugDrawer->draw();
-
-
-
-			const bool drawFeaturesText = (mDebugDrawer->getDebugMode () & btIDebugDraw::DBG_DrawFeaturesText) != 0;
-			if (drawFeaturesText)
-			{
-				// on all bodies we have
-				// we get all shapes and draw more information
-				//depending on mDebugDrawer mode.
-				std::deque<Object*>::iterator it = mObjects.begin();
-				while (it != mObjects.end())
-				{
-					//(*it)->drawFeaturesText();
-					++it;
-				}
-			}
-		}
-    }
-    // -------------------------------------------------------------------------
-    void DynamicsWorld::removeConstraint(TypedConstraint *constraint)
-    {
-        getBulletDynamicsWorld()->removeConstraint(constraint->getBulletTypedConstraint());
-        std::deque <TypedConstraint*>::iterator it = mConstraints.begin();
-        while (it != mConstraints.end())
-        {
-            if ((*it) == constraint)
-            {
-                mConstraints.erase (it);
-                break;
-            }
-            ++it;
+          mDebugContactPoints->addLine(ptA.x(), ptA.y(), ptA.z(),
+                                       ptB.x(), ptB.y(), ptB.z());
+          mDebugContactPoints->addLine(ptB.x(), ptB.y(), ptB.z(),
+                                       ptDistB.x(), ptDistB.y(), ptDistB.z());
         }
+      }
+      //you can un-comment out this line, and then all points are removed
+      //contactManifold->clearManifold();
     }
-    // -------------------------------------------------------------------------
-    void DynamicsWorld::addConstraint(TypedConstraint *constraint)
-    {
-        getBulletDynamicsWorld()->addConstraint(constraint->getBulletTypedConstraint());
-        mConstraints.push_back(constraint);
-    }
-    // -------------------------------------------------------------------------
-    void DynamicsWorld::addVehicle(RaycastVehicle *v)
-    {
-        getBulletDynamicsWorld()->addVehicle(v->getBulletVehicle ());
-        mActionInterface.push_back(static_cast <ActionInterface *> (v));
+    // draw lines that step Simulation sent.
+    mDebugContactPoints->draw();
+  }
 
-        //mVehicles.push_back(v);
+  if(mDebugDrawer) {
+    // draw lines that step Simulation sent.
+    mDebugDrawer->draw();
+
+
+
+    const bool drawFeaturesText = (mDebugDrawer->getDebugMode() & btIDebugDraw::DBG_DrawFeaturesText) != 0;
+    if(drawFeaturesText) {
+      // on all bodies we have
+      // we get all shapes and draw more information
+      //depending on mDebugDrawer mode.
+      std::deque<Object*>::iterator it = mObjects.begin();
+      while(it != mObjects.end()) {
+        //(*it)->drawFeaturesText();
+        ++it;
+      }
     }
-    // -------------------------------------------------------------------------
-    bool DynamicsWorld::isConstraintRegistered(TypedConstraint *constraint) const
-    {
-        std::deque <TypedConstraint*>::const_iterator it = mConstraints.begin();
-        while (it != mConstraints.end())
-        {
-            if ((*it) == constraint)
-                return true;
-            ++it;
-        }
-        return false;
+  }
+}
+// -------------------------------------------------------------------------
+void DynamicsWorld::removeConstraint(TypedConstraint* constraint) {
+  getBulletDynamicsWorld()->removeConstraint(constraint->getBulletTypedConstraint());
+  std::deque <TypedConstraint*>::iterator it = mConstraints.begin();
+  while(it != mConstraints.end()) {
+    if((*it) == constraint) {
+      mConstraints.erase(it);
+      break;
     }
+    ++it;
+  }
+}
+// -------------------------------------------------------------------------
+void DynamicsWorld::addConstraint(TypedConstraint* constraint) {
+  getBulletDynamicsWorld()->addConstraint(constraint->getBulletTypedConstraint());
+  mConstraints.push_back(constraint);
+}
+// -------------------------------------------------------------------------
+void DynamicsWorld::addVehicle(RaycastVehicle* v) {
+  getBulletDynamicsWorld()->addVehicle(v->getBulletVehicle());
+  mActionInterface.push_back(static_cast <ActionInterface*>(v));
+
+  //mVehicles.push_back(v);
+}
+// -------------------------------------------------------------------------
+bool DynamicsWorld::isConstraintRegistered(TypedConstraint* constraint) const {
+  std::deque <TypedConstraint*>::const_iterator it = mConstraints.begin();
+  while(it != mConstraints.end()) {
+    if((*it) == constraint)
+      return true;
+    ++it;
+  }
+  return false;
+}
 }
 

@@ -35,17 +35,15 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    // basic CylinderShape
-    class CylinderCollisionShape : public CollisionShape
-    {
-    public:
-        CylinderCollisionShape(const Ogre::Vector3  &halfExtents, const Ogre::Vector3 &axe);
-	    virtual ~CylinderCollisionShape();
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+// basic CylinderShape
+class CylinderCollisionShape : public CollisionShape {
+  public:
+    CylinderCollisionShape(const Ogre::Vector3&  halfExtents, const Ogre::Vector3& axe);
+    virtual ~CylinderCollisionShape();
 
-    };
+};
 }
 #endif //_OGREBULLETCOLLISIONS_CylinderShape_H
 

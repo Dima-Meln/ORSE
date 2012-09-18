@@ -34,21 +34,19 @@ THE SOFTWARE.
 #include "OgreBulletCollisionsPreRequisites.h"
 
 
-namespace OgreBulletCollisions
-{
-    class ObjectState : public btMotionState
-    {
-    public:
-	    ObjectState(Object *parent);
-	    ~ObjectState();
-    	
-	    virtual void getWorldTransform(btTransform& worldTrans ) const;
-        virtual void setWorldTransform(const btTransform& worldTrans);	
+namespace OgreBulletCollisions {
+class ObjectState : public btMotionState {
+  public:
+    ObjectState(Object* parent);
+    ~ObjectState();
 
-    private:
-        Object      *mObject;
-        btTransform  mWorldTrans;
-    };
+    virtual void getWorldTransform(btTransform& worldTrans) const;
+    virtual void setWorldTransform(const btTransform& worldTrans);
+
+  private:
+    Object*      mObject;
+    btTransform  mWorldTrans;
+};
 }
 #endif //_OGREBULLETCOLLISIONS_ObjectState_H
 

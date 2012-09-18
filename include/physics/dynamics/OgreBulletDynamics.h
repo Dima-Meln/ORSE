@@ -35,20 +35,20 @@ THE SOFTWARE.
 
 #ifdef _PRECOMP
 
-    #include "OgreBulletDynamicsRigidBody.h"
-    #include "OgreBulletDynamicsObjectState.h"
+#include "OgreBulletDynamicsRigidBody.h"
+#include "OgreBulletDynamicsObjectState.h"
 
-    #include "OgreBulletDynamicsConstraint.h"
-    #include "Constraints/OgreBulletDynamics6DofConstraint.h"
-    #include "Constraints/OgreBulletDynamicsHingeConstraint.h"
-    #include "Constraints/OgreBulletDynamicsPoint2pointConstraint.h"
-	#include "Constraints/OgreBulletDynamicsConeTwistConstraint.h"
+#include "OgreBulletDynamicsConstraint.h"
+#include "Constraints/OgreBulletDynamics6DofConstraint.h"
+#include "Constraints/OgreBulletDynamicsHingeConstraint.h"
+#include "Constraints/OgreBulletDynamicsPoint2pointConstraint.h"
+#include "Constraints/OgreBulletDynamicsConeTwistConstraint.h"
 
-	#include "Constraints/OgreBulletDynamicsRaycastVehicle.h"
-	#include "Prefab/OgreBulletDynamicsRagDoll.h"
+#include "Constraints/OgreBulletDynamicsRaycastVehicle.h"
+#include "Prefab/OgreBulletDynamicsRagDoll.h"
 
-    #include "OgreBulletDynamicsWorld.h"
+#include "OgreBulletDynamicsWorld.h"
 
 #endif //_PRECOMP
- 
+
 #endif //_OGREBULLETDYNAMICS_H

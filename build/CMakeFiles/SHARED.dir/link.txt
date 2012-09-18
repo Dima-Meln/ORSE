@@ -1,2 +1,0 @@
-/usr/bin/ar cr libSHARED.a  CMakeFiles/SHARED.dir/src/root.cpp.o CMakeFiles/SHARED.dir/src/resourcemgr.cpp.o CMakeFiles/SHARED.dir/src/viewport.cpp.o CMakeFiles/SHARED.dir/src/scenemanager.cpp.o CMakeFiles/SHARED.dir/src/window.cpp.o CMakeFiles/SHARED.dir/src/network/connection.cpp.o CMakeFiles/SHARED.dir/src/network/auth.cpp.o CMakeFiles/SHARED.dir/src/node.cpp.o CMakeFiles/SHARED.dir/src/entity.cpp.o
-/usr/bin/ranlib libSHARED.a

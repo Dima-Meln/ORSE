@@ -21,13 +21,11 @@
 BeginNamespace;
 namespace Config {
 
-Video::Video()
-{
+Video::Video() {
 
 }
 
-Video::~Video()
-{
+Video::~Video() {
 
 }
 void Video::showConfigDialog() {
@@ -35,17 +33,17 @@ void Video::showConfigDialog() {
   // You can skip this and use root.restoreConfig() to load configuration
   // settings if you were sure there are valid ones saved in ogre.cfg
   if(mRoot->showConfigDialog()) {
-     // If returned true, user clicked OK so initialise
-     // Here we choose to let the system create a default rendering window by passing 'true'
-     mWindow = m_Root->initialise(true, "TutorialApplication Render Window");
-     return true;
+    // If returned true, user clicked OK so initialise
+    // Here we choose to let the system create a default rendering window by passing 'true'
+    mWindow = m_Root->initialise(true, "TutorialApplication Render Window");
+    return true;
   } else {
-     return false;
+    return false;
   }
 }
 
 Video::setRender() {
-  Ogre::RenderSystem *rs = m_OgreRoot->getRenderSystemByName("OpenGL Rendering Subsystem");
+  Ogre::RenderSystem* rs = m_OgreRoot->getRenderSystemByName("OpenGL Rendering Subsystem");
 }
 
 }

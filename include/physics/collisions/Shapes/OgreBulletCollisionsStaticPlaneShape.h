@@ -35,20 +35,18 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    // basic BoxShape
-    class StaticPlaneCollisionShape : public CollisionShape
-    {
-    public:
-        StaticPlaneCollisionShape(const Ogre::Vector3 normal, Ogre::Real distance);
-	    virtual ~StaticPlaneCollisionShape();
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+// basic BoxShape
+class StaticPlaneCollisionShape : public CollisionShape {
+  public:
+    StaticPlaneCollisionShape(const Ogre::Vector3 normal, Ogre::Real distance);
+    virtual ~StaticPlaneCollisionShape();
 
-        bool drawWireFrame(DebugLines *wire, 
-            const Ogre::Vector3 &pos = Ogre::Vector3::ZERO, 
-            const Ogre::Quaternion &quat= Ogre::Quaternion::IDENTITY) const;
-    };
+    bool drawWireFrame(DebugLines* wire,
+                       const Ogre::Vector3& pos = Ogre::Vector3::ZERO,
+                       const Ogre::Quaternion& quat = Ogre::Quaternion::IDENTITY) const;
+};
 }
 #endif //_OGREBULLETCOLLISIONS_StaticPlaneShape_H
 

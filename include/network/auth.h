@@ -29,10 +29,10 @@ class auth {
     auth();
     auth(const auth& other);
     virtual ~auth();
-    
+
     bool connFacebook(string login, string pass);
     bool connServer(string host, uint32_t port);
-    
+
   private:
     asio::io_service m_ioservice;
     asio::ip::address m_address;

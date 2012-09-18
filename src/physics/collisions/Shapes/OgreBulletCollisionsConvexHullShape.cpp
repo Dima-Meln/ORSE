@@ -36,30 +36,25 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    ConvexHullCollisionShape::ConvexHullCollisionShape(const Real* points, int numPoints, int stride):	
-        CollisionShape()
-    {
-            mShape = new btConvexHullShape((btScalar*) points, numPoints, stride);
-    }
-    // -------------------------------------------------------------------------
-    ConvexHullCollisionShape::ConvexHullCollisionShape():	
-    CollisionShape()
-    {
-        mShape = new btConvexHullShape();
-	}
-	// -------------------------------------------------------------------------
-	ConvexHullCollisionShape::ConvexHullCollisionShape(btConvexHullShape *shape):	
-	CollisionShape()
-	{
-		mShape = shape;
-	}
-    // -------------------------------------------------------------------------
-    ConvexHullCollisionShape::~ConvexHullCollisionShape()
-    {
-    }
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+ConvexHullCollisionShape::ConvexHullCollisionShape(const Real* points, int numPoints, int stride):
+  CollisionShape() {
+  mShape = new btConvexHullShape((btScalar*) points, numPoints, stride);
+}
+// -------------------------------------------------------------------------
+ConvexHullCollisionShape::ConvexHullCollisionShape():
+  CollisionShape() {
+  mShape = new btConvexHullShape();
+}
+// -------------------------------------------------------------------------
+ConvexHullCollisionShape::ConvexHullCollisionShape(btConvexHullShape* shape):
+  CollisionShape() {
+  mShape = shape;
+}
+// -------------------------------------------------------------------------
+ConvexHullCollisionShape::~ConvexHullCollisionShape() {
+}
 
 }
 

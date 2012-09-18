@@ -40,69 +40,57 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-	CollisionRayResultCallback::CollisionRayResultCallback(const Ogre::Ray &ray, 
-							CollisionsWorld *world, Ogre::Real max_distance,
-							bool init):
-        mRayResultCallback(0),
-        mWorld(world),
-        mRay (ray),
-		mMaxDistance(max_distance)
-    {
-        if (init)
-        {
-            //mRay = new btCollisionWorld::RayResultCallback (
-            //    OgreBtConverter::to(ray.getOrigin ()), 
-            //   OgreBtConverter::to(ray.getDirection ()));
-        }
-	}
-    // -------------------------------------------------------------------------
-    CollisionRayResultCallback::~CollisionRayResultCallback()
-    {
-        if (mRayResultCallback)
-        {
-            delete mRayResultCallback;
-            mRayResultCallback = 0;
-        }
-    }
-    Ogre::Vector3 CollisionRayResultCallback::getRayStartPoint() const
-    {
-      return mRay.getOrigin();
-    }
-    // -------------------------------------------------------------------------
-    Ogre::Vector3 CollisionRayResultCallback::getRayEndPoint() const
-    {
-      return mRay.getPoint(mMaxDistance);
-    }
-    // -------------------------------------------------------------------------
-    bool  CollisionRayResultCallback::doesCollide() const
-    {
-        return mRayResultCallback->hasHit();
-    }
-    // -------------------------------------------------------------------------
-    Object  *CollisionClosestRayResultCallback::getCollidedObject () const
-    {        
-        return mWorld->findObject(static_cast<btCollisionWorld::ClosestRayResultCallback *> (mRayResultCallback)->m_collisionObject);
-	}
-    // -------------------------------------------------------------------------
-	CollisionClosestRayResultCallback::CollisionClosestRayResultCallback(const Ogre::Ray &ray, CollisionsWorld *world, Ogre::Real max_distance) :
-        CollisionRayResultCallback(ray, world, max_distance, false)
-    {
-        mRayResultCallback = new btCollisionWorld::ClosestRayResultCallback (
-            OgreBtConverter::to(getRayStartPoint ()), 
-            OgreBtConverter::to(getRayEndPoint ()));
-    } 
-    // -------------------------------------------------------------------------
-    Vector3 CollisionClosestRayResultCallback::getCollisionPoint() const
-    {
-        return BtOgreConverter::to(getBulletClosestRayResultCallback()->m_hitPointWorld);
-	}
-	// -------------------------------------------------------------------------
-	Vector3 CollisionClosestRayResultCallback::getCollisionNormal() const
-	{
-		return BtOgreConverter::to(getBulletClosestRayResultCallback()->m_hitNormalWorld);
-	}
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+CollisionRayResultCallback::CollisionRayResultCallback(const Ogre::Ray& ray,
+    CollisionsWorld* world, Ogre::Real max_distance,
+    bool init):
+  mRayResultCallback(0),
+  mWorld(world),
+  mRay(ray),
+  mMaxDistance(max_distance) {
+  if(init) {
+    //mRay = new btCollisionWorld::RayResultCallback (
+    //    OgreBtConverter::to(ray.getOrigin ()),
+    //   OgreBtConverter::to(ray.getDirection ()));
+  }
+}
+// -------------------------------------------------------------------------
+CollisionRayResultCallback::~CollisionRayResultCallback() {
+  if(mRayResultCallback) {
+    delete mRayResultCallback;
+    mRayResultCallback = 0;
+  }
+}
+Ogre::Vector3 CollisionRayResultCallback::getRayStartPoint() const {
+  return mRay.getOrigin();
+}
+// -------------------------------------------------------------------------
+Ogre::Vector3 CollisionRayResultCallback::getRayEndPoint() const {
+  return mRay.getPoint(mMaxDistance);
+}
+// -------------------------------------------------------------------------
+bool  CollisionRayResultCallback::doesCollide() const {
+  return mRayResultCallback->hasHit();
+}
+// -------------------------------------------------------------------------
+Object*  CollisionClosestRayResultCallback::getCollidedObject() const {
+  return mWorld->findObject(static_cast<btCollisionWorld::ClosestRayResultCallback*>(mRayResultCallback)->m_collisionObject);
+}
+// -------------------------------------------------------------------------
+CollisionClosestRayResultCallback::CollisionClosestRayResultCallback(const Ogre::Ray& ray, CollisionsWorld* world, Ogre::Real max_distance) :
+  CollisionRayResultCallback(ray, world, max_distance, false) {
+  mRayResultCallback = new btCollisionWorld::ClosestRayResultCallback(
+    OgreBtConverter::to(getRayStartPoint()),
+    OgreBtConverter::to(getRayEndPoint()));
+}
+// -------------------------------------------------------------------------
+Vector3 CollisionClosestRayResultCallback::getCollisionPoint() const {
+  return BtOgreConverter::to(getBulletClosestRayResultCallback()->m_hitPointWorld);
+}
+// -------------------------------------------------------------------------
+Vector3 CollisionClosestRayResultCallback::getCollisionNormal() const {
+  return BtOgreConverter::to(getBulletClosestRayResultCallback()->m_hitNormalWorld);
+}
 }
 

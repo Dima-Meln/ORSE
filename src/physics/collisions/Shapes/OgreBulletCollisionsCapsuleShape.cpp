@@ -37,22 +37,19 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    CapsuleCollisionShape::CapsuleCollisionShape(const Real  radius, const Real height, const Vector3 &axe):	
-        CollisionShape()
-    {
-        if (axe == Vector3::UNIT_X)
-            mShape = new btCapsuleShapeX(radius, height);
-        else if (axe == Vector3::UNIT_Y)
-            mShape = new btCapsuleShape (radius, height);
-        else if (axe == Vector3::UNIT_Z)
-            mShape = new btCapsuleShapeZ(radius, height);
-    }
-    // -------------------------------------------------------------------------
-    CapsuleCollisionShape::~CapsuleCollisionShape()
-    {
-    }
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+CapsuleCollisionShape::CapsuleCollisionShape(const Real  radius, const Real height, const Vector3& axe):
+  CollisionShape() {
+  if(axe == Vector3::UNIT_X)
+    mShape = new btCapsuleShapeX(radius, height);
+  else if(axe == Vector3::UNIT_Y)
+    mShape = new btCapsuleShape(radius, height);
+  else if(axe == Vector3::UNIT_Z)
+    mShape = new btCapsuleShapeZ(radius, height);
+}
+// -------------------------------------------------------------------------
+CapsuleCollisionShape::~CapsuleCollisionShape() {
+}
 }
 

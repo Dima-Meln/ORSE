@@ -37,127 +37,115 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    TriangleMeshCollisionShape::TriangleMeshCollisionShape(
-        Vector3        *vertices, 
-        unsigned int vertexCount, 
-        unsigned int *indices, 
-        unsigned int indexCount,
-		bool use32bitsIndices) :	
-        CollisionShape(),
-        mTriMesh(0)
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+TriangleMeshCollisionShape::TriangleMeshCollisionShape(
+  Vector3*        vertices,
+  unsigned int vertexCount,
+  unsigned int* indices,
+  unsigned int indexCount,
+  bool use32bitsIndices) :
+  CollisionShape(),
+  mTriMesh(0) {
+  unsigned int numFaces = indexCount / 3;
+
+  mTriMesh = new btTriangleMesh(use32bitsIndices);
+
+  btVector3    vertexPos[3];
+  for(unsigned int n = 0; n < numFaces; ++n) {
     {
-		unsigned int numFaces = indexCount / 3;
-
-		mTriMesh = new btTriangleMesh(use32bitsIndices);
-
-        btVector3    vertexPos[3];
-        for (unsigned int n = 0; n < numFaces; ++n)
-        {
-			{
-				const Vector3 &vec = vertices[*indices];
-				vertexPos[0][0] = vec.x;
-				vertexPos[0][1] = vec.y;
-				vertexPos[0][2] = vec.z;
-			}
-			{
-				const Vector3 &vec = vertices[*(indices + 1)];
-				vertexPos[1][0] = vec.x;
-				vertexPos[1][1] = vec.y;
-				vertexPos[1][2] = vec.z;
-			}
-			{
-				const Vector3 &vec = vertices[*(indices + 2)];
-				vertexPos[2][0] = vec.x;
-				vertexPos[2][1] = vec.y;
-				vertexPos[2][2] = vec.z;
-			}
-
-			indices += 3;
-
-            mTriMesh->addTriangle(vertexPos[0], vertexPos[1], vertexPos[2]);
-        }
-
-		const bool useQuantizedAABB = true;
-        mShape = new btBvhTriangleMeshShape(mTriMesh, useQuantizedAABB);
-
+      const Vector3& vec = vertices[*indices];
+      vertexPos[0][0] = vec.x;
+      vertexPos[0][1] = vec.y;
+      vertexPos[0][2] = vec.z;
     }
-    // -------------------------------------------------------------------------
-    TriangleMeshCollisionShape::~TriangleMeshCollisionShape()
     {
-        if(mTriMesh)
-        {
-            delete mTriMesh;
-        }
-        mTriMesh = 0;
+      const Vector3& vec = vertices[*(indices + 1)];
+      vertexPos[1][0] = vec.x;
+      vertexPos[1][1] = vec.y;
+      vertexPos[1][2] = vec.z;
     }
-    // -------------------------------------------------------------------------
-	bool TriangleMeshCollisionShape::drawWireFrame(DebugLines *wire, 
-		const Ogre::Vector3 &pos, 
-		const Ogre::Quaternion &quat) const
     {
-        const int numTris = mTriMesh->getNumTriangles ();
-        if (numTris > 0)
-        {
+      const Vector3& vec = vertices[*(indices + 2)];
+      vertexPos[2][0] = vec.x;
+      vertexPos[2][1] = vec.y;
+      vertexPos[2][2] = vec.z;
+    }
 
-			const int numSubParts = mTriMesh->getNumSubParts ();
-			for (int currSubPart = 0; currSubPart < numSubParts; currSubPart++)
-			{
-				const unsigned char* vertexBase = NULL;
-				int numVerts;
-				PHY_ScalarType vertexType;
-				int vertexStride;
-				const unsigned char* indexBase = NULL;
-				int indexStride;
-				int numFaces;
-				PHY_ScalarType indexType;
+    indices += 3;
 
-				mTriMesh->getLockedReadOnlyVertexIndexBase (&vertexBase, numVerts, 
-					vertexType, vertexStride, 
-					&indexBase, indexStride, numFaces, indexType, currSubPart);
+    mTriMesh->addTriangle(vertexPos[0], vertexPos[1], vertexPos[2]);
+  }
 
-				float* p;
-				btVector3 vert0;
-				btVector3 vert1;
-				btVector3 vert2;
-				for (int t = 0; t < numFaces; t++)
-				{
+  const bool useQuantizedAABB = false;
+  mShape = new btBvhTriangleMeshShape(mTriMesh, useQuantizedAABB);
+
+}
+// -------------------------------------------------------------------------
+TriangleMeshCollisionShape::~TriangleMeshCollisionShape() {
+  if(mTriMesh) {
+    delete mTriMesh;
+  }
+  mTriMesh = 0;
+}
+// -------------------------------------------------------------------------
+bool TriangleMeshCollisionShape::drawWireFrame(DebugLines* wire,
+    const Ogre::Vector3& pos,
+    const Ogre::Quaternion& quat) const {
+  const int numTris = mTriMesh->getNumTriangles();
+  if(numTris > 0) {
+
+    const int numSubParts = mTriMesh->getNumSubParts();
+    for(int currSubPart = 0; currSubPart < numSubParts; currSubPart++) {
+      const unsigned char* vertexBase = NULL;
+      int numVerts;
+      PHY_ScalarType vertexType;
+      int vertexStride;
+      const unsigned char* indexBase = NULL;
+      int indexStride;
+      int numFaces;
+      PHY_ScalarType indexType;
+
+      mTriMesh->getLockedReadOnlyVertexIndexBase(&vertexBase, numVerts,
+          vertexType, vertexStride,
+          &indexBase, indexStride, numFaces, indexType, currSubPart);
+
+      float* p;
+      btVector3 vert0;
+      btVector3 vert1;
+      btVector3 vert2;
+      for(int t = 0; t < numFaces; t++) {
 #define setVector(A, B) {A.setX(B[0]);A.setY(B[1]);A.setZ(B[2]);};
 
-					if (indexType == PHY_SHORT)
-					{
-						short int* index = (short int*)(indexBase + t*indexStride);
+        if(indexType == PHY_SHORT) {
+          short int* index = (short int*)(indexBase + t * indexStride);
 
-						p = (float*)(vertexBase + index[0]*vertexStride);
-						setVector(vert0, p);						
-						p = (float*)(vertexBase + index[1]*vertexStride);
-						setVector(vert1, p);			
-						p = (float*)(vertexBase + index[2]*vertexStride);
-						setVector(vert2, p);		
-					} 
-					else
-					{
-						int* index = (int*)(indexBase + t*indexStride);
+          p = (float*)(vertexBase + index[0] * vertexStride);
+          setVector(vert0, p);
+          p = (float*)(vertexBase + index[1] * vertexStride);
+          setVector(vert1, p);
+          p = (float*)(vertexBase + index[2] * vertexStride);
+          setVector(vert2, p);
+        } else {
+          int* index = (int*)(indexBase + t * indexStride);
 
-						p = (float*)(vertexBase + index[0]*vertexStride);
-						setVector(vert0, p);						
-						p = (float*)(vertexBase + index[1]*vertexStride);
-						setVector(vert1, p);			
-						p = (float*)(vertexBase + index[2]*vertexStride);
-						setVector(vert2, p);		
-					}
+          p = (float*)(vertexBase + index[0] * vertexStride);
+          setVector(vert0, p);
+          p = (float*)(vertexBase + index[1] * vertexStride);
+          setVector(vert1, p);
+          p = (float*)(vertexBase + index[2] * vertexStride);
+          setVector(vert2, p);
+        }
 #undef setVector
 
-					wire->addLine (BtOgreConverter::to(vert0), BtOgreConverter::to(vert1));
-					wire->addLine (BtOgreConverter::to(vert1), BtOgreConverter::to(vert2));
-					wire->addLine (BtOgreConverter::to(vert2), BtOgreConverter::to(vert0));
-				}
-			}
-            return true;
-        }
-        return false;
+        wire->addLine(BtOgreConverter::to(vert0), BtOgreConverter::to(vert1));
+        wire->addLine(BtOgreConverter::to(vert1), BtOgreConverter::to(vert2));
+        wire->addLine(BtOgreConverter::to(vert2), BtOgreConverter::to(vert0));
+      }
     }
+    return true;
+  }
+  return false;
+}
 }
 

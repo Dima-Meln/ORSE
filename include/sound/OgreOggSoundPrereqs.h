@@ -4,10 +4,10 @@
 * @version v1.21
 *
 * @section LICENSE
-* 
-* This source file is part of OgreOggSound, an OpenAL wrapper library for   
-* use with the Ogre Rendering Engine.										 
-*                                                                           
+*
+* This source file is part of OgreOggSound, an OpenAL wrapper library for
+* use with the Ogre Rendering Engine.
+*
 * Copyright (c) 2011 <Ian Stangoe>
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -26,10 +26,10 @@
 * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-* THE SOFTWARE. 
+* THE SOFTWARE.
 *
 * @section DESCRIPTION
-* 
+*
 * Pre-requisites for building lib
 */
 
@@ -95,7 +95,7 @@
  * 1 - BOOST multithreaded
  */
 #ifndef OGGSOUND_THREADED
-	#define OGGSOUND_THREADED 1
+#define OGGSOUND_THREADED 1
 #endif
 
 

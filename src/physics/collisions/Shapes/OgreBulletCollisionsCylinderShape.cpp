@@ -37,22 +37,19 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    CylinderCollisionShape::CylinderCollisionShape(const Vector3  &halfExtents, const Vector3 &axe):	
-        CollisionShape()
-    {
-        if (axe == Vector3::UNIT_X)
-            mShape = new btCylinderShapeX(OgreBtConverter::to(halfExtents));
-        else if (axe == Vector3::UNIT_Y)
-            mShape = new btCylinderShape (OgreBtConverter::to(halfExtents));
-        else if (axe == Vector3::UNIT_Z)
-            mShape = new btCylinderShapeZ(OgreBtConverter::to(halfExtents));
-    }
-    // -------------------------------------------------------------------------
-    CylinderCollisionShape::~CylinderCollisionShape()
-    {
-    }
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+CylinderCollisionShape::CylinderCollisionShape(const Vector3&  halfExtents, const Vector3& axe):
+  CollisionShape() {
+  if(axe == Vector3::UNIT_X)
+    mShape = new btCylinderShapeX(OgreBtConverter::to(halfExtents));
+  else if(axe == Vector3::UNIT_Y)
+    mShape = new btCylinderShape(OgreBtConverter::to(halfExtents));
+  else if(axe == Vector3::UNIT_Z)
+    mShape = new btCylinderShapeZ(OgreBtConverter::to(halfExtents));
+}
+// -------------------------------------------------------------------------
+CylinderCollisionShape::~CylinderCollisionShape() {
+}
 }
 

@@ -37,52 +37,48 @@ THE SOFTWARE.
 
 using namespace Ogre;
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    HingeConstraint::HingeConstraint(RigidBody * rbA, RigidBody * rbB, const Vector3& pivotInA,
-        const Vector3& pivotInB, const Vector3& axisInA, const Vector3& axisInB):
-        TypedConstraint(rbA, rbB)
-    {
-        btVector3 vec[4];
-        vec[0] = OgreBulletCollisions::OgreBtConverter::to(pivotInA);
-        vec[1] = OgreBulletCollisions::OgreBtConverter::to(pivotInB);
-        vec[2] = OgreBulletCollisions::OgreBtConverter::to(axisInA);
-        vec[3] = OgreBulletCollisions::OgreBtConverter::to(axisInB);
-       
-        mConstraint = new btHingeConstraint(
-            *rbA->getBulletRigidBody (),
-            *rbB->getBulletRigidBody (),
-            vec[0], vec[1], vec[2], vec[3]);
-/*
-        mConstraint = new btHingeConstraint(
-            *rbA->getBulletRigidBody (),
-            *rbB->getBulletRigidBody (), 
-            OgreBulletCollisions::OgreBtConverter::to(pivotInA),
-            OgreBulletCollisions::OgreBtConverter::to(pivotInB), 
-            OgreBulletCollisions::OgreBtConverter::to(axisInA), 
-            OgreBulletCollisions::OgreBtConverter::to(axisInB));*/
-    }
-    // -------------------------------------------------------------------------
-        HingeConstraint::HingeConstraint(RigidBody * rbA, 
-            const Vector3& pivotInA, 
-            const Vector3&  axisInA):
-    TypedConstraint(rbA)
-    {
-        btVector3 vec[2];
-        vec[0] = OgreBulletCollisions::OgreBtConverter::to(pivotInA);
-        vec[1] = OgreBulletCollisions::OgreBtConverter::to(axisInA);
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+HingeConstraint::HingeConstraint(RigidBody* rbA, RigidBody* rbB, const Vector3& pivotInA,
+                                 const Vector3& pivotInB, const Vector3& axisInA, const Vector3& axisInB):
+  TypedConstraint(rbA, rbB) {
+  btVector3 vec[4];
+  vec[0] = OgreBulletCollisions::OgreBtConverter::to(pivotInA);
+  vec[1] = OgreBulletCollisions::OgreBtConverter::to(pivotInB);
+  vec[2] = OgreBulletCollisions::OgreBtConverter::to(axisInA);
+  vec[3] = OgreBulletCollisions::OgreBtConverter::to(axisInB);
 
-        mConstraint = new btHingeConstraint(*rbA->getBulletRigidBody (),
-            vec[0], vec[1]);
+  mConstraint = new btHingeConstraint(
+    *rbA->getBulletRigidBody(),
+    *rbB->getBulletRigidBody(),
+    vec[0], vec[1], vec[2], vec[3]);
+  /*
+          mConstraint = new btHingeConstraint(
+              *rbA->getBulletRigidBody (),
+              *rbB->getBulletRigidBody (),
+              OgreBulletCollisions::OgreBtConverter::to(pivotInA),
+              OgreBulletCollisions::OgreBtConverter::to(pivotInB),
+              OgreBulletCollisions::OgreBtConverter::to(axisInA),
+              OgreBulletCollisions::OgreBtConverter::to(axisInB));*/
+}
+// -------------------------------------------------------------------------
+HingeConstraint::HingeConstraint(RigidBody* rbA,
+                                 const Vector3& pivotInA,
+                                 const Vector3&  axisInA):
+  TypedConstraint(rbA) {
+  btVector3 vec[2];
+  vec[0] = OgreBulletCollisions::OgreBtConverter::to(pivotInA);
+  vec[1] = OgreBulletCollisions::OgreBtConverter::to(axisInA);
 
-/*
-        mConstraint = new btHingeConstraint(*rbA->getBulletRigidBody (),
-            OgreBulletCollisions::OgreBtConverter::to(pivotInA),
-            OgreBulletCollisions::OgreBtConverter::to(axisInA));*/
-    }
-    // -------------------------------------------------------------------------
-    HingeConstraint::~HingeConstraint()
-    {
-    }
+  mConstraint = new btHingeConstraint(*rbA->getBulletRigidBody(),
+                                      vec[0], vec[1]);
+
+  /*
+          mConstraint = new btHingeConstraint(*rbA->getBulletRigidBody (),
+              OgreBulletCollisions::OgreBtConverter::to(pivotInA),
+              OgreBulletCollisions::OgreBtConverter::to(axisInA));*/
+}
+// -------------------------------------------------------------------------
+HingeConstraint::~HingeConstraint() {
+}
 }

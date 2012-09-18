@@ -35,17 +35,15 @@ THE SOFTWARE.
 
 #include "OgreBulletCollisionsShape.h"
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    // basic ConeShape
-    class ConeCollisionShape : public CollisionShape
-    {
-    public:
-        ConeCollisionShape(Ogre::Real radius, Ogre::Real height, const Ogre::Vector3 &axe);
-	    virtual ~ConeCollisionShape();
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+// basic ConeShape
+class ConeCollisionShape : public CollisionShape {
+  public:
+    ConeCollisionShape(Ogre::Real radius, Ogre::Real height, const Ogre::Vector3& axe);
+    virtual ~ConeCollisionShape();
 
-    };
+};
 }
 #endif //_OGREBULLETCOLLISIONS_ConeShape_H
 

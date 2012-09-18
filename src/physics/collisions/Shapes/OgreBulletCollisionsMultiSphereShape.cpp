@@ -37,36 +37,32 @@ THE SOFTWARE.
 using namespace Ogre;
 using namespace OgreBulletCollisions;
 
-namespace OgreBulletCollisions
-{
-    // -------------------------------------------------------------------------
-    MultiSphereCollisionShape::MultiSphereCollisionShape(
-        const Ogre::Vector3& inertiaHalfExtents,
-        const Ogre::Vector3* positions,
-        const Ogre::Real* radi,
-        int numSpheres):	
-        CollisionShape()
-    {
-		btVector3 * btPositions = new btVector3[numSpheres];
-		{
-			unsigned int currNum = numSpheres;
-			while (currNum-- > 0)
-			{
-				btPositions[currNum] = OgreBtConverter::to(positions[currNum]);
-			}
-		}
-
-        mShape = new btMultiSphereShape(
-            //OgreBtConverter::to(inertiaHalfExtents),
-            (btVector3 *) btPositions,
-            (const btScalar *) radi,
-            numSpheres);
-
-		delete [] btPositions;
+namespace OgreBulletCollisions {
+// -------------------------------------------------------------------------
+MultiSphereCollisionShape::MultiSphereCollisionShape(
+  const Ogre::Vector3& inertiaHalfExtents,
+  const Ogre::Vector3* positions,
+  const Ogre::Real* radi,
+  int numSpheres):
+  CollisionShape() {
+  btVector3* btPositions = new btVector3[numSpheres];
+  {
+    unsigned int currNum = numSpheres;
+    while(currNum-- > 0) {
+      btPositions[currNum] = OgreBtConverter::to(positions[currNum]);
     }
-    // -------------------------------------------------------------------------
-    MultiSphereCollisionShape::~MultiSphereCollisionShape()
-    {
-    }
+  }
+
+  mShape = new btMultiSphereShape(
+    //OgreBtConverter::to(inertiaHalfExtents),
+    (btVector3*) btPositions,
+    (const btScalar*) radi,
+    numSpheres);
+
+  delete [] btPositions;
+}
+// -------------------------------------------------------------------------
+MultiSphereCollisionShape::~MultiSphereCollisionShape() {
+}
 }
 

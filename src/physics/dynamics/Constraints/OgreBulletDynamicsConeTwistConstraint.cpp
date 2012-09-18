@@ -38,34 +38,30 @@ THE SOFTWARE.
 
 using namespace Ogre;
 
-namespace OgreBulletDynamics
-{
-    // -------------------------------------------------------------------------
-    ConeTwistConstraint::ConeTwistConstraint(RigidBody * rbA, RigidBody * rbB,
-        const Vector3& FrameInAVector3, const Quaternion& FrameInAOrientation,
-        const Vector3& FrameInBVector3, const Quaternion& FrameInBOrientation):
-    TypedConstraint(rbA, rbB)
-    {
-        btTransform frameInA (OgreBulletCollisions::OgreBtConverter::to(FrameInAOrientation),
-                              OgreBulletCollisions::OgreBtConverter::to(FrameInAVector3));
-        btTransform frameInB (OgreBulletCollisions::OgreBtConverter::to(FrameInBOrientation),
-                              OgreBulletCollisions::OgreBtConverter::to(FrameInBVector3));
+namespace OgreBulletDynamics {
+// -------------------------------------------------------------------------
+ConeTwistConstraint::ConeTwistConstraint(RigidBody* rbA, RigidBody* rbB,
+    const Vector3& FrameInAVector3, const Quaternion& FrameInAOrientation,
+    const Vector3& FrameInBVector3, const Quaternion& FrameInBOrientation):
+  TypedConstraint(rbA, rbB) {
+  btTransform frameInA(OgreBulletCollisions::OgreBtConverter::to(FrameInAOrientation),
+                       OgreBulletCollisions::OgreBtConverter::to(FrameInAVector3));
+  btTransform frameInB(OgreBulletCollisions::OgreBtConverter::to(FrameInBOrientation),
+                       OgreBulletCollisions::OgreBtConverter::to(FrameInBVector3));
 
-        mConstraint = new btConeTwistConstraint(
-            *rbA->getBulletRigidBody (),
-            *rbB->getBulletRigidBody (),
-            frameInA,
-            frameInB);
-    }
-    //-------------------------------------------------------------------------
-    ConeTwistConstraint::~ConeTwistConstraint()
-    {
-    }
-   
-    void ConeTwistConstraint::setLimit(Ogre::Real a, Ogre::Real b, Ogre::Real c)
-    {
-        dynamic_cast<btConeTwistConstraint*>(mConstraint)->setLimit(a,b,c);
-    }
-   
+  mConstraint = new btConeTwistConstraint(
+    *rbA->getBulletRigidBody(),
+    *rbB->getBulletRigidBody(),
+    frameInA,
+    frameInB);
+}
+//-------------------------------------------------------------------------
+ConeTwistConstraint::~ConeTwistConstraint() {
+}
+
+void ConeTwistConstraint::setLimit(Ogre::Real a, Ogre::Real b, Ogre::Real c) {
+  dynamic_cast<btConeTwistConstraint*>(mConstraint)->setLimit(a, b, c);
+}
+
 }
 
